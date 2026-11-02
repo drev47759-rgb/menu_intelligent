@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", "Times New Roman", serif;
+  --font-sans: "Outfit", "Segoe UI", system-ui, sans-serif;
+
+  --color-cream: #f7f3ec;
+  --color-paper: #efe6d6;
+  --color-ink: #1c1712;
+  --color-ink-soft: #5c534a;
+  --color-ink-muted: #6f675e;
+  --color-ink-subtle: #8a8278;
+  --color-accent: #6e2e2a;
+  --color-accent-fg: #f7f3ec;
+  --color-accent-hover: #572421;
+  --color-line: #e4d9c8;
+  --color-available: #2f6b4f;
+  --color-seasonal: #8a5a2b;
+  --color-danger: #8b3a32;
+
+  --shadow-border:
+    0px 0px 0px 1px rgba(28, 23, 18, 0.06),
+    0px 1px 2px -1px rgba(28, 23, 18, 0.06),
+    0px 2px 4px 0px rgba(28, 23, 18, 0.04);
+  --shadow-border-hover:
+    0px 0px 0px 1px rgba(28, 23, 18, 0.1),
+    0px 1px 2px -1px rgba(28, 23, 18, 0.08),
+    0px 2px 4px 0px rgba(28, 23, 18, 0.06);
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --motion-quick: 150ms;
+  --motion-fast: 250ms;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    overflow-x: clip;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-cream);
+    color: var(--color-ink);
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    font-family: var(--font-display);
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  dialog::backdrop {
+    background: rgb(28 23 18 / 0.5);
+  }
+}
+
+/* Restaurant themes — accent only, shared neutrals */
+[data-theme="train-bleu"] {
+  --color-accent: #2c3a4f;
+  --color-accent-fg: #f7f3ec;
+  --color-accent-hover: #1f2a3b;
+}
+
+[data-theme="bordelaise"] {
+  --color-accent: #6e2e2a;
+  --color-accent-fg: #f7f3ec;
+  --color-accent-hover: #572421;
+}
+
+[data-theme="histoire"] {
+  --color-accent: #3f4638;
+  --color-accent-fg: #f7f3ec;
+  --color-accent-hover: #2f352a;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  z-index: 100;
+  padding: 8px 14px;
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+.skip-link:focus {
+  left: 12px;
+  top: 12px;
+}
+
+@media (min-width: 1024px) {
+  /* Keep filter panel visible on desktop even if <details> is collapsed. */
+  details.menu-filters > :not(summary) {
+    display: flex !important;
+    flex-direction: column;
+  }
+  details.menu-filters > summary span:last-child {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

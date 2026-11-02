@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Carte — Brasserie Bordelaise, restaurant Bordeaux centre</title>
+<meta name="description" content="Le goût du Sud-Ouest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --dark:#1C1310; --dark2:#180F0D; --dark3:#120B09;
+  --cream:#FFFBF7; --paper:#F3E9E0;
+  --ink:#241914; --ink-soft:#7A6659;
+  --onDark:#F4E9DD; --onDarkSoft:#CBB6A5; --onDarkFaint:#96806F;
+  --accent:#7C2A2A; --accent2:#C79A4B;
+  --line:#E9DACB; --lineDark:rgba(255,255,255,.14);
+  --script:'Alex Brush',cursive; --sans:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --radius:3px; --maxw:1180px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.skip-link{position:absolute;left:-999px;top:auto}
+.skip-link:focus{left:12px;top:12px;background:#fff;padding:8px 14px;z-index:999;border-radius:4px}
+
+/* ---------- header / masthead ---------- */
+header.masthead{background:var(--cream);padding:38px 0 30px;text-align:center;border-bottom:1px solid var(--line)}
+header.masthead .eyebrow{font-family:var(--sans);font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:.72rem;color:var(--accent);margin:0 0 6px}
+header.masthead .brand{font-family:var(--sans);font-weight:800;letter-spacing:.03em;font-size:clamp(1.6rem,6vw,2.3rem);margin:0 0 4px;color:var(--ink)}
+header.masthead .tagline{font-family:var(--sans);font-style:italic;font-weight:400;color:var(--ink-soft);font-size:.98rem;margin:0 0 18px}
+.motif-row{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px auto 10px;max-width:560px}
+.motif-row svg{flex:0 0 auto;width:54px;height:64px;opacity:.82}
+.motif-row .script-title{font-family:var(--script);font-size:clamp(2.1rem,8vw,3rem);color:var(--ink);line-height:1;padding:0 6px;white-space:normal}
+.lede{max-width:560px;margin:0 auto 18px;color:var(--ink-soft);font-size:.96rem;line-height:1.65}
+.practical-line{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;justify-content:center;font-size:.92rem;color:var(--ink-soft);margin-top:6px}
+.practical-line a{text-decoration:none;border-bottom:1px dotted currentColor}
+.phone-big{display:inline-block;margin-top:10px;font-family:var(--sans);font-weight:700;font-size:1.3rem;letter-spacing:.02em;color:var(--ink)}
+.phone-big a{text-decoration:none;color:inherit}
+
+/* ---------- page tabs (sous-menus / autres cartes) ---------- */
+nav.pagetabs{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30;overflow-x:auto;-webkit-overflow-scrolling:touch}
+nav.pagetabs::-webkit-scrollbar{display:none}
+nav.pagetabs .wrap{display:flex;gap:2px;padding:0 14px;justify-content:flex-start}
+nav.pagetabs a{flex:0 0 auto;display:inline-block;padding:14px 16px 12px;font-size:.86rem;font-weight:600;color:var(--ink-soft);text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent;letter-spacing:.01em}
+nav.pagetabs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent)}
+
+/* ---------- category tab bar (jump) ---------- */
+nav.jump{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;overflow-x:auto;-webkit-overflow-scrolling:touch}
+nav.jump.stacked{top:47px}
+nav.jump::-webkit-scrollbar{display:none}
+nav.jump ul{list-style:none;display:flex;gap:4px;margin:0;padding:9px 14px;min-width:max-content}
+nav.jump a{display:inline-block;padding:8px 14px;border-radius:20px;font-size:.82rem;font-weight:600;color:var(--ink-soft);text-decoration:none;white-space:nowrap;background:transparent;border:1px solid var(--line);transition:.15s}
+nav.jump a.is-active,nav.jump a:hover{background:var(--dark);color:var(--onDark);border-color:var(--dark)}
+
+main{display:block}
+p.intro{max-width:720px;margin:26px auto 6px;padding:0 22px;text-align:center;color:var(--ink-soft);font-size:.95rem;line-height:1.7}
+.callout{max-width:720px;margin:14px auto 8px;padding:16px 20px;text-align:center;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);color:var(--ink-soft);font-size:.92rem}
+
+/* ---------- category dark panel ---------- */
+section.category{background:var(--dark);color:var(--onDark);padding:44px 0 40px;border-bottom:1px solid rgba(255,255,255,.06)}
+section.category:nth-of-type(even){background:var(--dark2)}
+.cat-head{margin-bottom:22px}
+.cat-title{font-family:var(--script);font-size:clamp(1.9rem,7vw,2.5rem);color:var(--onDark);display:inline-block;position:relative;padding-bottom:10px;line-height:1}
+.cat-title::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,var(--accent2) 0%,rgba(255,255,255,.18) 70%)}
+.cat-title .en{display:block;font-family:var(--sans);font-style:normal;font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:.68rem;color:var(--onDarkFaint);margin-top:4px}
+.cat-meta{display:block;font-family:var(--sans);font-size:.74rem;color:var(--onDarkFaint);margin-top:8px;letter-spacing:.03em}
+.cat-note,.cat-intro{font-size:.86rem;font-style:italic;color:var(--onDarkSoft);margin:0 0 16px;line-height:1.6;max-width:640px}
+.price-note{font-style:normal;font-weight:600;color:var(--accent2);background:rgba(255,255,255,.05);display:inline-block;padding:5px 12px;border-radius:20px;border:1px solid rgba(255,255,255,.12)}
+.price-note .cents{font-size:.85em}
+.subhead{font-family:var(--sans);font-weight:700;text-transform:uppercase;letter-spacing:.09em;font-size:.76rem;color:var(--accent2);margin:26px 0 10px;padding-top:2px}
+.subhead:first-child{margin-top:0}
+
+ul.rows{list-style:none;margin:0 0 6px;padding:0}
+ul.rows li{padding:10px 0;border-bottom:1px dotted rgba(255,255,255,.14)}
+ul.rows li:last-child{border-bottom:none}
+.line1{display:flex;align-items:flex-end;gap:8px}
+.rname{font-weight:600;font-size:.99rem;color:var(--onDark)}
+.rtag{font-size:.68rem;font-weight:600;color:var(--dark);background:var(--accent2);padding:1px 7px;border-radius:9px;margin-left:2px;letter-spacing:.02em;white-space:nowrap;position:relative;top:-1px}
+.leader{flex:1 1 auto;border-bottom:1px dotted rgba(255,255,255,.32);min-width:14px;margin-bottom:.35em;height:1px}
+.rprice{font-weight:700;font-size:.98rem;white-space:nowrap;color:var(--onDark)}
+.rprice .cents,.price .cents,.sz b .cents,.price-tag .cents{font-size:.72em;font-weight:600;opacity:.82}
+.rdesc{margin:3px 0 0;font-size:.82rem;color:var(--onDarkSoft);line-height:1.55}
+.rnote{margin:3px 0 0;font-size:.78rem;color:var(--onDarkFaint);font-style:italic;line-height:1.5}
+.sizes-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;margin-top:4px}
+.sz{display:flex;align-items:baseline;gap:5px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:3px 10px 3px 12px;line-height:1.3}
+.sz b{font-size:.88rem;font-weight:700;color:var(--onDark);order:2}
+.sz small{font-size:.66rem;color:var(--onDarkFaint);text-transform:uppercase;letter-spacing:.03em;order:1}
+
+article.dish{padding:16px 0;border-bottom:1px dotted rgba(255,255,255,.14)}
+article.dish:last-child{border-bottom:none}
+.row1{display:flex;align-items:flex-end;gap:8px;flex-wrap:wrap}
+.row1 h4{margin:0;font-weight:600;font-size:1.02rem;color:var(--onDark);display:flex;align-items:center;gap:7px;flex-wrap:wrap;flex:0 1 auto}
+.row1 .leader{flex:1 1 40px}
+.row1 .price,.row1 .prices{padding-bottom:.05em}
+.badge{font-size:.64rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--dark);background:var(--accent2);padding:2px 8px;border-radius:9px}
+.ref{font-size:.7rem;color:var(--onDarkFaint);vertical-align:super}
+.price,.prices{font-weight:700;font-size:1.02rem;color:var(--onDark);white-space:nowrap}
+.desc{margin:6px 0 0;font-size:.86rem;color:var(--onDarkSoft);line-height:1.6;max-width:640px}
+.note{margin:5px 0 0;font-size:.78rem;color:var(--onDarkFaint);font-style:italic}
+
+/* ---------- formule / menu cards ---------- */
+.cards-wrap{background:var(--cream);padding:46px 0}
+.cards-grid{display:grid;grid-template-columns:1fr;gap:22px}
+@media(min-width:720px){.cards-grid{grid-template-columns:repeat(2,1fr)}}
+.menu-card,.simple-card{background:var(--dark);color:var(--onDark);border-radius:var(--radius);padding:30px 26px;position:relative;overflow:hidden}
+.menu-card::before,.simple-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.menu-card h3,.simple-card h3{font-family:var(--script);font-size:1.9rem;margin:2px 0 2px;color:var(--onDark);font-weight:400}
+.menu-card .subtitle{margin:0 0 10px;font-size:.82rem;color:var(--onDarkSoft);font-style:italic}
+.menu-card .price-tag,.simple-card .price-tag{display:inline-block;font-size:1.5rem;font-weight:800;color:var(--accent2);margin:6px 0 16px}
+.menu-card .schedule{font-size:.78rem;color:var(--onDarkFaint);margin:-6px 0 14px}
+.menu-card .course{text-align:center;font-size:.92rem;margin:0;padding:9px 0;color:var(--onDark)}
+.menu-card .diamond{text-align:center;color:var(--accent2);font-size:.7rem;opacity:.8}
+.menu-card .alt{display:block;font-size:.72rem;color:var(--onDarkFaint);font-style:italic;margin:2px 0}
+.menu-card .pairing{list-style:none;margin:14px 0 4px;padding:14px 0 0;border-top:1px solid rgba(255,255,255,.1);text-align:left}
+.menu-card .pairing li{font-size:.84rem;color:var(--onDarkSoft);padding:4px 0 4px 18px;position:relative}
+.menu-card .pairing li::before{content:"";position:absolute;left:2px;top:11px;width:6px;height:6px;border-radius:50%;background:var(--accent2)}
+.choice-groups{margin:14px 0 4px;padding:14px 0 0;border-top:1px solid rgba(255,255,255,.1);text-align:left}
+.choice-group{padding:6px 0}
+.choice-group b{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent2);margin-bottom:3px}
+.choice-group span{font-size:.85rem;color:var(--onDarkSoft);line-height:1.55}
+.menu-card .note,.simple-card .note{margin-top:12px;text-align:left}
+.simple-card ul{list-style:none;margin:0;padding:0}
+.simple-card li{display:flex;align-items:baseline;gap:8px;padding:8px 0;border-bottom:1px dotted rgba(255,255,255,.14);font-size:.92rem}
+.simple-card li:last-child{border-bottom:none}
+.simple-card li .sc-name{flex:1}
+.simple-card li b{font-weight:700;color:var(--accent2)}
+
+/* ---------- producers ---------- */
+section.producers{background:var(--paper);padding:42px 0}
+section.producers h2{font-family:var(--script);font-size:2rem;font-weight:400;text-align:center;margin:0 0 26px;color:var(--ink)}
+.producers-grid{display:grid;grid-template-columns:1fr;gap:18px}
+@media(min-width:640px){.producers-grid{grid-template-columns:repeat(2,1fr)}}
+.producer{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.producer .pname{font-weight:700;margin-bottom:4px;color:var(--ink)}
+.producer .pdesc{margin:0;font-size:.86rem;color:var(--ink-soft);line-height:1.55}
+
+/* ---------- footnotes ---------- */
+.footnotes{max-width:720px;margin:30px auto;padding:0 22px}
+.footnotes p{font-size:.78rem;color:var(--ink-soft);line-height:1.6;margin:4px 0}
+
+/* ---------- footer ---------- */
+footer.site{background:var(--dark3);color:var(--onDarkSoft);padding:40px 0 34px;text-align:center}
+footer.site strong{display:block;font-family:var(--script);font-size:1.8rem;font-weight:400;color:var(--onDark);margin-bottom:10px}
+footer.site p{margin:4px 0;font-size:.86rem}
+footer.site a{color:var(--accent2);text-decoration:none;border-bottom:1px dotted currentColor}
+footer.site .hist{max-width:560px;margin:16px auto 0;font-size:.78rem;font-style:italic;color:var(--onDarkFaint);line-height:1.6}
+
+@media(min-width:820px){
+  .wrap{padding:0 32px}
+  section.category{padding:60px 0 52px}
+}
+
+/* ---------- Group B: header extras (rating, quickbar, cta) ---------- */
+.rating-badge{display:inline-block;margin:6px 0 14px;font-size:.86rem;font-weight:600;color:var(--ink);text-decoration:none;background:var(--paper);border:1px solid var(--line);padding:6px 14px;border-radius:20px}
+.quickbar{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;font-size:.9rem;color:var(--ink-soft);margin-top:4px}
+.quickbar a{text-decoration:none;border-bottom:1px dotted currentColor}
+.cta-btn{display:inline-block;margin-top:16px;background:var(--dark);color:var(--onDark);text-decoration:none;font-weight:600;font-size:.86rem;letter-spacing:.03em;padding:12px 26px;border-radius:26px}
+
+/* ---------- Group B: hero / ardoise ---------- */
+.hero-band{background:var(--paper);padding:34px 0;text-align:center;border-bottom:1px solid var(--line)}
+.hero-band h2{font-family:var(--script);font-weight:400;font-size:clamp(1.7rem,6vw,2.2rem);margin:0 0 10px;color:var(--ink)}
+.hero-band p{max-width:600px;margin:0 auto;color:var(--ink-soft);font-size:.94rem;line-height:1.6}
+.hero-list{list-style:none;max-width:560px;margin:16px auto 0;padding:0;text-align:left;columns:1;font-size:.9rem;color:var(--ink-soft)}
+.hero-list li{padding:4px 0 4px 18px;position:relative}
+.hero-list li::before{content:"—";position:absolute;left:0;color:var(--accent)}
+
+/* ---------- Group B: menu-section (flat, no accordion) ---------- */
+.group-title{font-family:var(--script);font-weight:400;text-align:center;font-size:clamp(1.7rem,6vw,2.2rem);color:var(--ink);margin:0 0 8px;padding-top:8px}
+.group-sub{text-align:center;color:var(--ink-soft);font-size:.92rem;max-width:600px;margin:0 auto 8px;line-height:1.6}
+.section-note,.section-range{font-size:.84rem;font-style:italic;color:var(--onDarkSoft);margin:0 0 14px;max-width:640px}
+.empty-note{font-size:.88rem;color:var(--onDarkSoft);background:rgba(255,255,255,.05);border:1px dashed rgba(255,255,255,.22);border-radius:6px;padding:14px 16px;line-height:1.6}
+.allergen-note,.extras-note{max-width:820px;margin:26px auto;padding:16px 20px;background:var(--paper);border-left:4px solid var(--accent);font-size:.86rem;color:var(--ink-soft);line-height:1.6;border-radius:0 4px 4px 0}
+.extras-note h4{margin:0 0 6px;color:var(--ink);font-size:.9rem}
+.extras-note .exline{display:block;margin:2px 0}
+
+/* ---------- Group B: reviews / faq / infos ---------- */
+.section-block{background:var(--cream);padding:44px 0}
+.section-block.alt{background:var(--paper)}
+.review-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:22px}
+@media(min-width:640px){.review-grid{grid-template-columns:repeat(3,1fr)}}
+.review-card{display:block;background:var(--dark);color:var(--onDark);border-radius:var(--radius);padding:18px 20px;text-decoration:none}
+.review-card .review-name{display:block;font-weight:700;font-size:.92rem;margin-bottom:4px}
+.review-card .review-rating{display:block;color:var(--accent2);font-weight:600;font-size:.88rem;margin-bottom:6px}
+.review-card .review-count{color:var(--onDarkFaint);font-weight:400}
+.review-card .review-note{display:block;font-size:.8rem;color:var(--onDarkSoft)}
+.faq-list{max-width:760px;margin:24px auto 0}
+.faq-item{border-bottom:1px solid var(--line);padding:14px 0}
+.faq-item summary{font-weight:600;cursor:pointer;font-size:.98rem;color:var(--ink)}
+.faq-item p{margin:10px 0 0;color:var(--ink-soft);font-size:.9rem;line-height:1.6}
+table.hours{border-collapse:collapse;margin:22px auto;font-size:.92rem}
+table.hours th,table.hours td{text-align:left;padding:6px 20px 6px 0;border-bottom:1px dotted var(--line);font-weight:400;color:var(--ink-soft)}
+table.hours th{font-weight:600;color:var(--ink)}
+.infos-grid{display:grid;grid-template-columns:1fr;gap:14px;max-width:900px;margin:10px auto 0}
+@media(min-width:640px){.infos-grid{grid-template-columns:repeat(3,1fr)}}
+.info-card{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.info-card h4{margin:0 0 6px;font-size:.92rem;color:var(--ink)}
+.info-card p{margin:0;font-size:.85rem;color:var(--ink-soft);line-height:1.55}
+
+/* ---------- Group C: hero with photo ---------- */
+.hero-photo{position:relative;background:var(--dark3);color:var(--onDark)}
+.hero-photo img{width:100%;height:46vh;min-height:260px;max-height:460px;object-fit:cover;opacity:.55}
+.hero-photo .hero-inner{position:relative;margin-top:-140px;padding:0 22px 34px;text-align:center}
+.hero-photo .hero-badge{display:inline-block;background:var(--accent2);color:var(--dark);font-weight:700;font-size:.76rem;padding:5px 14px;border-radius:20px;margin-bottom:12px}
+.hero-photo .hero-eyebrow{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--onDarkSoft);margin:0 0 6px}
+.hero-photo h1{font-family:var(--script);font-weight:400;font-size:clamp(2.2rem,9vw,3.4rem);margin:0 0 10px;color:var(--onDark)}
+.hero-photo .hero-tagline{max-width:520px;margin:0 auto 16px;font-size:.96rem;color:var(--onDarkSoft);line-height:1.6}
+.hero-photo .hero-cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+.hero-photo .hero-facts{list-style:none;padding:0;margin:0;font-size:.86rem;color:var(--onDarkFaint)}
+.hero-photo .hero-facts li{display:inline;margin:0 8px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:.86rem;padding:12px 24px;border-radius:26px}
+.btn--primary{background:var(--accent2);color:var(--dark)}
+.btn--ghost{border:1px solid rgba(255,255,255,.4);color:var(--onDark)}
+.intro-band{background:var(--paper);padding:34px 0;text-align:center}
+.intro-band p{max-width:640px;margin:0 auto 10px;color:var(--ink-soft);font-size:.94rem;line-height:1.7}
+.intro-award{display:inline-block;margin-top:6px;font-weight:700;color:var(--accent);font-size:.86rem;letter-spacing:.02em}
+
+/* ---------- Group C: dish tags ---------- */
+.dish-tags{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0;padding:0}
+.dish-tags li{font-size:.66rem;font-weight:600;letter-spacing:.03em;color:var(--onDarkFaint);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:2px 9px}
+
+/* ---------- Group C: formula cards with courses & calendar ---------- */
+.course-block{margin:16px 0}
+.course-block .clabel{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--accent2);margin:0 0 8px}
+.course-block ul{list-style:none;margin:0;padding:0}
+.course-block li{font-size:.88rem;color:var(--onDarkSoft);padding:6px 0 6px 16px;position:relative;line-height:1.55;border-bottom:1px dotted rgba(255,255,255,.1)}
+.course-block li:last-child{border-bottom:none}
+.course-block li::before{content:"\2022";position:absolute;left:0;color:var(--accent2)}
+.jeudis-table{width:100%;border-collapse:collapse;margin-top:12px;font-size:.86rem}
+.jeudis-table td{padding:7px 10px 7px 0;border-bottom:1px dotted rgba(255,255,255,.12);vertical-align:top}
+.jeudis-table td:first-child{font-weight:700;color:var(--accent2);white-space:nowrap;width:64px}
+.jeudis-table td:last-child{color:var(--onDarkSoft)}
+
+/* ---------- Group C: special menus (fêtes) ---------- */
+.special-badge{display:inline-block;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--onDarkFaint);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:3px 10px;margin-bottom:10px}
+.special-meta{color:var(--accent2);font-weight:600;font-size:.88rem;margin:0 0 4px}
+.special-kids{margin-top:14px;font-size:.84rem;color:var(--onDarkSoft);font-style:italic}
+.linklist{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;list-style:none;padding:0;margin:0}
+
+/* ---------- Group C: wine regions / glass wines / bar ---------- */
+.wine-regions-grid{display:grid;grid-template-columns:1fr;gap:26px;margin-top:18px}
+@media(min-width:820px){.wine-regions-grid{grid-template-columns:1fr 1fr}}
+.wine-region-block h4{font-family:var(--sans);font-weight:700;font-size:.86rem;text-transform:uppercase;letter-spacing:.07em;color:var(--accent2);margin:0 0 10px;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,.15)}
+.wine-row{padding:9px 0;border-bottom:1px dotted rgba(255,255,255,.13)}
+.wine-row:last-child{border-bottom:none}
+.wine-row .wname{font-weight:600;font-size:.92rem;color:var(--onDark)}
+.wine-row .wnote{font-weight:400;font-style:italic;font-size:.8rem;color:var(--onDarkFaint)}
+.wine-row .wmeta{display:block;font-size:.76rem;color:var(--onDarkFaint);margin:1px 0 4px}
+.wine-row .wprices{display:flex;gap:14px;flex-wrap:wrap}
+.wine-row .wprices span{font-size:.86rem;color:var(--onDarkSoft)}
+.wine-row .wprices b{color:var(--onDark);font-weight:700}
+.vins-maison-box{margin-top:24px;padding:16px 18px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:6px}
+.vins-maison-box strong{display:block;color:var(--accent2);font-size:.9rem;margin-bottom:8px}
+.vins-maison-box ul{list-style:none;margin:0;padding:0;font-size:.86rem;color:var(--onDarkSoft)}
+.vins-maison-box li{padding:2px 0}
+.bar-grid{display:grid;grid-template-columns:1fr;gap:30px;margin-top:10px}
+@media(min-width:720px){.bar-grid{grid-template-columns:1fr 1fr}}
+.bar-item-desc{margin:2px 0 0;font-size:.8rem;color:var(--onDarkFaint);font-style:italic}
+
+/* ---------- Group C: legend / tags ---------- */
+.legend-tags{list-style:none;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:0;margin:16px 0}
+.legend-tags li{font-size:.78rem;font-weight:600;color:var(--ink);background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:4px 12px}
+
+/* ---------- Shared: simple photo band (real, sourced photos) ---------- */
+.photo-band{width:100%;overflow:hidden;background:var(--dark3);line-height:0}
+.photo-band img{width:100%;height:38vh;min-height:220px;max-height:420px;object-fit:cover;display:block}
+.photo-band figcaption{background:var(--dark3);color:var(--onDarkFaint);font-size:.68rem;text-align:right;padding:5px 14px;line-height:1.4}
+.photo-band figcaption a{color:inherit}
+
+/* ---------- Shared: 2-column photo+text category panel (disposition de référence) ---------- */
+section.category.has-photo{padding:0}
+section.category.has-photo .photo-row{display:flex;align-items:stretch;max-width:var(--maxw);margin:0 auto;min-height:340px}
+section.category.has-photo.photo-right .photo-row{flex-direction:row-reverse}
+.cat-photo-col{flex:0 0 36%;position:relative;background:var(--dark3);overflow:hidden}
+.cat-photo-col img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cat-photo-col figcaption{position:absolute;left:0;right:0;bottom:0;padding:5px 8px;font-size:.6rem;line-height:1.3;color:rgba(255,255,255,.85);background:linear-gradient(0deg,rgba(0,0,0,.55),transparent)}
+.cat-text-col{flex:1;min-width:0;padding:34px 20px}
+@media(min-width:600px){.cat-photo-col{flex-basis:40%}.cat-text-col{padding:38px 30px}}
+@media(min-width:820px){.cat-photo-col{flex-basis:38%}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Restaurant","@id":"https://www.brasserie-bordelaise.fr/#restaurant","name":"Brasserie Bordelaise","url":"https://www.brasserie-bordelaise.fr","telephone":"+33557871191","address":{"@type":"PostalAddress","streetAddress":"50 rue Saint-Rémi","addressLocality":"Bordeaux","postalCode":"33000","addressCountry":"FR"},"servesCuisine":["Française","Brasserie","Bordelaise","Sud-Ouest"],"priceRange":"€€€","acceptsReservations":true,"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"12:00","closes":"23:59"}],"brand":{"@type":"Organization","name":"Maison Faber Lascombes"},"hasMenu":{"@id":"https://www.brasserie-bordelaise.fr/la-carte#menu"}},{"@type":"Menu","@id":"https://www.brasserie-bordelaise.fr/la-carte#menu","name":"La Carte — Brasserie Bordelaise","hasMenuSection":[{"@type":"MenuSection","@id":"https://www.brasserie-bordelaise.fr/la-carte#cochonnailles","name":"Cochonnailles","hasMenuItem":[{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#plateau-de-charcuteries","name":"Plateau de charcuteries","description":"Grattons de Bordeaux, greniers médocains, saucisson ibérique, chorizo, jambon Cebo","offers":[{"@type":"Offer","price":"18.00","priceCurrency":"EUR","name":"petit"},{"@type":"Offer","price":"35.00","priceCurrency":"EUR","name":"grand"}]},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#chiffonnade-de-jambon-jambon-du-domaine-abotia","name":"Chiffonnade de jambon — Jambon du Domaine Abotia","description":"Pays Basque","offers":{"@type":"Offer","price":"24.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#chiffonnade-de-jambon-jambon-bellota-48-mois","name":"Chiffonnade de jambon — Jambon Bellota 48 mois","offers":{"@type":"Offer","price":"38.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#jambon-a-la-decoupe-cebo-grande-selection","name":"Jambon à la découpe — Cebo Grande Sélection","description":"24 mois d'affinage","offers":{"@type":"Offer","price":"26.00","priceCurrency":"EUR"}}]},{"@type":"MenuSection","@id":"https://www.brasserie-bordelaise.fr/la-carte#huitres","name":"Huîtres","hasMenuItem":[{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#huitres-la-perle-n3","name":"Huîtres « La Perle » n°3","description":"Joël Dupuch, ostréiculteur au Cap-Ferret — Les Parcs de l'Impératrice. C'est dans leurs parcs et claires situés au Cap-Ferret que les Parcs de l'Impératrice affinent les plus belles huîtres sélectionnées avec soin. La Perle est une huître charnue et croquante.","offers":{"@type":"Offer","price":"3.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#huitres-royales-n4","name":"Huîtres « Royales » n°4","description":"Huîtres Hervé, ostréiculteur en Charente-Maritime. Toute en rondeur et en chair, élevée 4 années en pleine mer, la royale surprend par ses saveurs équilibrées et iodées, avec en final un croquant aux notes de noisette.","offers":{"@type":"Offer","price":"3.50","priceCurrency":"EUR"}}]},{"@type":"MenuSection","@id":"https://www.brasserie-bordelaise.fr/la-carte#caviar","name":"Caviar Sturia","hasMenuItem":[{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#caviar-sturia-classic-baerii","name":"Caviar Sturia Classic Baerii","description":"Un caviar gourmand, au goût iodé, avec des grains fondants et une belle longueur en bouche.","offers":{"@type":"Offer","price":"75.00","priceCurrency":"EUR"}}]},{"@type":"MenuSection","@id":"https://www.brasserie-bordelaise.fr/la-carte#entrees","name":"Entrées","hasMenuItem":[{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#soupe-a-l-oignon","name":"Soupe à l'oignon","description":"Emmental, croûtons","offers":{"@type":"Offer","price":"16.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#tartare-de-thon","name":"Tartare de thon","description":"Aneth, échalotes, huile verte, hollandaise au citron","offers":[{"@type":"Offer","price":"16.00","priceCurrency":"EUR","name":"entrée"},{"@type":"Offer","price":"26.00","priceCurrency":"EUR","name":"plat"}]},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#oeuf-mimosa-mulet-fume-maison","name":"Œuf mimosa, mulet fumé maison","description":"Poutargue, citron, pistache","offers":{"@type":"Offer","price":"16.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#tomate-coeur-de-boeuf-burrata","name":"Tomate cœur de bœuf, burrata","offers":{"@type":"Offer","price":"18.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#carpaccio-de-boeuf-epais","name":"Carpaccio de bœuf épais","description":"Comté, oignons brûlés, huile de noix, persil, jus réduit","offers":[{"@type":"Offer","price":"18.00","priceCurrency":"EUR","name":"entrée"},{"@type":"Offer","price":"28.00","priceCurrency":"EUR","name":"plat"}]},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#terrine-de-foie-gras-de-canard-du-gers","name":"Terrine de foie gras de canard du Gers","description":"Pommes en texture, brioche à la flamme","offers":{"@type":"Offer","price":"24.00","priceCurrency":"EUR"}}]},{"@type":"MenuSection","@id":"https://www.brasserie-bordelaise.fr/la-carte#plats-incontournables","name":"Plats incontournables","hasMenuItem":[{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#lasagnes-de-legumes-de-saison","name":"Lasagnes de légumes de saison","description":"Coulis tomate origan, crumble parmesan","offers":{"@type":"Offer","price":"26.00","priceCurrency":"EUR"},"suitableForDiet":["https://schema.org/VegetarianDiet"]},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#pave-de-cabillaud","name":"Pavé de cabillaud","description":"Chorizo, purée de pommes de terre, légumes de saison","offers":{"@type":"Offer","price":"28.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#ris-de-veau","name":"Ris de veau","description":"Jus corsé au poivre des Pyrénées, câpres & artichauts grillés","offers":{"@type":"Offer","price":"28.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#joue-de-boeuf-a-la-bordelaise","name":"Joue de bœuf à la Bordelaise","description":"Purée de pommes de terre, carottes rôties","offers":{"@type":"Offer","price":"28.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#poulet-roti-de-la-ferme-de-gruey-a-pissos","name":"Poulet rôti de la ferme de Gruey à Pissos","description":"Jus gras, farce truffée, ail confit, gratin dauphinois","offers":{"@type":"Offer","price":"29.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#magret-de-canard","name":"Magret de canard","description":"Deux garnitures au choix","offers":{"@type":"Offer","price":"32.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#macaronade-de-la-brasserie-bordelaise","name":"Macaronade de la Brasserie Bordelaise","description":"Crème, foie gras, lard, macaroni, champignons, foie frais poêlé","offers":{"@type":"Offer","price":"32.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#filet-de-boeuf-facon-wellington","name":"Filet de bœuf façon Wellington","description":"Purée de pommes de terre, sucrine grillée","offers":{"@type":"Offer","price":"32.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#cote-de-veau-a-la-milanaise","name":"Côte de veau à la milanaise","description":"Crème à l'ail, citron, purée de pommes de terre","offers":{"@type":"Offer","price":"36.00","priceCurrency":"EUR"}}]},{"@type":"MenuSection","@id":"https://www.brasserie-bordelaise.fr/la-carte#selection-boeuf","name":"Sélection de bœuf","hasMenuItem":[{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#tartare-de-boeuf-de-la-brasserie-bordelaise","name":"Tartare de bœuf de la Brasserie Bordelaise","offers":{"@type":"Offer","price":"24.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#bavette-angus","name":"Bavette Angus","description":"Env. 230 g","offers":{"@type":"Offer","price":"26.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#faux-filet-hereford","name":"Faux-filet Hereford","description":"Maturé 55 jours","offers":{"@type":"Offer","price":"32.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#entrecote","name":"Entrecôte","description":"Env. 300 g","offers":{"@type":"Offer","price":"35.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#cote-de-boeuf","name":"Côte de bœuf","description":"Env. 1 kg","offers":{"@type":"Offer","price":"95.00","priceCurrency":"EUR"}}]},{"@type":"MenuSection","@id":"https://www.brasserie-bordelaise.fr/la-carte#desserts","name":"Desserts","hasMenuItem":[{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#assiette-de-4-fromages-affines","name":"Assiette de 4 fromages affinés","description":"De Mimi Crèmerie","offers":{"@type":"Offer","price":"14.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#creme-brulee","name":"Crème brûlée","offers":{"@type":"Offer","price":"9.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#profiteroles","name":"Profiteroles","offers":{"@type":"Offer","price":"10.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#moelleux-au-chocolat-grand-cru-valrhona","name":"Moelleux au chocolat Grand Cru Valrhona","offers":{"@type":"Offer","price":"10.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#tarte-tatin","name":"Tarte tatin","offers":{"@type":"Offer","price":"12.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#fraisier","name":"Fraisier","offers":{"@type":"Offer","price":"12.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#cafe-gourmand","name":"Café gourmand","description":"Thé gourmand + 1 €","offers":{"@type":"Offer","price":"12.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#cafe-ou-chocolat-liegeois","name":"Café ou chocolat liégeois","offers":{"@type":"Offer","price":"12.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#colonel-gascon","name":"Colonel Gascon","description":"Au Bas-Armagnac","offers":{"@type":"Offer","price":"12.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#sorbet-poire","name":"Sorbet poire","description":"À l'eau-de-vie de poire Williams","offers":{"@type":"Offer","price":"14.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#glace-ou-sorbet","name":"Glace ou sorbet","description":"Parfums : vanille, café, chocolat, rhum-raisin, pomme verte, poire, citron, fraise, framboise, cassis","offers":{"@type":"Offer","price":"4.00","priceCurrency":"EUR"}}]},{"@type":"MenuSection","@id":"https://www.brasserie-bordelaise.fr/la-carte#les-midis","name":"Les midis","description":"Du lundi au vendredi de 12h à 15h, hors jours fériés. Selon la saisonnalité et le marché du chef.","hasMenuItem":[{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#plat-du-jour","name":"Plat du jour","offers":{"@type":"Offer","price":"16.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#entree-plat-ou-plat-dessert","name":"Entrée + plat, ou plat + dessert","offers":{"@type":"Offer","price":"22.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#entree-plat-dessert","name":"Entrée + plat + dessert","offers":{"@type":"Offer","price":"30.00","priceCurrency":"EUR"}}]},{"@type":"MenuSection","@id":"https://www.brasserie-bordelaise.fr/la-carte#menu-enfant","name":"Menu enfant","description":"Offert tous les mercredis hors vacances scolaires (moins de 12 ans).","hasMenuItem":[{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#steak-hache-de-boeuf-ou-fish-and-chips","name":"Steak haché de bœuf, ou Fish and chips","offers":{"@type":"Offer","price":"12.00","priceCurrency":"EUR"}},{"@type":"MenuItem","@id":"https://www.brasserie-bordelaise.fr/la-carte#moelleux-au-chocolat-ou-glace","name":"Moelleux au chocolat, ou glace","offers":{"@type":"Offer","price":"12.00","priceCurrency":"EUR"}}]}]}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="eyebrow">Maison Faber Lascombes</p>
+    <p class="brand">Brasserie Bordelaise</p>
+    <div class="motif-row"><svg viewBox="0 0 54 64" xmlns="http://www.w3.org/2000/svg"><g  stroke="#7C2A2A" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M27 4c-2 8 0 14 4 19"/>
+        <path d="M31 21c-9 2-15 9-15 19 0 9 6 16 15 16s15-7 15-16"/>
+        <circle cx="22" cy="34" r="3.4"/><circle cx="30" cy="31" r="3.4"/><circle cx="38" cy="34" r="3.4"/>
+        <circle cx="19" cy="42" r="3.4"/><circle cx="27" cy="40" r="3.4"/><circle cx="35" cy="42" r="3.4"/><circle cx="42" cy="41" r="3.4"/>
+        <circle cx="24" cy="49" r="3.4"/><circle cx="32" cy="48" r="3.4"/><circle cx="39" cy="49" r="3.4"/>
+        <path d="M27 8c4-4 9-5 13-2M31 21c5-1 8 1 10 5"/>
+        </g></svg><h1 class="script-title">La Carte</h1><svg viewBox="0 0 54 64" xmlns="http://www.w3.org/2000/svg"><g transform="scale(-1,1)" stroke="#7C2A2A" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M27 4c-2 8 0 14 4 19"/>
+        <path d="M31 21c-9 2-15 9-15 19 0 9 6 16 15 16s15-7 15-16"/>
+        <circle cx="22" cy="34" r="3.4"/><circle cx="30" cy="31" r="3.4"/><circle cx="38" cy="34" r="3.4"/>
+        <circle cx="19" cy="42" r="3.4"/><circle cx="27" cy="40" r="3.4"/><circle cx="35" cy="42" r="3.4"/><circle cx="42" cy="41" r="3.4"/>
+        <circle cx="24" cy="49" r="3.4"/><circle cx="32" cy="48" r="3.4"/><circle cx="39" cy="49" r="3.4"/>
+        <path d="M27 8c4-4 9-5 13-2M31 21c5-1 8 1 10 5"/>
+        </g></svg></div>
+    <p class="tagline">Le goût du Sud-Ouest</p>
+    <p class="practical-line">50 rue Saint-Rémi, 33000 Bordeaux &middot; Service continu tous les jours, 12h – minuit</p>
+    <p class="phone-big"><a href="tel:+33557871191">+33 (0)5 57 87 11 91</a></p>
+  </div>
+</header>
+<figure class="photo-band"><img src="https://www.brasserie-bordelaise.fr/wp-content/themes/brasserie/img/plats-01.jpg" alt="Plats de la Brasserie Bordelaise" loading="lazy"><figcaption>Photo : <a href="https://www.brasserie-bordelaise.fr">Brasserie Bordelaise</a></figcaption></figure>
+<nav class="pagetabs"><div class="wrap"><a href="brasserie-bordelaise-la-carte.html" aria-current="page">La Carte</a><a href="brasserie-bordelaise-carte-des-vins.html">Carte des Vins</a></div></nav>
+<nav class="jump stacked" aria-label="Categories"><ul><li><a href="#cochonnailles">Cochonnailles</a></li><li><a href="#huitres">Huîtres</a></li><li><a href="#caviar">Caviar Sturia</a></li><li><a href="#entrees">Entrées</a></li><li><a href="#plats-incontournables">Plats incontournables</a></li><li><a href="#selection-boeuf">Sélection de bœuf</a></li><li><a href="#desserts">Desserts</a></li></ul></nav>
+<main id="main">
+<p class="intro">Cuisine bordelaise et sud-ouest, produits de saison et sélection de bœuf maturé. Service continu tous les jours, 12h – minuit. Réservation : +33 (0)5 57 87 11 91.</p>
+<section class="category" id="cochonnailles"><div class="wrap"><div class="cat-inner"><div class="cat-head"><h2 class="cat-title">Cochonnailles</h2></div><article class="dish"><div class="row1"><h4>Plateau de charcuteries</h4></div><div class="sizes-row"><span class="sz"><small>petit</small><b>18<span class="cents">€00</span></b></span><span class="sz"><small>grand</small><b>35<span class="cents">€00</span></b></span></div><p class="desc">Grattons de Bordeaux, greniers médocains, saucisson ibérique, chorizo, jambon Cebo</p></article><article class="dish"><div class="row1"><h4>Chiffonnade de jambon — Jambon du Domaine Abotia</h4><span class="leader"></span><span class="price">24<span class="cents">€00</span> <small>/ 100 g</small></span></div><p class="desc">Pays Basque</p></article><article class="dish"><div class="row1"><h4>Chiffonnade de jambon — Jambon Bellota 48 mois</h4><span class="leader"></span><span class="price">38<span class="cents">€00</span> <small>/ 100 g</small></span></div></article><article class="dish"><div class="row1"><h4>Jambon à la découpe — Cebo Grande Sélection</h4><span class="leader"></span><span class="price">26<span class="cents">€00</span> <small>/ 150 g</small></span></div><p class="desc">24 mois d'affinage</p></article></div></div></section><section class="category has-photo photo-right" id="huitres"><div class="photo-row"><div class="cat-text-col"><div class="cat-head"><h2 class="cat-title">Huîtres</h2></div><article class="dish"><div class="row1"><h4>Huîtres « La Perle » n°3</h4><span class="leader"></span><span class="price">3<span class="cents">€00</span> <small>/ pièce</small></span></div><p class="desc">Joël Dupuch, ostréiculteur au Cap-Ferret — Les Parcs de l'Impératrice. C'est dans leurs parcs et claires situés au Cap-Ferret que les Parcs de l'Impératrice affinent les plus belles huîtres sélectionnées avec soin. La Perle est une huître charnue et croquante.</p></article><article class="dish"><div class="row1"><h4>Huîtres « Royales » n°4</h4><span class="leader"></span><span class="price">3<span class="cents">€50</span> <small>/ pièce</small></span></div><p class="desc">Huîtres Hervé, ostréiculteur en Charente-Maritime. Toute en rondeur et en chair, élevée 4 années en pleine mer, la royale surprend par ses saveurs équilibrées et iodées, avec en final un croquant aux notes de noisette.</p></article></div><div class="cat-photo-col"><img src="https://images.unsplash.com/photo-1663072302693-d92701c4ef42?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Plateau d'huîtres, photo d'illustration" loading="lazy"><figcaption>Photo d'illustration — non contractuelle</figcaption></div></div></section><section class="category" id="caviar"><div class="wrap"><div class="cat-inner"><div class="cat-head"><h2 class="cat-title">Caviar Sturia</h2></div><article class="dish"><div class="row1"><h4>Caviar Sturia Classic Baerii</h4><span class="leader"></span><span class="price">75<span class="cents">€00</span> <small>/ 30 g</small></span></div><p class="desc">Un caviar gourmand, au goût iodé, avec des grains fondants et une belle longueur en bouche.</p></article></div></div></section><section class="category" id="entrees"><div class="wrap"><div class="cat-inner"><div class="cat-head"><h2 class="cat-title">Entrées</h2></div><article class="dish"><div class="row1"><h4>Soupe à l'oignon</h4><span class="leader"></span><span class="price">16<span class="cents">€00</span></span></div><p class="desc">Emmental, croûtons</p></article><article class="dish"><div class="row1"><h4>Tartare de thon</h4></div><div class="sizes-row"><span class="sz"><small>entrée</small><b>16<span class="cents">€00</span></b></span><span class="sz"><small>plat</small><b>26<span class="cents">€00</span></b></span></div><p class="desc">Aneth, échalotes, huile verte, hollandaise au citron</p></article><article class="dish"><div class="row1"><h4>Œuf mimosa, mulet fumé maison</h4><span class="leader"></span><span class="price">16<span class="cents">€00</span></span></div><p class="desc">Poutargue, citron, pistache</p></article><article class="dish"><div class="row1"><h4>Tomate cœur de bœuf, burrata</h4><span class="leader"></span><span class="price">18<span class="cents">€00</span></span></div></article><article class="dish"><div class="row1"><h4>Carpaccio de bœuf épais<sup class="ref">*</sup></h4></div><div class="sizes-row"><span class="sz"><small>entrée</small><b>18<span class="cents">€00</span></b></span><span class="sz"><small>plat</small><b>28<span class="cents">€00</span></b></span></div><p class="desc">Comté, oignons brûlés, huile de noix, persil, jus réduit</p></article><article class="dish"><div class="row1"><h4>Terrine de foie gras de canard du Gers</h4><span class="leader"></span><span class="price">24<span class="cents">€00</span></span></div><p class="desc">Pommes en texture, brioche à la flamme</p></article></div></div></section><section class="category" id="plats-incontournables"><div class="wrap"><div class="cat-inner"><div class="cat-head"><h2 class="cat-title">Plats incontournables</h2></div><article class="dish"><div class="row1"><h4>Lasagnes de légumes de saison<span class="badge">Végétarien</span></h4><span class="leader"></span><span class="price">26<span class="cents">€00</span></span></div><p class="desc">Coulis tomate origan, crumble parmesan</p></article><article class="dish"><div class="row1"><h4>Pavé de cabillaud</h4><span class="leader"></span><span class="price">28<span class="cents">€00</span></span></div><p class="desc">Chorizo, purée de pommes de terre, légumes de saison</p></article><article class="dish"><div class="row1"><h4>Ris de veau<sup class="ref">*</sup></h4><span class="leader"></span><span class="price">28<span class="cents">€00</span></span></div><p class="desc">Jus corsé au poivre des Pyrénées, câpres &amp; artichauts grillés</p></article><article class="dish"><div class="row1"><h4>Joue de bœuf à la Bordelaise<sup class="ref">*</sup></h4><span class="leader"></span><span class="price">28<span class="cents">€00</span></span></div><p class="desc">Purée de pommes de terre, carottes rôties</p></article><article class="dish"><div class="row1"><h4>Poulet rôti de la ferme de Gruey à Pissos<sup class="ref">*</sup></h4><span class="leader"></span><span class="price">29<span class="cents">€00</span></span></div><p class="desc">Jus gras, farce truffée, ail confit, gratin dauphinois</p></article><article class="dish"><div class="row1"><h4>Magret de canard<sup class="ref">*</sup></h4><span class="leader"></span><span class="price">32<span class="cents">€00</span></span></div><p class="desc">Deux garnitures au choix</p></article><article class="dish"><div class="row1"><h4>Macaronade de la Brasserie Bordelaise</h4><span class="leader"></span><span class="price">32<span class="cents">€00</span></span></div><p class="desc">Crème, foie gras, lard, macaroni, champignons, foie frais poêlé</p></article><article class="dish"><div class="row1"><h4>Filet de bœuf façon Wellington<sup class="ref">*</sup></h4><span class="leader"></span><span class="price">32<span class="cents">€00</span></span></div><p class="desc">Purée de pommes de terre, sucrine grillée</p></article><article class="dish"><div class="row1"><h4>Côte de veau à la milanaise<sup class="ref">*</sup></h4><span class="leader"></span><span class="price">36<span class="cents">€00</span></span></div><p class="desc">Crème à l'ail, citron, purée de pommes de terre</p></article></div></div></section><section class="category has-photo" id="selection-boeuf"><div class="photo-row"><div class="cat-photo-col"><img src="https://www.maisonfaberlascombes.fr/admin/uploads/images/FX%20FILET.jpg" alt="Filet de bœuf de la Brasserie Bordelaise" loading="lazy"><figcaption>Brasserie Bordelaise</figcaption></div><div class="cat-text-col"><div class="cat-head"><h2 class="cat-title">Sélection de bœuf</h2></div><p class="cat-note">Pour connaître les provenances, consultez notre ardoise. Deux accompagnements au choix : purée, légumes de saison rôtis, gratin dauphinois, frites, salade verte. Une sauce/condiment au choix : beurre maître d'hôtel, échalotes confites, poivre vert, bordelaise. Supplément sauce ou garniture : 6 €. Supplément escalope de foie frais poêlé : 8 €.</p><article class="dish"><div class="row1"><h4>Tartare de bœuf de la Brasserie Bordelaise<sup class="ref">*</sup></h4><span class="leader"></span><span class="price">24<span class="cents">€00</span></span></div></article><article class="dish"><div class="row1"><h4>Bavette Angus<sup class="ref">*</sup></h4><span class="leader"></span><span class="price">26<span class="cents">€00</span></span></div><p class="desc">Env. 230 g</p></article><article class="dish"><div class="row1"><h4>Faux-filet Hereford<sup class="ref">*</sup></h4><span class="leader"></span><span class="price">32<span class="cents">€00</span></span></div><p class="desc">Maturé 55 jours</p></article><article class="dish"><div class="row1"><h4>Entrecôte<sup class="ref">*</sup></h4><span class="leader"></span><span class="price">35<span class="cents">€00</span></span></div><p class="desc">Env. 300 g</p></article><article class="dish"><div class="row1"><h4>Côte de bœuf<sup class="ref">*</sup></h4><span class="leader"></span><span class="price">95<span class="cents">€00</span></span></div><p class="desc">Env. 1 kg</p></article></div></div></section><section class="category" id="desserts"><div class="wrap"><div class="cat-inner"><div class="cat-head"><h2 class="cat-title">Desserts</h2></div><article class="dish"><div class="row1"><h4>Assiette de 4 fromages affinés</h4><span class="leader"></span><span class="price">14<span class="cents">€00</span></span></div><p class="desc">De Mimi Crèmerie</p></article><article class="dish"><div class="row1"><h4>Crème brûlée</h4><span class="leader"></span><span class="price">9<span class="cents">€00</span></span></div></article><article class="dish"><div class="row1"><h4>Profiteroles</h4><span class="leader"></span><span class="price">10<span class="cents">€00</span></span></div></article><article class="dish"><div class="row1"><h4>Moelleux au chocolat Grand Cru Valrhona</h4><span class="leader"></span><span class="price">10<span class="cents">€00</span></span></div></article><article class="dish"><div class="row1"><h4>Tarte tatin</h4><span class="leader"></span><span class="price">12<span class="cents">€00</span></span></div></article><article class="dish"><div class="row1"><h4>Fraisier</h4><span class="leader"></span><span class="price">12<span class="cents">€00</span></span></div></article><article class="dish"><div class="row1"><h4>Café gourmand</h4><span class="leader"></span><span class="price">12<span class="cents">€00</span></span></div><p class="desc">Thé gourmand + 1 €</p></article><article class="dish"><div class="row1"><h4>Café ou chocolat liégeois</h4><span class="leader"></span><span class="price">12<span class="cents">€00</span></span></div></article><article class="dish"><div class="row1"><h4>Colonel Gascon</h4><span class="leader"></span><span class="price">12<span class="cents">€00</span></span></div><p class="desc">Au Bas-Armagnac</p></article><article class="dish"><div class="row1"><h4>Sorbet poire</h4><span class="leader"></span><span class="price">14<span class="cents">€00</span></span></div><p class="desc">À l'eau-de-vie de poire Williams</p></article><article class="dish"><div class="row1"><h4>Glace ou sorbet</h4><span class="leader"></span><span class="price">4<span class="cents">€00</span> <small>/ boule</small></span></div><p class="desc">Parfums : vanille, café, chocolat, rhum-raisin, pomme verte, poire, citron, fraise, framboise, cassis</p></article></div></div></section>
+<section class="cards-wrap" id="menus-formules"><div class="wrap">
+    <div class="motif-row" style="margin-bottom:26px"><h2 class="script-title" style="color:var(--ink)">Menus &amp; Formules</h2></div>
+    <div class="cards-grid"><div class="simple-card" id="les-midis"><h3>Les midis</h3><p class="schedule">Du lundi au vendredi de 12h à 15h, hors jours fériés</p><ul><li><span class="sc-name">Plat du jour</span> <b>16<span class="cents">€00</span></b></li><li><span class="sc-name">Entrée + plat, ou plat + dessert</span> <b>22<span class="cents">€00</span></b></li><li><span class="sc-name">Entrée + plat + dessert</span> <b>30<span class="cents">€00</span></b></li></ul><p class="note">Selon la saisonnalité et le marché du chef.</p></div><div class="simple-card" id="menu-enfant"><h3>Menu enfant — 12 €</h3><ul><li><span class="sc-name">Steak haché de bœuf, ou Fish and chips</span></li><li><span class="sc-name">Moelleux au chocolat, ou glace</span></li></ul><p class="note">Offert tous les mercredis hors vacances scolaires (moins de 12 ans).</p></div></div>
+  </div></section>
+<section class="producers"><div class="wrap"><h2>Nos producteurs</h2><div class="producers-grid"><div class="producer"><div class="pname">Joël Dupuch · Cap-Ferret</div><p class="pdesc">Ostréiculteur sur le Bassin d'Arcachon, sélectionnant ses huîtres avec soin et les affinant dans ses parcs et claires au Cap-Ferret.</p></div><div class="producer"><div class="pname">Huîtres Hervé · Marennes-Oléron</div><p class="pdesc">Ostréiculteur de père en fils depuis 3 générations, proposant des huîtres d'exception à différentes tailles, affinages et saveurs.</p></div><div class="producer"><div class="pname">Lesage Prestige</div><p class="pdesc">Boucher et sélectionneur de viandes d'exception, travaillant avec les éleveurs français pour proposer les meilleures races de nos régions.</p></div><div class="producer"><div class="pname">Florian Gazeau · Canéjan</div><p class="pdesc">Maître artisan boucher offrant une qualité de viande d'exception, sélectionnée auprès de partenaires historiques.</p></div><div class="producer"><div class="pname">Mimi Crèmerie · Bordeaux</div><p class="pdesc">La crèmerie de Mariane, passionnée de fromages, propose une sélection principalement fermière qui évolue avec la saisonnalité.</p></div><div class="producer"><div class="pname">Sturia · Gironde</div><p class="pdesc">Producteur français de caviar alliant savoir-faire traditionnel et minutie de l'élevage des esturgeons.</p></div><div class="producer"><div class="pname">Au Pétrin Moissagais · Bordeaux</div><p class="pdesc">Boulanger travaillant dans le respect des traditions, farine de blé bio et farine « Label Rouge ». Pain cuit dans un four à bois de 1765.</p></div><div class="producer"><div class="pname">La Ferme de Gruey · Pissos, Landes</div><p class="pdesc">Ferme familiale créée en 1979, élevant ses volailles selon un savoir-faire traditionnel, en conditions d'élevage naturel.</p></div><div class="producer"><div class="pname">Source des Abatilles · Arcachon</div><p class="pdesc">Eau minérale naturelle sans nitrate et d'une grande pureté.</p></div></div></div></section>
+<div class="footnotes wrap"><p>* Origine des viandes : consulter nos ardoises en salle.</p><p>** Plat végétarien.</p><p>Liste complète des allergènes disponible sur demande auprès de notre équipe.</p></div>
+</main>
+<footer class="site"><div class="wrap"><strong>Brasserie Bordelaise</strong><p>Brasserie Bordelaise — Maison Faber Lascombes</p><p>50 rue Saint-Rémi, 33000 Bordeaux · <a href="tel:+33557871191">+33 (0)5 57 87 11 91</a> · <a href="https://www.brasserie-bordelaise.fr">www.brasserie-bordelaise.fr</a></p><p>Service continu tous les jours, 12h – minuit</p><p>Maison Faber Lascombes : Le 7 Restaurant · Brasserie Bordelaise · Le Puy Paulin · Hôtel de la Plage · La Terrasse Rouge</p></div></footer>
+</body>
+</html>

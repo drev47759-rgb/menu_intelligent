@@ -1,0 +1,7138 @@
+[
+  {
+    "id": "tb-langoustines-roties-pissaladiere",
+    "name": "Langoustines rôties, pissaladière",
+    "description": "Bavaroise de crustacés, anchoïade et basilic",
+    "price": 38.0,
+    "category": "Les Entrées",
+    "categoryId": "entrees",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Bavaroise de crustacés",
+      "Anchoïade et basilic"
+    ],
+    "allergens": [
+      "crustacés"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-poulpe-marine-au-citron-vert",
+    "name": "Poulpe mariné au citron vert",
+    "description": "Crémeux de pois chiches au cumin, condiment aux épices et coriandre fraîche",
+    "price": 32.0,
+    "category": "Les Entrées",
+    "categoryId": "entrees",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Crémeux de pois chiches au cumin",
+      "Condiment aux épices et coriandre fraîche"
+    ],
+    "allergens": [
+      "mollusques"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-gravelax-de-truite",
+    "name": "Gravelax de truite",
+    "description": "Émulsion à l'oseille et pommes fondantes",
+    "price": 31.0,
+    "category": "Les Entrées",
+    "categoryId": "entrees",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Émulsion à l'oseille et pommes fondantes"
+    ],
+    "allergens": [
+      "poissons"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-emince-de-dorade-royale-petits-pois-et-homard",
+    "name": "Émincé de dorade royale, petits pois et homard",
+    "description": "Vinaigrette de crustacés, jeunes pousses de jardin",
+    "price": 34.0,
+    "category": "Les Entrées",
+    "categoryId": "entrees",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Vinaigrette de crustacés",
+      "Jeunes pousses de jardin"
+    ],
+    "allergens": [
+      "crustacés",
+      "poissons"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-foie-gras-de-canard-cuit-entier-au-bouillon",
+    "name": "Foie gras de canard cuit entier au bouillon",
+    "description": "Chutney de radis blanc, consommé en gelée",
+    "price": 35.0,
+    "category": "Les Entrées",
+    "categoryId": "entrees",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Chutney de radis blanc",
+      "Consommé en gelée"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-fricassee-de-morilles-au-vin-jaune",
+    "name": "Fricassée de morilles au vin jaune",
+    "description": "Crème d'oignons doux",
+    "price": 29.0,
+    "category": "Les Entrées",
+    "categoryId": "entrees",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Crème d'oignons doux"
+    ],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-caviar-oscietre-d-aquitaine-de-la-maison-prunier-30-g",
+    "name": "Caviar Osciètre d'Aquitaine de la Maison Prunier",
+    "description": "Blinis et condiments",
+    "price": 98.0,
+    "category": "Les Entrées",
+    "categoryId": "entrees",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Blinis et condiments"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "/ 30 g",
+    "isFeatured": true,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-minestrone-de-legumes-printaniers",
+    "name": "Minestrone de légumes printaniers",
+    "description": "Ravioles de Romans, huile de basilic",
+    "price": 34.0,
+    "category": "Le Végétal",
+    "categoryId": "le-vegetal",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Ravioles de Romans",
+      "Huile de basilic"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-dos-de-bar-cuit-sur-la-peau",
+    "name": "Dos de bar cuit sur la peau",
+    "description": "Gnocchi de pommes de terre, asperges blanches et vertes, coriandre fraîche",
+    "price": 55.0,
+    "category": "Les Poissons",
+    "categoryId": "poissons",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Gnocchi de pommes de terre",
+      "Asperges blanches et vertes",
+      "Coriandre fraîche"
+    ],
+    "allergens": [
+      "gluten",
+      "poissons"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-noix-de-lotte-a-la-plancha",
+    "name": "Noix de lotte à la plancha",
+    "description": "Jeunes carottes rôties, olives de Nyons, parfum de thym-citron",
+    "price": 38.0,
+    "category": "Les Poissons",
+    "categoryId": "poissons",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Jeunes carottes rôties",
+      "Olives de Nyons",
+      "Parfum de thym-citron"
+    ],
+    "allergens": [
+      "fruits à coque",
+      "poissons"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-cabillaud-vapeur",
+    "name": "Cabillaud vapeur",
+    "description": "Poêlée d'artichauts poivrade, cébettes et ail des ours",
+    "price": 42.0,
+    "category": "Les Poissons",
+    "categoryId": "poissons",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Poêlée d'artichauts poivrade",
+      "Cébettes et ail des ours"
+    ],
+    "allergens": [
+      "poissons"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-dorade-royale-rotie-entiere-a-la-provencale",
+    "name": "Dorade royale rôtie entière à la provençale",
+    "description": "Tian de légumes niçois — À partager pour 2 personnes, selon arrivage.",
+    "price": 120.0,
+    "category": "Les Poissons",
+    "categoryId": "poissons",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Tian de légumes niçois",
+      "À partager pour 2 personnes",
+      "Selon arrivage"
+    ],
+    "allergens": [
+      "poissons"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "seasonal",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-gigot-d-agneau-de-nos-regions-roti",
+    "name": "Gigot d'agneau de nos régions rôti",
+    "description": "Servi à la voiture de tranche, gratin dauphinois façon « Michel Rostang »",
+    "price": 47.0,
+    "category": "Les Viandes",
+    "categoryId": "viandes",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Servi à la voiture de tranche",
+      "Gratin dauphinois façon « Michel Rostang »"
+    ],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-tartare-de-b-uf-a-votre-gout",
+    "name": "Tartare de bœuf à votre goût",
+    "description": "Frites maison et salade de jeunes pousses",
+    "price": 38.0,
+    "category": "Les Viandes",
+    "categoryId": "viandes",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Frites maison et salade de jeunes pousses"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-supreme-de-volaille-fermiere-roti",
+    "name": "Suprême de volaille fermière rôti",
+    "description": "Sauce poulette, fricassée d'asperges, morilles et petits pois",
+    "price": 42.0,
+    "category": "Les Viandes",
+    "categoryId": "viandes",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Sauce poulette",
+      "Fricassée d'asperges",
+      "Morilles et petits pois"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-c-ur-de-filet-de-b-uf-a-la-casserole",
+    "name": "Cœur de filet de bœuf à la casserole",
+    "description": "Pommes boulangère, jus court aux girolles",
+    "price": 48.0,
+    "category": "Les Viandes",
+    "categoryId": "viandes",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Pommes boulangère",
+      "Jus court aux girolles"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-jarret-de-veau-a-la-sarriette",
+    "name": "Jarret de veau à la sarriette",
+    "description": "Petits pois à la française — À partager pour 2 personnes.",
+    "price": 135.0,
+    "category": "Les Viandes",
+    "categoryId": "viandes",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Petits pois à la française",
+      "À partager pour 2 personnes"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-salade-de-jeunes-pousses-assaisonnee-a-votre-gout",
+    "name": "Salade de jeunes pousses assaisonnée à votre goût",
+    "description": "Huile d'olive des Baux-de-Provence, vinaigre de Xérès ou balsamique, abricots secs, noix et noisettes",
+    "price": 13.0,
+    "category": "La Salade et les Fromages",
+    "categoryId": "salade-fromages",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Huile d'olive des Baux-de-Provence",
+      "Vinaigre de Xérès ou balsamique",
+      "Abricots secs",
+      "Noix et noisettes"
+    ],
+    "allergens": [
+      "fruits à coque"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-plateau-de-fromages-affines-de-nos-regions",
+    "name": "Plateau de fromages affinés de nos régions",
+    "description": "",
+    "price": 19.0,
+    "category": "La Salade et les Fromages",
+    "categoryId": "salade-fromages",
+    "menuGroup": "À la Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-baba-bouchon",
+    "name": "Baba bouchon",
+    "description": "Rhum arrangé aux agrumes, crème fouettée vanillée",
+    "price": 19.0,
+    "category": "Les Desserts",
+    "categoryId": "desserts",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Rhum arrangé aux agrumes",
+      "Crème fouettée vanillée"
+    ],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-ganache-moelleuse-au-chocolat-guanaja",
+    "name": "Ganache moelleuse au chocolat « Guanaja »",
+    "description": "Sablé cacao, noisettes caramélisées",
+    "price": 19.0,
+    "category": "Les Desserts",
+    "categoryId": "desserts",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Sablé cacao",
+      "Noisettes caramélisées"
+    ],
+    "allergens": [
+      "fruits à coque",
+      "gluten"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-souffle-pistache-griottes",
+    "name": "Soufflé pistache, griottes",
+    "description": "",
+    "price": 19.0,
+    "category": "Les Desserts",
+    "categoryId": "desserts",
+    "menuGroup": "À la Carte",
+    "ingredients": [],
+    "allergens": [
+      "fruits à coque"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-fraises-cremeux-vanille-sorbet-basilic",
+    "name": "Fraises, crémeux vanille, sorbet basilic",
+    "description": "",
+    "price": 19.0,
+    "category": "Les Desserts",
+    "categoryId": "desserts",
+    "menuGroup": "À la Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-nuage-de-citron-de-menton",
+    "name": "Nuage de citron de Menton",
+    "description": "Chartreuse verte et herbes fraîches",
+    "price": 19.0,
+    "category": "Les Desserts",
+    "categoryId": "desserts",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Chartreuse verte et herbes fraîches"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-framboises-au-parfum-d-hibiscus",
+    "name": "Framboises au parfum d'hibiscus",
+    "description": "Parfait glacé fleur d'oranger et amandes de Valence",
+    "price": 19.0,
+    "category": "Les Desserts",
+    "categoryId": "desserts",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Parfait glacé fleur d'oranger et amandes de Valence"
+    ],
+    "allergens": [
+      "fruits à coque"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-crepes-suzette-flambees-au-grand-marnier",
+    "name": "Crêpes Suzette flambées au Grand Marnier",
+    "description": "",
+    "price": 21.0,
+    "category": "Les Desserts",
+    "categoryId": "desserts",
+    "menuGroup": "À la Carte",
+    "ingredients": [],
+    "allergens": [
+      "gluten"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-cafe-ou-the-gourmand",
+    "name": "Café ou thé gourmand",
+    "description": "Servi avec ses petits fours",
+    "price": 19.0,
+    "category": "Les Desserts",
+    "categoryId": "desserts",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Servi avec ses petits fours"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-finca-el-platanillo",
+    "name": "Finca El Platanillo",
+    "description": "Café",
+    "price": 7.0,
+    "category": "Les Cafés et les Thés",
+    "categoryId": "cafes-thes",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Café"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-decafeine",
+    "name": "Décaféiné",
+    "description": "",
+    "price": 7.0,
+    "category": "Les Cafés et les Thés",
+    "categoryId": "cafes-thes",
+    "menuGroup": "À la Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-macaron-train-bleu-x2",
+    "name": "Macaron Train Bleu",
+    "description": "",
+    "price": 6.6,
+    "category": "Macaron Train Bleu",
+    "categoryId": "macarons",
+    "menuGroup": "À la Carte",
+    "ingredients": [],
+    "allergens": [
+      "gluten"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "x2",
+    "isFeatured": true,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-macaron-train-bleu-2-x4",
+    "name": "Macaron Train Bleu",
+    "description": "",
+    "price": 13.2,
+    "category": "Macaron Train Bleu",
+    "categoryId": "macarons",
+    "menuGroup": "À la Carte",
+    "ingredients": [],
+    "allergens": [
+      "gluten"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "x4",
+    "isFeatured": true,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-le-menu-plm",
+    "name": "Le Menu PLM",
+    "description": "Boissons non comprises. — Gravelax de truite, émulsion à l'oseille et pommes fondantes ou Fricassée de morilles au vin jaune, crème d'oignons doux · Cabillaud vapeur, poêlée d'artichauts poivrade, cébettes et ail des ou rs ou Suprême de volaille fermière rôtie, sauce poulette, fricassée d'asperges, morilles et petits pois · Sélection de fromages affinés de nos régions · Baba b ou chon, rhum arrangé aux agrumes, crème fouettée vanillée ou Suggestion de dessert du moment",
+    "price": 78.0,
+    "category": "Menus & Formules",
+    "categoryId": "menus-formules",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Boissons non comprises",
+      "Gravelax de truite",
+      "Crème d'oignons doux",
+      "Cabillaud vapeur",
+      "Poêlée d'artichauts poivrade",
+      "Sauce poulette",
+      "Fricassée d'asperges",
+      "Morilles et petits pois",
+      "Sélection de fromages affinés de nos régions",
+      "Baba b ou chon",
+      "Rhum arrangé aux agrumes",
+      "Crème fouettée vanillée ou Suggestion de dessert du moment"
+    ],
+    "allergens": [
+      "lait",
+      "poissons"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": true,
+    "course": "menu",
+    "origin": null
+  },
+  {
+    "id": "tb-le-menu-du-voyageur",
+    "name": "Le Menu du Voyageur",
+    "description": "Servi en 45 minutes. Boissons non comprises. Menu proposé pour un maximum de 12 personnes. — Gigot d'agneau de nos régions rôti, servi à la voiture de tranche, gratin dauphinois façon « Michel Rostang » · Millefeuille caramélisé, crème vanille de Madagascar",
+    "price": 57.0,
+    "category": "Menus & Formules",
+    "categoryId": "menus-formules",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Gigot d'agneau de nos régions rôti",
+      "Servi à la voiture de tranche",
+      "Gratin dauphinois façon « Michel Rostang »",
+      "Millefeuille caramélisé",
+      "Crème vanille de Madagascar"
+    ],
+    "allergens": [
+      "gluten",
+      "lait"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": true,
+    "course": "menu",
+    "origin": null
+  },
+  {
+    "id": "tb-le-menu-du-train-bleu",
+    "name": "Le Menu du Train Bleu",
+    "description": "Servi pour l'ensemble de la table, au déjeuner jusqu'à 14h et au dîner jusqu'à 22h. Boissons non comprises. — Langoustine rôtie, pissaladière, bavaroise de crustacés, anchoïade et basilic · Foie gras de canard cuit entier au bouillon, chutney de radis blanc, consommé en gelée · Dos de bar cuit sur la peau, gnocchi de pommes de terre, asperges blanches et vertes, coriandre fraîche · Sorbet citron vert basilic et gin · Confit de jarret de veau à la sarriette, petits pois à la française · Sélection de fromages affinés de nos régions · Nuage de citron de Menton, Chartreuse verte et herbe",
+    "price": 120.0,
+    "category": "Menus & Formules",
+    "categoryId": "menus-formules",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Servi pour l'ensemble de la table",
+      "Langoustine rôtie",
+      "Pissaladière",
+      "Bavaroise de crustacés",
+      "Anchoïade et basilic",
+      "Foie gras de canard cuit entier au bouillon",
+      "Chutney de radis blanc",
+      "Consommé en gelée",
+      "Dos de bar cuit sur la peau",
+      "Gnocchi de pommes de terre",
+      "Asperges blanches et vertes",
+      "Coriandre fraîche"
+    ],
+    "allergens": [
+      "crustacés",
+      "gluten",
+      "poissons"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": true,
+    "course": "menu",
+    "origin": null
+  },
+  {
+    "id": "tb-accord-mets-et-vins",
+    "name": "Accord Mets et Vins",
+    "description": "Menu accompagné de 3 verres (15 cl) de vin au choix, servi uniquement avec Le Menu du Train Bleu — par personne. — Blanc — AOC Pouilly-Fumé, Serge Dagueneau & Filles · Blanc — AOC Chablis, Domaine Oliveira Lecestre · Rouge — AOC Haut-Médoc, Château Victoria",
+    "price": 42.0,
+    "category": "Menus & Formules",
+    "categoryId": "menus-formules",
+    "menuGroup": "À la Carte",
+    "ingredients": [
+      "Menu accompagné de 3 verres (15 cl) de vin au choix",
+      "Servi uniquement avec Le Menu du Train Bleu",
+      "Par personne",
+      "Blanc",
+      "AOC Pouilly-Fumé",
+      "Serge Dagueneau & Filles",
+      "Blanc",
+      "AOC Chablis",
+      "Domaine Oliveira Lecestre",
+      "Rouge",
+      "AOC Haut-Médoc",
+      "Château Victoria"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": true,
+    "course": "menu",
+    "origin": null
+  },
+  {
+    "id": "tb-le-menu-des-enfants",
+    "name": "Le Menu des Enfants",
+    "description": "Jusqu'à 10 ans. Plat servi en portion adaptée pour les enfants.",
+    "price": 29.0,
+    "category": "Menus & Formules",
+    "categoryId": "menus-formules",
+    "menuGroup": "À la Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": true,
+    "course": "menu",
+    "origin": null
+  },
+  {
+    "id": "tb-planche-de-charcuteries",
+    "name": "Planche de charcuteries",
+    "description": "Jambon ibérique, saucisson Bellota, rillettes de canard, rosette de Lyon",
+    "price": 21.0,
+    "category": "Sur le Pouce",
+    "categoryId": "sur-le-pouce",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Jambon ibérique",
+      "Saucisson Bellota",
+      "Rillettes de canard",
+      "Rosette de Lyon"
+    ],
+    "allergens": [],
+    "dietaryTags": [],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-planche-de-fromages-affines-de-nos-regions",
+    "name": "Planche de fromages affinés de nos régions",
+    "description": "",
+    "price": 16.0,
+    "category": "Sur le Pouce",
+    "categoryId": "sur-le-pouce",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-caviar-oscietre-d-aquitaine-de-la-maison-prunier-2-30-g",
+    "name": "Caviar Osciètre d'Aquitaine de la Maison Prunier",
+    "description": "Œuf mollet, blinis et condiments",
+    "price": 98.0,
+    "category": "Sur le Pouce",
+    "categoryId": "sur-le-pouce",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Œuf mollet",
+      "Blinis et condiments"
+    ],
+    "allergens": [
+      "gluten",
+      "œufs"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "/ 30 g",
+    "isFeatured": true,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-salade-caesar",
+    "name": "Salade Caesar",
+    "description": "Salade croquante, volaille, parmesan, sauce anchoïade",
+    "price": 26.0,
+    "category": "Sur le Pouce",
+    "categoryId": "sur-le-pouce",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Salade croquante",
+      "Volaille",
+      "Parmesan",
+      "Sauce anchoïade"
+    ],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-croque-monsieur-en-roll",
+    "name": "Croque-Monsieur en roll",
+    "description": "Jambon blanc « Prince de Paris »",
+    "price": 27.0,
+    "category": "Sur le Pouce",
+    "categoryId": "sur-le-pouce",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Jambon blanc « Prince de Paris »"
+    ],
+    "allergens": [],
+    "dietaryTags": [],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-club-sandwich",
+    "name": "Club sandwich",
+    "description": "Poulet, bacon, laitue, tomate, œuf dur, chips maison",
+    "price": 28.0,
+    "category": "Sur le Pouce",
+    "categoryId": "sur-le-pouce",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Poulet",
+      "Bacon",
+      "Laitue",
+      "Tomate",
+      "Œuf dur",
+      "Chips maison"
+    ],
+    "allergens": [
+      "œufs"
+    ],
+    "dietaryTags": [],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-cabillaud-vapeur-2",
+    "name": "Cabillaud vapeur",
+    "description": "Poêlée d'artichauts poivrade, cébettes et ail des ours",
+    "price": 42.0,
+    "category": "Sur le Pouce",
+    "categoryId": "sur-le-pouce",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Poêlée d'artichauts poivrade",
+      "Cébettes et ail des ours"
+    ],
+    "allergens": [
+      "poissons"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-saumon-fume",
+    "name": "Saumon fumé",
+    "description": "Crème aigrelette aux herbes",
+    "price": 29.0,
+    "category": "Sur le Pouce",
+    "categoryId": "sur-le-pouce",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Crème aigrelette aux herbes"
+    ],
+    "allergens": [
+      "lait",
+      "poissons"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-foie-gras-frais-de-canard-cuit-entier-au-bouillon",
+    "name": "Foie gras frais de canard cuit entier au bouillon",
+    "description": "Chutney de radis blanc, consommé en gelée",
+    "price": 35.0,
+    "category": "Sur le Pouce",
+    "categoryId": "sur-le-pouce",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Chutney de radis blanc",
+      "Consommé en gelée"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-parmentier-d-agneau-confit",
+    "name": "Parmentier d'agneau confit",
+    "description": "Salade de jeunes pousses",
+    "price": 31.0,
+    "category": "Sur le Pouce",
+    "categoryId": "sur-le-pouce",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Salade de jeunes pousses"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-tartine-avocat-et-uf-mollet",
+    "name": "Tartine avocat et œuf mollet",
+    "description": "Pain aux céréales, graines de chia",
+    "price": 20.0,
+    "category": "Sur le Pouce",
+    "categoryId": "sur-le-pouce",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Pain aux céréales",
+      "Graines de chia"
+    ],
+    "allergens": [
+      "gluten",
+      "œufs"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-tartare-de-b-uf-charolais-assaisonne",
+    "name": "Tartare de bœuf Charolais assaisonné",
+    "description": "Sauce tomate et soja, huile de sésame, frites maison",
+    "price": 35.0,
+    "category": "Sur le Pouce",
+    "categoryId": "sur-le-pouce",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Sauce tomate et soja",
+      "Huile de sésame",
+      "Frites maison"
+    ],
+    "allergens": [
+      "soja",
+      "sésame"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-baba-bouchon-2",
+    "name": "Baba bouchon",
+    "description": "Rhum arrangé aux agrumes, crème fouettée vanillée",
+    "price": 19.0,
+    "category": "Les Desserts & Pâtisseries",
+    "categoryId": "desserts-lounge",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Rhum arrangé aux agrumes",
+      "Crème fouettée vanillée"
+    ],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-tarte-framboise-pistache",
+    "name": "Tarte framboise pistache",
+    "description": "",
+    "price": 19.0,
+    "category": "Les Desserts & Pâtisseries",
+    "categoryId": "desserts-lounge",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "fruits à coque",
+      "gluten"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-tarte-au-citron-yuzu-meringuee",
+    "name": "Tarte au citron yuzu meringuée",
+    "description": "",
+    "price": 19.0,
+    "category": "Les Desserts & Pâtisseries",
+    "categoryId": "desserts-lounge",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "gluten"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-chou-chantilly-aux-fraises",
+    "name": "Chou chantilly aux fraises",
+    "description": "",
+    "price": 19.0,
+    "category": "Les Desserts & Pâtisseries",
+    "categoryId": "desserts-lounge",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-millefeuille-caramelise",
+    "name": "Millefeuille caramélisé",
+    "description": "Crème vanille de Madagascar",
+    "price": 19.0,
+    "category": "Les Desserts & Pâtisseries",
+    "categoryId": "desserts-lounge",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Crème vanille de Madagascar"
+    ],
+    "allergens": [
+      "gluten",
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-tarte-chocolat-gianduja",
+    "name": "Tarte chocolat Gianduja",
+    "description": "",
+    "price": 19.0,
+    "category": "Les Desserts & Pâtisseries",
+    "categoryId": "desserts-lounge",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "fruits à coque",
+      "gluten"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-le-gourmand-du-train-bleu",
+    "name": "Le Gourmand du Train Bleu",
+    "description": "Café ou thé accompagné de ses mignardises",
+    "price": 19.0,
+    "category": "Les Desserts & Pâtisseries",
+    "categoryId": "desserts-lounge",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Café ou thé accompagné de ses mignardises"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": true,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-chocolat-liegeois",
+    "name": "Chocolat liégeois",
+    "description": "",
+    "price": 19.0,
+    "category": "Les Coupes Glacées",
+    "categoryId": "coupes-glacees",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-cafe-liegeois",
+    "name": "Café liégeois",
+    "description": "",
+    "price": 19.0,
+    "category": "Les Coupes Glacées",
+    "categoryId": "coupes-glacees",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-coupe-glacee-aux-fruits-rouges",
+    "name": "Coupe glacée aux fruits rouges",
+    "description": "",
+    "price": 19.0,
+    "category": "Les Coupes Glacées",
+    "categoryId": "coupes-glacees",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "tb-cafe-creme",
+    "name": "Café crème",
+    "description": "",
+    "price": 9.5,
+    "category": "Boissons Glacées",
+    "categoryId": "boissons-glacees",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-caramel-macchiato",
+    "name": "Caramel Macchiato",
+    "description": "",
+    "price": 9.5,
+    "category": "Boissons Glacées",
+    "categoryId": "boissons-glacees",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-signature-gourmand-train-bleu",
+    "name": "Signature gourmand Train Bleu",
+    "description": "Poire caramel latte et shot d'espresso",
+    "price": 11.5,
+    "category": "Boissons Glacées",
+    "categoryId": "boissons-glacees",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Poire caramel latte et shot d'espresso"
+    ],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": true,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-douceur-cafe-mocha",
+    "name": "Douceur café « Mocha »",
+    "description": "Espresso et chocolat surmonté de mousse de lait",
+    "price": 11.5,
+    "category": "Boissons Glacées",
+    "categoryId": "boissons-glacees",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Espresso et chocolat surmonté de mousse de lait"
+    ],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-chocolat",
+    "name": "Chocolat",
+    "description": "",
+    "price": 11.0,
+    "category": "Boissons Glacées",
+    "categoryId": "boissons-glacees",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-matcha-latte",
+    "name": "Matcha Latte",
+    "description": "",
+    "price": 11.5,
+    "category": "Boissons Glacées",
+    "categoryId": "boissons-glacees",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-blue-matcha-latte",
+    "name": "Blue Matcha Latte",
+    "description": "",
+    "price": 11.5,
+    "category": "Boissons Glacées",
+    "categoryId": "boissons-glacees",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-espresso-ou-decafeine",
+    "name": "Espresso ou décaféiné",
+    "description": "",
+    "price": 7.0,
+    "category": "Boissons Chaudes — Les Cafés",
+    "categoryId": "boissons-chaudes",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-double-cafe-ou-decafeine",
+    "name": "Double café ou décaféiné",
+    "description": "",
+    "price": 10.0,
+    "category": "Boissons Chaudes — Les Cafés",
+    "categoryId": "boissons-chaudes",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-cafe-creme-2",
+    "name": "Café crème",
+    "description": "",
+    "price": 9.5,
+    "category": "Boissons Chaudes — Les Cafés",
+    "categoryId": "boissons-chaudes",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-cappuccino",
+    "name": "Cappuccino",
+    "description": "",
+    "price": 9.5,
+    "category": "Boissons Chaudes — Les Cafés",
+    "categoryId": "boissons-chaudes",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-caramel-macchiato-2",
+    "name": "Caramel Macchiato",
+    "description": "",
+    "price": 9.5,
+    "category": "Boissons Chaudes — Les Recettes Gourmandes",
+    "categoryId": "boissons-chaudes",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-cafe-viennois",
+    "name": "Café Viennois",
+    "description": "",
+    "price": 10.0,
+    "category": "Boissons Chaudes — Les Recettes Gourmandes",
+    "categoryId": "boissons-chaudes",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-douceur-cafe-mocha-2",
+    "name": "Douceur café « Mocha »",
+    "description": "Espresso et chocolat surmonté de mousse de lait",
+    "price": 11.5,
+    "category": "Boissons Chaudes — Les Recettes Gourmandes",
+    "categoryId": "boissons-chaudes",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Espresso et chocolat surmonté de mousse de lait"
+    ],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-signature-gourmand-train-bleu-2",
+    "name": "Signature gourmand Train Bleu",
+    "description": "Poire caramel latte et shot d'espresso",
+    "price": 11.5,
+    "category": "Boissons Chaudes — Les Recettes Gourmandes",
+    "categoryId": "boissons-chaudes",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Poire caramel latte et shot d'espresso"
+    ],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": true,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-chocolat-chaud",
+    "name": "Chocolat chaud",
+    "description": "",
+    "price": 11.0,
+    "category": "Boissons Chaudes — Les Recettes Gourmandes",
+    "categoryId": "boissons-chaudes",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-chocolat-viennois",
+    "name": "Chocolat Viennois",
+    "description": "",
+    "price": 11.5,
+    "category": "Boissons Chaudes — Les Recettes Gourmandes",
+    "categoryId": "boissons-chaudes",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-matcha-latte-2",
+    "name": "Matcha Latte",
+    "description": "Matcha cérémonial 100 % importé du Japon",
+    "price": 11.5,
+    "category": "Boissons Chaudes — Les Recettes Gourmandes",
+    "categoryId": "boissons-chaudes",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Matcha cérémonial 100 % importé du Japon"
+    ],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-blue-matcha-latte-2",
+    "name": "Blue Matcha Latte",
+    "description": "Fleur de butterfly pea, baobab, cannelle",
+    "price": 11.5,
+    "category": "Boissons Chaudes — Les Recettes Gourmandes",
+    "categoryId": "boissons-chaudes",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Fleur de butterfly pea",
+      "Baobab",
+      "Cannelle"
+    ],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-marco-polo",
+    "name": "Marco Polo",
+    "description": "Thé noir aux fruits rouges",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés noirs",
+    "categoryId": "thes-infusions",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Thé noir aux fruits rouges"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-earl-grey-imperial",
+    "name": "Earl Grey Impérial",
+    "description": "",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés noirs",
+    "categoryId": "thes-infusions",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-darjeeling-himalaya",
+    "name": "Darjeeling Himalaya",
+    "description": "",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés noirs",
+    "categoryId": "thes-infusions",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-sultane",
+    "name": "Sultane",
+    "description": "Thé de Ceylan",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés noirs",
+    "categoryId": "thes-infusions",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Thé de Ceylan"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-french-breakfast-tea",
+    "name": "French Breakfast Tea",
+    "description": "",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés noirs",
+    "categoryId": "thes-infusions",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-fuji-yama",
+    "name": "Fuji-Yama",
+    "description": "Thé vert nature du Japon",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés verts",
+    "categoryId": "thes-infusions",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Thé vert nature du Japon"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-casablanca",
+    "name": "Casablanca",
+    "description": "Thé vert à la menthe marocaine",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés verts",
+    "categoryId": "thes-infusions",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Thé vert à la menthe marocaine"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-the-sur-le-nil",
+    "name": "Thé sur le Nil",
+    "description": "Thé vert aux agrumes",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés verts",
+    "categoryId": "thes-infusions",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Thé vert aux agrumes"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-the-a-l-opera",
+    "name": "Thé à l'Opéra",
+    "description": "Thé vert aux fruits rouges vanillés",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés verts",
+    "categoryId": "thes-infusions",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Thé vert aux fruits rouges vanillés"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-jasmin-mandarin",
+    "name": "Jasmin Mandarin",
+    "description": "",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés verts",
+    "categoryId": "thes-infusions",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-rouge-bourbon",
+    "name": "Rouge Bourbon",
+    "description": "Rooibos rouge, naturellement sans théine, à la vanille",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés verts",
+    "categoryId": "thes-infusions",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Rooibos rouge",
+      "Naturellement sans théine",
+      "À la vanille"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-blanc-rose",
+    "name": "Blanc & Rose",
+    "description": "Thé blanc aux boutons de rose",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés verts",
+    "categoryId": "thes-infusions",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Thé blanc aux boutons de rose"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-tilla-argentea",
+    "name": "Tilla Argentea",
+    "description": "Tilleul",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Infusions",
+    "categoryId": "thes-infusions",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Tilleul"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-verbena-citrodora",
+    "name": "Verbena Citrodora",
+    "description": "Verveine citronnée",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Infusions",
+    "categoryId": "thes-infusions",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Verveine citronnée"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-chamomilla",
+    "name": "Chamomilla",
+    "description": "Camomille",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Infusions",
+    "categoryId": "thes-infusions",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Camomille"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-thymus-citriodorus",
+    "name": "Thymus Citriodorus",
+    "description": "Référence au citron de Menton",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Infusions",
+    "categoryId": "thes-infusions",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Référence au citron de Menton"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-millebuis-vignerons-de-buxy-15-cl",
+    "name": "Millebuis, Vignerons de Buxy",
+    "description": "",
+    "price": 15.0,
+    "category": "Les Vins au Verre — Blanc",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "15 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-millebuis-vignerons-de-buxy-2-20-cl",
+    "name": "Millebuis, Vignerons de Buxy",
+    "description": "",
+    "price": 19.0,
+    "category": "Les Vins au Verre — Blanc",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "20 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-domaine-oliveira-lecestre-15-cl",
+    "name": "Domaine Oliveira Lecestre",
+    "description": "",
+    "price": 19.0,
+    "category": "Les Vins au Verre — Blanc",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "15 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-domaine-oliveira-lecestre-2-20-cl",
+    "name": "Domaine Oliveira Lecestre",
+    "description": "",
+    "price": 25.0,
+    "category": "Les Vins au Verre — Blanc",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "20 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-chateau-tour-leognan-15-cl",
+    "name": "Château Tour Léognan",
+    "description": "",
+    "price": 15.0,
+    "category": "Les Vins au Verre — Blanc",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "15 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-chateau-tour-leognan-2-20-cl",
+    "name": "Château Tour Léognan",
+    "description": "",
+    "price": 18.0,
+    "category": "Les Vins au Verre — Blanc",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "20 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-essence-des-climats-domaine-laroche-15-cl",
+    "name": "Essence des Climats, Domaine Laroche",
+    "description": "",
+    "price": 21.0,
+    "category": "Les Vins au Verre — Blanc",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "15 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-essence-des-climats-domaine-laroche-2-20-cl",
+    "name": "Essence des Climats, Domaine Laroche",
+    "description": "",
+    "price": 27.0,
+    "category": "Les Vins au Verre — Blanc",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "20 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-chateau-patache-d-aux-cru-bourgeois-15-cl",
+    "name": "Château Patache d'Aux, Cru Bourgeois",
+    "description": "",
+    "price": 18.0,
+    "category": "Les Vins au Verre — Rouge",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "15 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-chateau-patache-d-aux-cru-bourgeois-2-20-cl",
+    "name": "Château Patache d'Aux, Cru Bourgeois",
+    "description": "",
+    "price": 24.0,
+    "category": "Les Vins au Verre — Rouge",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "20 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-cuvee-l-domaine-combier-15-cl",
+    "name": "Cuvée L., Domaine Combier",
+    "description": "",
+    "price": 19.0,
+    "category": "Les Vins au Verre — Rouge",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "15 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-cuvee-l-domaine-combier-2-20-cl",
+    "name": "Cuvée L., Domaine Combier",
+    "description": "",
+    "price": 24.0,
+    "category": "Les Vins au Verre — Rouge",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "20 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-thierry-germain-domaine-des-roches-neuves-15-cl",
+    "name": "Thierry Germain, Domaine des Roches Neuves",
+    "description": "",
+    "price": 14.0,
+    "category": "Les Vins au Verre — Rouge",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "15 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-thierry-germain-domaine-des-roches-neuves-2-20-cl",
+    "name": "Thierry Germain, Domaine des Roches Neuves",
+    "description": "",
+    "price": 18.0,
+    "category": "Les Vins au Verre — Rouge",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "20 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-manuel-olivier-15-cl",
+    "name": "Manuel Olivier",
+    "description": "",
+    "price": 25.0,
+    "category": "Les Vins au Verre — Rouge",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "15 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-manuel-olivier-2-20-cl",
+    "name": "Manuel Olivier",
+    "description": "",
+    "price": 30.0,
+    "category": "Les Vins au Verre — Rouge",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "20 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-le-petit-rasque-15-cl",
+    "name": "Le Petit Rasque",
+    "description": "",
+    "price": 15.0,
+    "category": "Les Vins au Verre — Rosé",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "15 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-le-petit-rasque-2-20-cl",
+    "name": "Le Petit Rasque",
+    "description": "",
+    "price": 19.0,
+    "category": "Les Vins au Verre — Rosé",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "20 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-domaine-ott-ramassan-15-cl",
+    "name": "Domaine Ott Ramassan",
+    "description": "",
+    "price": 21.0,
+    "category": "Les Vins au Verre — Rosé",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "15 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-domaine-ott-ramassan-2-20-cl",
+    "name": "Domaine Ott Ramassan",
+    "description": "",
+    "price": 27.0,
+    "category": "Les Vins au Verre — Rosé",
+    "categoryId": "vins-au-verre",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "20 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-collet-brut-17-cl",
+    "name": "Collet Brut",
+    "description": "",
+    "price": 22.0,
+    "category": "Les Champagnes",
+    "categoryId": "champagnes-lounge",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "17 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-collet-brut-2-37-5-cl",
+    "name": "Collet Brut",
+    "description": "",
+    "price": 46.0,
+    "category": "Les Champagnes",
+    "categoryId": "champagnes-lounge",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "37,5 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-collet-brut-3-75-cl",
+    "name": "Collet Brut",
+    "description": "",
+    "price": 90.0,
+    "category": "Les Champagnes",
+    "categoryId": "champagnes-lounge",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-collet-rose-17-cl",
+    "name": "Collet Rosé",
+    "description": "",
+    "price": 25.0,
+    "category": "Les Champagnes",
+    "categoryId": "champagnes-lounge",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "17 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-collet-rose-2-75-cl",
+    "name": "Collet Rosé",
+    "description": "",
+    "price": 95.0,
+    "category": "Les Champagnes",
+    "categoryId": "champagnes-lounge",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-bollinger-brut-cuvee-speciale-17-cl",
+    "name": "Bollinger Brut Cuvée Spéciale",
+    "description": "",
+    "price": 28.0,
+    "category": "Les Champagnes",
+    "categoryId": "champagnes-lounge",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "17 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-bollinger-brut-cuvee-speciale-2-75-cl",
+    "name": "Bollinger Brut Cuvée Spéciale",
+    "description": "",
+    "price": 109.0,
+    "category": "Les Champagnes",
+    "categoryId": "champagnes-lounge",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-ruinart-blanc-de-blancs-75-cl",
+    "name": "Ruinart Blanc de Blancs",
+    "description": "",
+    "price": 130.0,
+    "category": "Les Champagnes",
+    "categoryId": "champagnes-lounge",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-kir-royal-17-cl",
+    "name": "Kir Royal",
+    "description": "",
+    "price": 21.0,
+    "category": "Les Champagnes",
+    "categoryId": "champagnes-lounge",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "17 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-veuve-clicquot-75-cl",
+    "name": "Veuve Clicquot",
+    "description": "",
+    "price": 109.0,
+    "category": "Les Champagnes",
+    "categoryId": "champagnes-lounge",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-prosecco-17-cl",
+    "name": "Prosecco",
+    "description": "",
+    "price": 11.0,
+    "category": "Les Apéritifs",
+    "categoryId": "aperitifs",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "17 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-kir-du-chanoine-cardinal-12-cl",
+    "name": "Kir du Chanoine, Cardinal",
+    "description": "",
+    "price": 11.0,
+    "category": "Les Apéritifs",
+    "categoryId": "aperitifs",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "12 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-pineau-blanc-ou-rouge-9-cl",
+    "name": "Pineau blanc ou rouge",
+    "description": "",
+    "price": 11.0,
+    "category": "Les Apéritifs",
+    "categoryId": "aperitifs",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "9 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-muscat-de-beaumes-de-venise-9-cl",
+    "name": "Muscat de Beaumes-de-Venise",
+    "description": "",
+    "price": 11.0,
+    "category": "Les Apéritifs",
+    "categoryId": "aperitifs",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "9 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-ricard-pastis-4-cl",
+    "name": "Ricard, Pastis",
+    "description": "",
+    "price": 11.0,
+    "category": "Les Apéritifs",
+    "categoryId": "aperitifs",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "4 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-suze-9-cl",
+    "name": "Suze",
+    "description": "",
+    "price": 11.0,
+    "category": "Les Apéritifs",
+    "categoryId": "aperitifs",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "9 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-campari-9-cl",
+    "name": "Campari",
+    "description": "",
+    "price": 11.0,
+    "category": "Les Apéritifs",
+    "categoryId": "aperitifs",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "9 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-porto-blanc-ou-rouge-9-cl",
+    "name": "Porto blanc ou rouge",
+    "description": "",
+    "price": 11.0,
+    "category": "Les Apéritifs",
+    "categoryId": "aperitifs",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "9 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-martini-rosso-martini-bianco-9-cl",
+    "name": "Martini Rosso, Martini Bianco",
+    "description": "",
+    "price": 11.0,
+    "category": "Les Apéritifs",
+    "categoryId": "aperitifs",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "9 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-cidre-33-cl",
+    "name": "Cidre",
+    "description": "",
+    "price": 11.0,
+    "category": "Les Apéritifs",
+    "categoryId": "aperitifs",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "33 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-schweppes-heritage-ginger-ale-20-cl",
+    "name": "Schweppes Héritage Ginger Ale",
+    "description": "",
+    "price": 9.5,
+    "category": "Les Boissons Fraîches",
+    "categoryId": "boissons-fraiches",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "20 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-schweppes-heritage-tonic-originale-25-cl",
+    "name": "Schweppes Héritage Tonic Originale",
+    "description": "",
+    "price": 9.5,
+    "category": "Les Boissons Fraîches",
+    "categoryId": "boissons-fraiches",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-orangina-ou-schweppes-agrum-25-cl",
+    "name": "Orangina, ou Schweppes Agrum'",
+    "description": "",
+    "price": 9.5,
+    "category": "Les Boissons Fraîches",
+    "categoryId": "boissons-fraiches",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-pepsi-ou-pepsi-zero-sucres-33-cl",
+    "name": "Pepsi, ou Pepsi Zéro Sucres",
+    "description": "",
+    "price": 9.5,
+    "category": "Les Boissons Fraîches",
+    "categoryId": "boissons-fraiches",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "33 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-lorina-limonade-artisanale-33-cl",
+    "name": "Lorina, limonade artisanale",
+    "description": "",
+    "price": 9.5,
+    "category": "Les Boissons Fraîches",
+    "categoryId": "boissons-fraiches",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "33 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-san-bitter-10-cl",
+    "name": "San Bitter",
+    "description": "",
+    "price": 8.5,
+    "category": "Les Boissons Fraîches",
+    "categoryId": "boissons-fraiches",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "10 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-the-glace-20-cl",
+    "name": "Thé glacé",
+    "description": "Pêche, menthe-citron ou framboise",
+    "price": 10.5,
+    "category": "Les Boissons Fraîches",
+    "categoryId": "boissons-fraiches",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Pêche",
+      "Menthe-citron ou framboise"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "20 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-jus-presse-de-citron-8-cl",
+    "name": "Jus pressé de citron",
+    "description": "",
+    "price": 10.5,
+    "category": "Les Nectars et Jus de Fruits",
+    "categoryId": "jus-nectars",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "8 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-jus-presse-d-orange-18-cl",
+    "name": "Jus pressé d'orange",
+    "description": "",
+    "price": 10.5,
+    "category": "Les Nectars et Jus de Fruits",
+    "categoryId": "jus-nectars",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "18 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-jus-presse-de-pamplemousse-18-cl",
+    "name": "Jus pressé de pamplemousse",
+    "description": "",
+    "price": 10.5,
+    "category": "Les Nectars et Jus de Fruits",
+    "categoryId": "jus-nectars",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "18 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-nectar-d-ananas-20-cl",
+    "name": "Nectar d'ananas",
+    "description": "",
+    "price": 10.5,
+    "category": "Les Nectars et Jus de Fruits",
+    "categoryId": "jus-nectars",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "20 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-jus-de-pomme-25-cl",
+    "name": "Jus de pomme",
+    "description": "Comptoir Rhodanien",
+    "price": 10.5,
+    "category": "Les Nectars et Jus de Fruits",
+    "categoryId": "jus-nectars",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Comptoir Rhodanien"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-jus-de-tomate-25-cl",
+    "name": "Jus de tomate",
+    "description": "Comptoir Rhodanien",
+    "price": 10.5,
+    "category": "Les Nectars et Jus de Fruits",
+    "categoryId": "jus-nectars",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Comptoir Rhodanien"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-jus-de-raisin-25-cl",
+    "name": "Jus de raisin",
+    "description": "Comptoir Rhodanien",
+    "price": 10.5,
+    "category": "Les Nectars et Jus de Fruits",
+    "categoryId": "jus-nectars",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Comptoir Rhodanien"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-nectar-d-abricot-25-cl",
+    "name": "Nectar d'abricot",
+    "description": "Comptoir Rhodanien",
+    "price": 10.5,
+    "category": "Les Nectars et Jus de Fruits",
+    "categoryId": "jus-nectars",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Comptoir Rhodanien"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-nectar-de-fraise-25-cl",
+    "name": "Nectar de fraise",
+    "description": "Comptoir Rhodanien",
+    "price": 10.5,
+    "category": "Les Nectars et Jus de Fruits",
+    "categoryId": "jus-nectars",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Comptoir Rhodanien"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-nectar-de-peche-25-cl",
+    "name": "Nectar de pêche",
+    "description": "Comptoir Rhodanien",
+    "price": 10.5,
+    "category": "Les Nectars et Jus de Fruits",
+    "categoryId": "jus-nectars",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Comptoir Rhodanien"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-nectar-de-poire-25-cl",
+    "name": "Nectar de poire",
+    "description": "Comptoir Rhodanien",
+    "price": 10.5,
+    "category": "Les Nectars et Jus de Fruits",
+    "categoryId": "jus-nectars",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Comptoir Rhodanien"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-nectar-de-mangue-25-cl",
+    "name": "Nectar de mangue",
+    "description": "Comptoir Rhodanien",
+    "price": 10.5,
+    "category": "Les Nectars et Jus de Fruits",
+    "categoryId": "jus-nectars",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Comptoir Rhodanien"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-nectar-de-framboise-25-cl",
+    "name": "Nectar de framboise",
+    "description": "Comptoir Rhodanien",
+    "price": 10.5,
+    "category": "Les Nectars et Jus de Fruits",
+    "categoryId": "jus-nectars",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Comptoir Rhodanien"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-evian-50-cl",
+    "name": "Evian",
+    "description": "",
+    "price": 8.5,
+    "category": "Les Eaux",
+    "categoryId": "eaux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "50 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-evian-2-1-l",
+    "name": "Evian",
+    "description": "",
+    "price": 12.0,
+    "category": "Les Eaux",
+    "categoryId": "eaux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "1 L",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-badoit-verte-50-cl",
+    "name": "Badoit verte",
+    "description": "",
+    "price": 8.5,
+    "category": "Les Eaux",
+    "categoryId": "eaux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "50 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-badoit-verte-2-1-l",
+    "name": "Badoit verte",
+    "description": "",
+    "price": 12.0,
+    "category": "Les Eaux",
+    "categoryId": "eaux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "1 L",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-badoit-rouge-33-cl",
+    "name": "Badoit rouge",
+    "description": "",
+    "price": 8.5,
+    "category": "Les Eaux",
+    "categoryId": "eaux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "33 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-saint-geron-75-cl",
+    "name": "Saint-Géron",
+    "description": "",
+    "price": 10.0,
+    "category": "Les Eaux",
+    "categoryId": "eaux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-aperol-spritz-15-cl",
+    "name": "Aperol Spritz",
+    "description": "Aperol, Prosecco, eau gazeuse",
+    "price": 17.0,
+    "category": "Les Cocktails",
+    "categoryId": "cocktails",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Aperol",
+      "Prosecco",
+      "Eau gazeuse"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "15 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-fiorente-spritz-18-cl",
+    "name": "Fiorente Spritz",
+    "description": "Fiorente, Prosecco, eau gazeuse",
+    "price": 17.0,
+    "category": "Les Cocktails",
+    "categoryId": "cocktails",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Fiorente",
+      "Prosecco",
+      "Eau gazeuse"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "18 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-americano-campari-12-cl",
+    "name": "Americano Campari",
+    "description": "Campari, vermouth rouge, eau gazeuse",
+    "price": 17.0,
+    "category": "Les Cocktails",
+    "categoryId": "cocktails",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Campari",
+      "Vermouth rouge",
+      "Eau gazeuse"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "12 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-negroni-9-cl",
+    "name": "Negroni",
+    "description": "Campari, vermouth rouge, gin",
+    "price": 17.0,
+    "category": "Les Cocktails",
+    "categoryId": "cocktails",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Campari",
+      "Vermouth rouge",
+      "Gin"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "9 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-mojito-12-cl",
+    "name": "Mojito",
+    "description": "Rhum Havana Club 3 ans, menthe fraîche, sirop de canne et cassonade, citron vert frais, eau gazeuse",
+    "price": 17.0,
+    "category": "Les Cocktails",
+    "categoryId": "cocktails",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Rhum Havana Club 3 ans",
+      "Menthe fraîche",
+      "Sirop de canne et cassonade",
+      "Citron vert frais",
+      "Eau gazeuse"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "12 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-dry-martini-7-cl",
+    "name": "Dry Martini",
+    "description": "Vermouth dry, gin Tanqueray",
+    "price": 17.0,
+    "category": "Les Cocktails",
+    "categoryId": "cocktails",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Vermouth dry",
+      "Gin Tanqueray"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "7 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-caipi-rinha-ou-roska-6-cl",
+    "name": "Caipi « Rinha » ou « Roska »",
+    "description": "Cachaça ou vodka Ketel One, dés de citron vert frais, sucre de canne",
+    "price": 17.0,
+    "category": "Les Cocktails",
+    "categoryId": "cocktails",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Cachaça ou vodka Ketel One",
+      "Dés de citron vert frais",
+      "Sucre de canne"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "6 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-espresso-martini-7-cl",
+    "name": "Espresso Martini",
+    "description": "Vodka Grey Goose, liqueur Kahlua, espresso, sirop vanille",
+    "price": 17.0,
+    "category": "Les Cocktails",
+    "categoryId": "cocktails",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Vodka Grey Goose",
+      "Liqueur Kahlua",
+      "Espresso",
+      "Sirop vanille"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "7 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-margarita-8-cl",
+    "name": "Margarita",
+    "description": "Tequila Silver Patron, Cointreau, jus de citron vert",
+    "price": 17.0,
+    "category": "Les Cocktails",
+    "categoryId": "cocktails",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Tequila Silver Patron",
+      "Cointreau",
+      "Jus de citron vert"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "8 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-moscow-mule-15-cl",
+    "name": "Moscow Mule",
+    "description": "Vodka Grey Goose, ginger beer, jus de citron vert",
+    "price": 17.0,
+    "category": "Les Cocktails",
+    "categoryId": "cocktails",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Vodka Grey Goose",
+      "Ginger beer",
+      "Jus de citron vert"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "15 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-french-75-12-cl",
+    "name": "French 75",
+    "description": "Gin Bombay Sapphire, jus de citron jaune, Champagne, sucre de canne",
+    "price": 18.0,
+    "category": "Les Cocktails",
+    "categoryId": "cocktails",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Gin Bombay Sapphire",
+      "Jus de citron jaune",
+      "Champagne",
+      "Sucre de canne"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "12 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-spritz-sans-alcool-18-cl",
+    "name": "Spritz sans alcool",
+    "description": "Orange spritz bitter, Martini Vibrante, eau gazeuse, boisson effervescente aromatisée sans alcool, kumquat",
+    "price": 16.0,
+    "category": "Les Mocktails",
+    "categoryId": "mocktails",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Orange spritz bitter",
+      "Martini Vibrante",
+      "Eau gazeuse",
+      "Boisson effervescente aromatisée sans alcool",
+      "Kumquat"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "18 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-claire-d-or-16-cl",
+    "name": "Claire d'Or",
+    "description": "Jus de pomme, poire, citron, sirop vanille",
+    "price": 16.0,
+    "category": "Les Mocktails",
+    "categoryId": "mocktails",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Jus de pomme",
+      "Poire",
+      "Citron",
+      "Sirop vanille"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "16 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-la-brume-rose-19-cl",
+    "name": "La Brume Rose",
+    "description": "Thé blanc à la rose, nectars de fraise et framboise, jus de citron, sirop violette, sirop vanille, basilic",
+    "price": 16.0,
+    "category": "Les Mocktails",
+    "categoryId": "mocktails",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Thé blanc à la rose",
+      "Nectars de fraise et framboise",
+      "Jus de citron",
+      "Sirop violette",
+      "Sirop vanille",
+      "Basilic"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "19 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-old-simple-9-cl",
+    "name": "Old Simple",
+    "description": "Ananas frais, sucre de canne, Martini Vibrante, spiritueux sans alcool, sirop de cannelle, zeste d'orange",
+    "price": 16.0,
+    "category": "Les Mocktails",
+    "categoryId": "mocktails",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Ananas frais",
+      "Sucre de canne",
+      "Martini Vibrante",
+      "Spiritueux sans alcool",
+      "Sirop de cannelle",
+      "Zeste d'orange"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "9 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-tanqueray-ten",
+    "name": "Tanqueray Ten",
+    "description": "Gin anglais crémeux, sec, belle longueur en bouche",
+    "price": 17.5,
+    "category": "Gin & Tonic",
+    "categoryId": "gin-tonic",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Gin anglais crémeux",
+      "Sec",
+      "Belle longueur en bouche"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-citadelle",
+    "name": "Citadelle",
+    "description": "Gin français épicé, richesse florale caractéristique",
+    "price": 17.5,
+    "category": "Gin & Tonic",
+    "categoryId": "gin-tonic",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Gin français épicé",
+      "Richesse florale caractéristique"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 1,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-hendrick-s",
+    "name": "Hendrick's",
+    "description": "Gin écossais aromatique, pétales de rose et fraîcheur de concombre",
+    "price": 17.5,
+    "category": "Gin & Tonic",
+    "categoryId": "gin-tonic",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Gin écossais aromatique",
+      "Pétales de rose et fraîcheur de concombre"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-christian-drouin",
+    "name": "Christian Drouin",
+    "description": "Gin français, mélange surprenant de genièvre et de pomme",
+    "price": 17.5,
+    "category": "Gin & Tonic",
+    "categoryId": "gin-tonic",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Gin français",
+      "Mélange surprenant de genièvre et de pomme"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-gin-xii",
+    "name": "Gin XII",
+    "description": "Gin français, mélange de 12 plantes des collines de Haute-Provence",
+    "price": 17.5,
+    "category": "Gin & Tonic",
+    "categoryId": "gin-tonic",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Gin français",
+      "Mélange de 12 plantes des collines de Haute-Provence"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-johnnie-walker-red-label-4-cl",
+    "name": "Johnnie Walker Red Label",
+    "description": "Intense et fruité",
+    "price": 14.0,
+    "category": "Les Spiritueux — Whisky blended",
+    "categoryId": "spiritueux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Intense et fruité"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "4 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-johnnie-walker-black-label-4-cl",
+    "name": "Johnnie Walker Black Label",
+    "description": "Doux, force de la tourbe, finale fumée",
+    "price": 17.0,
+    "category": "Les Spiritueux — Whisky blended",
+    "categoryId": "spiritueux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Doux",
+      "Force de la tourbe",
+      "Finale fumée"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "4 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-johnnie-walker-blue-label-4-cl",
+    "name": "Johnnie Walker Blue Label",
+    "description": "Intensité, complexité, fruits secs et chocolat amer",
+    "price": 24.0,
+    "category": "Les Spiritueux — Whisky blended",
+    "categoryId": "spiritueux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Intensité",
+      "Complexité",
+      "Fruits secs et chocolat amer"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "4 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-glenmorangie-10-ans-4-cl",
+    "name": "Glenmorangie 10 ans",
+    "description": "Highlands, élégance, finesse, fruits savoureux",
+    "price": 18.0,
+    "category": "Les Spiritueux — Single malt",
+    "categoryId": "spiritueux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Highlands",
+      "Élégance",
+      "Finesse",
+      "Fruits savoureux"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "4 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-knockando-12-ans-4-cl",
+    "name": "Knockando 12 ans",
+    "description": "Speyside, fruité et délicat",
+    "price": 18.0,
+    "category": "Les Spiritueux — Single malt",
+    "categoryId": "spiritueux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Speyside",
+      "Fruité et délicat"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "4 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-nikka-from-the-barrel-4-cl",
+    "name": "Nikka From The Barrel",
+    "description": "Notes marines sur fond boisé vanillé",
+    "price": 21.0,
+    "category": "Les Spiritueux — Whisky japonais",
+    "categoryId": "spiritueux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Notes marines sur fond boisé vanillé"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "4 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-nikka-coffey-grain-4-cl",
+    "name": "Nikka Coffey Grain",
+    "description": "Doux et frais, finale fruitée",
+    "price": 21.0,
+    "category": "Les Spiritueux — Whisky japonais",
+    "categoryId": "spiritueux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Doux et frais",
+      "Finale fruitée"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "4 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-bulleit-4-cl",
+    "name": "Bulleit",
+    "description": "Kentucky, États-Unis — caractère sec",
+    "price": 16.0,
+    "category": "Les Spiritueux — Bourbon",
+    "categoryId": "spiritueux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Kentucky",
+      "États-Unis",
+      "Caractère sec"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "4 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-diplomatico-4-cl",
+    "name": "Diplomatico",
+    "description": "Venezuela, rhum ambré",
+    "price": 18.0,
+    "category": "Les Spiritueux — Rhum — Ron",
+    "categoryId": "spiritueux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Venezuela",
+      "Rhum ambré"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "4 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-don-papa-4-cl",
+    "name": "Don Papa",
+    "description": "Philippines",
+    "price": 18.0,
+    "category": "Les Spiritueux — Rhum — Ron",
+    "categoryId": "spiritueux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Philippines"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "4 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-ron-appleton-signature-4-cl",
+    "name": "Ron Appleton Signature",
+    "description": "Jamaïque",
+    "price": 18.0,
+    "category": "Les Spiritueux — Rhum — Ron",
+    "categoryId": "spiritueux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Jamaïque"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "4 cl",
+    "isFeatured": true,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-j-bailly-4-cl",
+    "name": "J. Bailly",
+    "description": "Martinique, 12 ans d'âge",
+    "price": 18.0,
+    "category": "Les Spiritueux — Rhum — Ron",
+    "categoryId": "spiritueux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Martinique",
+      "12 ans d'âge"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "4 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-grey-goose-4-cl",
+    "name": "Grey Goose",
+    "description": "France, douce et florale",
+    "price": 17.0,
+    "category": "Les Spiritueux — Vodka",
+    "categoryId": "spiritueux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "France",
+      "Douce et florale"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "4 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-grey-goose-poire-4-cl",
+    "name": "Grey Goose Poire",
+    "description": "France, fruité et floral",
+    "price": 17.0,
+    "category": "Les Spiritueux — Vodka",
+    "categoryId": "spiritueux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "France",
+      "Fruité et floral"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "4 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-silver-patron-4-cl",
+    "name": "Silver Patron",
+    "description": "100 % agave bleu, Mexique, authentique",
+    "price": 14.0,
+    "category": "Les Spiritueux — Tequila",
+    "categoryId": "spiritueux",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "100 % agave bleu",
+      "Mexique",
+      "Authentique"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "4 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-desperados-33-cl",
+    "name": "Desperados",
+    "description": "",
+    "price": 12.0,
+    "category": "Les Bières — Bouteille",
+    "categoryId": "bieres",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "33 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-heineken-0-0-33-cl",
+    "name": "Heineken 0.0",
+    "description": "Bière sans alcool",
+    "price": 11.0,
+    "category": "Les Bières — Bouteille",
+    "categoryId": "bieres",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Bière sans alcool"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "33 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-gallia-champs-libre-33-cl",
+    "name": "Gallia Champs Libre",
+    "description": "",
+    "price": 12.0,
+    "category": "Les Bières — Bouteille",
+    "categoryId": "bieres",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "33 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-mort-subite-33-cl",
+    "name": "Mort Subite",
+    "description": "",
+    "price": 12.0,
+    "category": "Les Bières — Bouteille",
+    "categoryId": "bieres",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "33 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-heineken-33-cl",
+    "name": "Heineken",
+    "description": "",
+    "price": 9.0,
+    "category": "Les Bières — Pression",
+    "categoryId": "bieres",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "33 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-heineken-2-50-cl",
+    "name": "Heineken",
+    "description": "",
+    "price": 13.0,
+    "category": "Les Bières — Pression",
+    "categoryId": "bieres",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "50 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-affligem-33-cl",
+    "name": "Affligem",
+    "description": "",
+    "price": 9.5,
+    "category": "Les Bières — Pression",
+    "categoryId": "bieres",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "33 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-affligem-2-50-cl",
+    "name": "Affligem",
+    "description": "",
+    "price": 14.0,
+    "category": "Les Bières — Pression",
+    "categoryId": "bieres",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "50 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-panache-ou-monaco-33-cl",
+    "name": "Panaché ou Monaco",
+    "description": "",
+    "price": 9.0,
+    "category": "Les Bières — Pression",
+    "categoryId": "bieres",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "33 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-panache-ou-monaco-2-50-cl",
+    "name": "Panaché ou Monaco",
+    "description": "",
+    "price": 13.0,
+    "category": "Les Bières — Pression",
+    "categoryId": "bieres",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "50 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-train-bleu-9-cl",
+    "name": "Train Bleu",
+    "description": "Vodka Grey Goose, curaçao bleu, jus d'ananas, citron vert",
+    "price": 17.0,
+    "category": "La Sélection du Train Bleu",
+    "categoryId": "selection-train-bleu",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Vodka Grey Goose",
+      "Curaçao bleu",
+      "Jus d'ananas",
+      "Citron vert"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "9 cl",
+    "isFeatured": true,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-rouge-pourpre-10-cl",
+    "name": "Rouge Pourpre",
+    "description": "Gin Bombay Bramble, eau-de-vie de poivre, Fiorente, crème de mûre, angostura bitter",
+    "price": 17.0,
+    "category": "La Sélection du Train Bleu",
+    "categoryId": "selection-train-bleu",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Gin Bombay Bramble",
+      "Eau-de-vie de poivre",
+      "Fiorente",
+      "Crème de mûre",
+      "Angostura bitter"
+    ],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 1,
+    "availability": "available",
+    "portion": "10 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-perle-d-agave-14-cl",
+    "name": "Perle d'Agave",
+    "description": "Tequila Patron Añejo, Fiorente, Martini blanc, pincée de sel, huile d'olive",
+    "price": 17.0,
+    "category": "La Sélection du Train Bleu",
+    "categoryId": "selection-train-bleu",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Tequila Patron Añejo",
+      "Fiorente",
+      "Martini blanc",
+      "Pincée de sel",
+      "Huile d'olive"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "14 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-pear-of-bourbon-11-cl",
+    "name": "Pear of Bourbon",
+    "description": "Bourbon Bulleit, nectar de poire, Amaretto, jus de citron vert",
+    "price": 17.0,
+    "category": "La Sélection du Train Bleu",
+    "categoryId": "selection-train-bleu",
+    "menuGroup": "Sur le Pouce & Bar",
+    "ingredients": [
+      "Bourbon Bulleit",
+      "Nectar de poire",
+      "Amaretto",
+      "Jus de citron vert"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "11 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-duo-de-mini-viennoiseries",
+    "name": "Duo de mini viennoiseries",
+    "description": "Croissant ou pain au chocolat",
+    "price": 6.0,
+    "category": "Viennoiseries & Pains d'Exception",
+    "categoryId": "viennoiseries",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Croissant ou pain au chocolat"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-selection-de-pains-beurre-d-isigny-et-confiture-ou-miel",
+    "name": "Sélection de pains, beurre d'Isigny et confiture ou miel",
+    "description": "Baguette tradition, boule céréales, carré ancien",
+    "price": 7.5,
+    "category": "Viennoiseries & Pains d'Exception",
+    "categoryId": "viennoiseries",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Baguette tradition",
+      "Boule céréales",
+      "Carré ancien"
+    ],
+    "allergens": [
+      "gluten",
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-crepes-au-sucre-ou-beurre-sale",
+    "name": "Crêpes au sucre ou beurre salé",
+    "description": "",
+    "price": 8.5,
+    "category": "Viennoiseries & Pains d'Exception",
+    "categoryId": "viennoiseries",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [
+      "gluten",
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-monumental-croissant",
+    "name": "Monumental croissant",
+    "description": "Assortiment de pâtes à tartiner",
+    "price": 24.0,
+    "category": "Nos Créations à Partager",
+    "categoryId": "a-partager",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Assortiment de pâtes à tartiner"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-fastueuse-torsade-chocolat",
+    "name": "Fastueuse torsade chocolat",
+    "description": "",
+    "price": 22.0,
+    "category": "Nos Créations à Partager",
+    "categoryId": "a-partager",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-badine-de-fruits-rouges",
+    "name": "Badine de fruits rouges",
+    "description": "",
+    "price": 20.0,
+    "category": "Nos Créations à Partager",
+    "categoryId": "a-partager",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-fromage-blanc-et-compotee-de-fruits-de-saison",
+    "name": "Fromage blanc et compotée de fruits de saison",
+    "description": "",
+    "price": 12.0,
+    "category": "Fraîcheur & Douceurs Matinales",
+    "categoryId": "douceurs-matinales",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-yaourt-de-la-ferme-des-peupliers",
+    "name": "Yaourt de la « Ferme des Peupliers »",
+    "description": "Nature ou aux fruits",
+    "price": 4.5,
+    "category": "Fraîcheur & Douceurs Matinales",
+    "categoryId": "douceurs-matinales",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Nature ou aux fruits"
+    ],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-skyr-nature",
+    "name": "Skyr nature",
+    "description": "",
+    "price": 5.5,
+    "category": "Fraîcheur & Douceurs Matinales",
+    "categoryId": "douceurs-matinales",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-granola-au-lait-de-soja-ou-au-lait-d-avoine",
+    "name": "Granola au lait de soja ou au lait d'avoine",
+    "description": "Graines de tournesol, noix de cajou, amandes et noisettes",
+    "price": 7.0,
+    "category": "Fraîcheur & Douceurs Matinales",
+    "categoryId": "douceurs-matinales",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Graines de tournesol",
+      "Noix de cajou",
+      "Amandes et noisettes"
+    ],
+    "allergens": [
+      "fruits à coque",
+      "gluten",
+      "lait",
+      "soja"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-porridge-nature-au-lait-vegetal",
+    "name": "Porridge nature au lait végétal",
+    "description": "Soja ou avoine",
+    "price": 8.0,
+    "category": "Fraîcheur & Douceurs Matinales",
+    "categoryId": "douceurs-matinales",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Soja ou avoine"
+    ],
+    "allergens": [
+      "lait",
+      "soja"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-salade-de-fruits-de-saison",
+    "name": "Salade de fruits de saison",
+    "description": "",
+    "price": 10.0,
+    "category": "Le Jardin du Matin",
+    "categoryId": "jardin-du-matin",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-toastines-avocado",
+    "name": "Toastines avocado",
+    "description": "Vinaigrette calamansi",
+    "price": 10.0,
+    "category": "Le Jardin du Matin",
+    "categoryId": "jardin-du-matin",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Vinaigrette calamansi"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-carrot-toast",
+    "name": "Carrot toast",
+    "description": "Crème de balsamique",
+    "price": 6.0,
+    "category": "Le Jardin du Matin",
+    "categoryId": "jardin-du-matin",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Crème de balsamique"
+    ],
+    "allergens": [
+      "gluten",
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-pan-tomato",
+    "name": "Pan tomato",
+    "description": "Huile d'olive",
+    "price": 8.0,
+    "category": "Le Jardin du Matin",
+    "categoryId": "jardin-du-matin",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Huile d'olive"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-salade-feta",
+    "name": "Salade féta",
+    "description": "Tomates anciennes et concombre, vinaigrette menthe",
+    "price": 12.0,
+    "category": "Le Jardin du Matin",
+    "categoryId": "jardin-du-matin",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Tomates anciennes et concombre",
+      "Vinaigrette menthe"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-omelette-nature",
+    "name": "Omelette nature",
+    "description": "",
+    "price": 13.0,
+    "category": "Les Œufs Bio de Tradition",
+    "categoryId": "oeufs-bio",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [
+      "œufs"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-omelette-son-accompagnement-au-choix",
+    "name": "Omelette & son accompagnement au choix",
+    "description": "Poitrine fumée ou jambon « Prince de Paris »",
+    "price": 15.0,
+    "category": "Les Œufs Bio de Tradition",
+    "categoryId": "oeufs-bio",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Poitrine fumée ou jambon « Prince de Paris »"
+    ],
+    "allergens": [
+      "œufs"
+    ],
+    "dietaryTags": [],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-omelette-son-accompagnement-saumon-fume",
+    "name": "Omelette & son accompagnement — saumon fumé",
+    "description": "",
+    "price": 17.0,
+    "category": "Les Œufs Bio de Tradition",
+    "categoryId": "oeufs-bio",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [
+      "poissons",
+      "œufs"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-omelette-garnie-aux-fines-herbes",
+    "name": "Omelette garnie aux fines herbes",
+    "description": "",
+    "price": 13.0,
+    "category": "Les Œufs Bio de Tradition",
+    "categoryId": "oeufs-bio",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [
+      "œufs"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-omelette-garnie-champignons-ou-emmental",
+    "name": "Omelette garnie — champignons ou emmental",
+    "description": "",
+    "price": 15.0,
+    "category": "Les Œufs Bio de Tradition",
+    "categoryId": "oeufs-bio",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [
+      "lait",
+      "œufs"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-ufs-parfaits-benedictine",
+    "name": "Œufs parfaits bénédictine",
+    "description": "Saumon fumé ou poitrine fumée",
+    "price": 18.0,
+    "category": "Les Œufs Bio de Tradition",
+    "categoryId": "oeufs-bio",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Saumon fumé ou poitrine fumée"
+    ],
+    "allergens": [
+      "poissons",
+      "œufs"
+    ],
+    "dietaryTags": [],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-ufs-mollets-croustillants",
+    "name": "Œufs mollets croustillants",
+    "description": "Fines herbes et épinards, façon florentine",
+    "price": 17.0,
+    "category": "Les Œufs Bio de Tradition",
+    "categoryId": "oeufs-bio",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Fines herbes et épinards",
+      "Façon florentine"
+    ],
+    "allergens": [
+      "œufs"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "tb-saumon-fume-de-maison-nordique-100-g",
+    "name": "Saumon fumé de Maison Nordique",
+    "description": "Blinis et crème à l'aneth",
+    "price": 15.0,
+    "category": "Les Assiettes de nos Artisans",
+    "categoryId": "assiettes-artisans",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Blinis et crème à l'aneth"
+    ],
+    "allergens": [
+      "gluten",
+      "lait",
+      "poissons"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "/ 100 g",
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-le-duo-prince-de-paris-fromages-120-g",
+    "name": "Le duo « Prince de Paris & fromages »",
+    "description": "Baguette croustillante et beurre demi-sel",
+    "price": 15.0,
+    "category": "Les Assiettes de nos Artisans",
+    "categoryId": "assiettes-artisans",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Baguette croustillante et beurre demi-sel"
+    ],
+    "allergens": [
+      "gluten",
+      "lait"
+    ],
+    "dietaryTags": [],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "/ 120 g",
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-jambon-blanc-prince-de-paris-100-g",
+    "name": "Jambon blanc « Prince de Paris »",
+    "description": "Baguette croustillante et beurre demi-sel",
+    "price": 12.0,
+    "category": "Les Assiettes de nos Artisans",
+    "categoryId": "assiettes-artisans",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Baguette croustillante et beurre demi-sel"
+    ],
+    "allergens": [
+      "gluten",
+      "lait"
+    ],
+    "dietaryTags": [],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "/ 100 g",
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-assiette-mimolette-emmental-100-g",
+    "name": "Assiette mimolette & emmental",
+    "description": "Baguette croustillante et beurre demi-sel",
+    "price": 10.0,
+    "category": "Les Assiettes de nos Artisans",
+    "categoryId": "assiettes-artisans",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Baguette croustillante et beurre demi-sel"
+    ],
+    "allergens": [
+      "gluten",
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "/ 100 g",
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "tb-espresso-ou-decafeine-2",
+    "name": "Espresso ou décaféiné",
+    "description": "",
+    "price": 7.0,
+    "category": "Boissons Chaudes — Les Cafés",
+    "categoryId": "boissons-chaudes-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-double-cafe-ou-decafeine-2",
+    "name": "Double café ou décaféiné",
+    "description": "",
+    "price": 10.0,
+    "category": "Boissons Chaudes — Les Cafés",
+    "categoryId": "boissons-chaudes-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-cafe-creme-3",
+    "name": "Café crème",
+    "description": "",
+    "price": 9.5,
+    "category": "Boissons Chaudes — Les Cafés",
+    "categoryId": "boissons-chaudes-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-cappuccino-2",
+    "name": "Cappuccino",
+    "description": "",
+    "price": 9.5,
+    "category": "Boissons Chaudes — Les Cafés",
+    "categoryId": "boissons-chaudes-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-caramel-macchiato-3",
+    "name": "Caramel Macchiato",
+    "description": "",
+    "price": 9.5,
+    "category": "Boissons Chaudes — Café — recettes gourmandes",
+    "categoryId": "boissons-chaudes-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-cafe-viennois-2",
+    "name": "Café Viennois",
+    "description": "",
+    "price": 10.0,
+    "category": "Boissons Chaudes — Café — recettes gourmandes",
+    "categoryId": "boissons-chaudes-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-douceur-cafe-mocha-3",
+    "name": "Douceur café « Mocha »",
+    "description": "Espresso et chocolat surmonté de mousse de lait",
+    "price": 11.5,
+    "category": "Boissons Chaudes — Café — recettes gourmandes",
+    "categoryId": "boissons-chaudes-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Espresso et chocolat surmonté de mousse de lait"
+    ],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-signature-gourmand-train-bleu-3",
+    "name": "Signature gourmand Train Bleu",
+    "description": "Poire caramel latte et shot d'espresso",
+    "price": 11.5,
+    "category": "Boissons Chaudes — Café — recettes gourmandes",
+    "categoryId": "boissons-chaudes-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Poire caramel latte et shot d'espresso"
+    ],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": true,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-chocolat-chaud-2",
+    "name": "Chocolat chaud",
+    "description": "",
+    "price": 11.0,
+    "category": "Boissons Chaudes — Chocolat",
+    "categoryId": "boissons-chaudes-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-chocolat-viennois-2",
+    "name": "Chocolat Viennois",
+    "description": "",
+    "price": 11.5,
+    "category": "Boissons Chaudes — Chocolat",
+    "categoryId": "boissons-chaudes-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-matcha-latte-3",
+    "name": "Matcha Latte",
+    "description": "Matcha cérémonial 100 % importé du Japon",
+    "price": 11.5,
+    "category": "Boissons Chaudes — Matcha",
+    "categoryId": "boissons-chaudes-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Matcha cérémonial 100 % importé du Japon"
+    ],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-blue-matcha-latte-3",
+    "name": "Blue Matcha Latte",
+    "description": "Fleur de butterfly pea, baobab, cannelle",
+    "price": 11.5,
+    "category": "Boissons Chaudes — Matcha",
+    "categoryId": "boissons-chaudes-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Fleur de butterfly pea",
+      "Baobab",
+      "Cannelle"
+    ],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-marco-polo-2",
+    "name": "Marco Polo",
+    "description": "Thé noir aux fruits rouges",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés noirs",
+    "categoryId": "thes-infusions-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Thé noir aux fruits rouges"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-earl-grey-imperial-2",
+    "name": "Earl Grey Impérial",
+    "description": "",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés noirs",
+    "categoryId": "thes-infusions-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-darjeeling-himalaya-2",
+    "name": "Darjeeling Himalaya",
+    "description": "",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés noirs",
+    "categoryId": "thes-infusions-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-sultane-2",
+    "name": "Sultane",
+    "description": "Thé de Ceylan",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés noirs",
+    "categoryId": "thes-infusions-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Thé de Ceylan"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-french-breakfast-tea-2",
+    "name": "French Breakfast Tea",
+    "description": "",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés noirs",
+    "categoryId": "thes-infusions-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-fuji-yama-2",
+    "name": "Fuji-Yama",
+    "description": "Thé vert nature du Japon",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés verts",
+    "categoryId": "thes-infusions-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Thé vert nature du Japon"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-casablanca-2",
+    "name": "Casablanca",
+    "description": "Thé vert à la menthe marocaine",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés verts",
+    "categoryId": "thes-infusions-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Thé vert à la menthe marocaine"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-the-sur-le-nil-2",
+    "name": "Thé sur le Nil",
+    "description": "Thé vert aux agrumes",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés verts",
+    "categoryId": "thes-infusions-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Thé vert aux agrumes"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-the-a-l-opera-2",
+    "name": "Thé à l'Opéra",
+    "description": "Thé vert aux fruits rouges vanillés",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés verts",
+    "categoryId": "thes-infusions-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Thé vert aux fruits rouges vanillés"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-jasmin-mandarin-2",
+    "name": "Jasmin Mandarin",
+    "description": "",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés verts",
+    "categoryId": "thes-infusions-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-rouge-bourbon-2",
+    "name": "Rouge Bourbon",
+    "description": "Rooibos rouge, naturellement sans théine, à la vanille",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés verts",
+    "categoryId": "thes-infusions-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Rooibos rouge",
+      "Naturellement sans théine",
+      "À la vanille"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-blanc-rose-2",
+    "name": "Blanc & Rose",
+    "description": "Thé blanc aux boutons de rose",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Thés verts",
+    "categoryId": "thes-infusions-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Thé blanc aux boutons de rose"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-tilla-argentea-2",
+    "name": "Tilla Argentea",
+    "description": "Tilleul",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Infusions",
+    "categoryId": "thes-infusions-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Tilleul"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-verbena-citrodora-2",
+    "name": "Verbena Citrodora",
+    "description": "Verveine citronnée",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Infusions",
+    "categoryId": "thes-infusions-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Verveine citronnée"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-chamomilla-2",
+    "name": "Chamomilla",
+    "description": "Camomille",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Infusions",
+    "categoryId": "thes-infusions-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Camomille"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-thymus-citriodorus-2",
+    "name": "Thymus Citriodorus",
+    "description": "Référence au citron de Menton",
+    "price": 10.5,
+    "category": "Les Thés et Infusions — Infusions",
+    "categoryId": "thes-infusions-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Référence au citron de Menton"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-evian-3-50-cl",
+    "name": "Evian",
+    "description": "",
+    "price": 8.5,
+    "category": "Les Boissons Fraîches",
+    "categoryId": "boissons-fraiches-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "50 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-evian-4-1-l",
+    "name": "Evian",
+    "description": "",
+    "price": 12.0,
+    "category": "Les Boissons Fraîches",
+    "categoryId": "boissons-fraiches-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "1 L",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-badoit-verte-3-50-cl",
+    "name": "Badoit verte",
+    "description": "",
+    "price": 8.5,
+    "category": "Les Boissons Fraîches",
+    "categoryId": "boissons-fraiches-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "50 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-badoit-verte-4-1-l",
+    "name": "Badoit verte",
+    "description": "",
+    "price": 12.0,
+    "category": "Les Boissons Fraîches",
+    "categoryId": "boissons-fraiches-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "1 L",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-badoit-rouge-2-33-cl",
+    "name": "Badoit rouge",
+    "description": "",
+    "price": 8.5,
+    "category": "Les Boissons Fraîches",
+    "categoryId": "boissons-fraiches-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "33 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-saint-geron-2-75-cl",
+    "name": "Saint-Géron",
+    "description": "",
+    "price": 10.0,
+    "category": "Les Boissons Fraîches",
+    "categoryId": "boissons-fraiches-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-schweppes-heritage-tonic-original-ou-ginger-ale-20-25-cl",
+    "name": "Schweppes Héritage Tonic Original ou Ginger Ale",
+    "description": "",
+    "price": 9.5,
+    "category": "Les Boissons Fraîches",
+    "categoryId": "boissons-fraiches-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "20-25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-orangina-ou-schweppes-agrum-2-25-cl",
+    "name": "Orangina, ou Schweppes Agrum'",
+    "description": "",
+    "price": 9.5,
+    "category": "Les Boissons Fraîches",
+    "categoryId": "boissons-fraiches-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-pepsi-ou-pepsi-max-33-cl",
+    "name": "Pepsi, ou Pepsi Max",
+    "description": "",
+    "price": 9.5,
+    "category": "Les Boissons Fraîches",
+    "categoryId": "boissons-fraiches-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "33 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-lorina-limonade-artisanale-2-33-cl",
+    "name": "Lorina, limonade artisanale",
+    "description": "",
+    "price": 9.5,
+    "category": "Les Boissons Fraîches",
+    "categoryId": "boissons-fraiches-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "33 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-san-bitter-2-10-cl",
+    "name": "San Bitter",
+    "description": "",
+    "price": 8.5,
+    "category": "Les Boissons Fraîches",
+    "categoryId": "boissons-fraiches-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "10 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-the-glace-2-20-cl",
+    "name": "Thé glacé",
+    "description": "Pêche, menthe-citron ou framboise",
+    "price": 10.5,
+    "category": "Les Boissons Fraîches",
+    "categoryId": "boissons-fraiches-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Pêche",
+      "Menthe-citron ou framboise"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "20 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-jus-presse-de-citron-2-8-cl",
+    "name": "Jus pressé de citron",
+    "description": "",
+    "price": 10.5,
+    "category": "Jus de Fruits et Nectars",
+    "categoryId": "jus-nectars-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "8 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-jus-presse-d-orange-2-18-cl",
+    "name": "Jus pressé d'orange",
+    "description": "",
+    "price": 10.5,
+    "category": "Jus de Fruits et Nectars",
+    "categoryId": "jus-nectars-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "18 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-jus-presse-de-pamplemousse-2-18-cl",
+    "name": "Jus pressé de pamplemousse",
+    "description": "",
+    "price": 10.5,
+    "category": "Jus de Fruits et Nectars",
+    "categoryId": "jus-nectars-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "18 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-nectar-d-ananas-2-20-cl",
+    "name": "Nectar d'ananas",
+    "description": "",
+    "price": 10.5,
+    "category": "Jus de Fruits et Nectars",
+    "categoryId": "jus-nectars-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "20 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-jus-de-pomme-2-25-cl",
+    "name": "Jus de pomme",
+    "description": "Comptoir Rhodanien",
+    "price": 10.5,
+    "category": "Jus de Fruits et Nectars",
+    "categoryId": "jus-nectars-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Comptoir Rhodanien"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-jus-de-tomate-2-25-cl",
+    "name": "Jus de tomate",
+    "description": "Comptoir Rhodanien",
+    "price": 10.5,
+    "category": "Jus de Fruits et Nectars",
+    "categoryId": "jus-nectars-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Comptoir Rhodanien"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-jus-de-raisin-2-25-cl",
+    "name": "Jus de raisin",
+    "description": "Comptoir Rhodanien",
+    "price": 10.5,
+    "category": "Jus de Fruits et Nectars",
+    "categoryId": "jus-nectars-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Comptoir Rhodanien"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-nectar-d-abricot-2-25-cl",
+    "name": "Nectar d'abricot",
+    "description": "Comptoir Rhodanien",
+    "price": 10.5,
+    "category": "Jus de Fruits et Nectars",
+    "categoryId": "jus-nectars-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Comptoir Rhodanien"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-nectar-de-fraise-2-25-cl",
+    "name": "Nectar de fraise",
+    "description": "Comptoir Rhodanien",
+    "price": 10.5,
+    "category": "Jus de Fruits et Nectars",
+    "categoryId": "jus-nectars-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Comptoir Rhodanien"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-nectar-de-peche-2-25-cl",
+    "name": "Nectar de pêche",
+    "description": "Comptoir Rhodanien",
+    "price": 10.5,
+    "category": "Jus de Fruits et Nectars",
+    "categoryId": "jus-nectars-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Comptoir Rhodanien"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-nectar-de-poire-2-25-cl",
+    "name": "Nectar de poire",
+    "description": "Comptoir Rhodanien",
+    "price": 10.5,
+    "category": "Jus de Fruits et Nectars",
+    "categoryId": "jus-nectars-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Comptoir Rhodanien"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-nectar-de-mangue-2-25-cl",
+    "name": "Nectar de mangue",
+    "description": "Comptoir Rhodanien",
+    "price": 10.5,
+    "category": "Jus de Fruits et Nectars",
+    "categoryId": "jus-nectars-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Comptoir Rhodanien"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-nectar-de-framboise-2-25-cl",
+    "name": "Nectar de framboise",
+    "description": "Comptoir Rhodanien",
+    "price": 10.5,
+    "category": "Jus de Fruits et Nectars",
+    "categoryId": "jus-nectars-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Comptoir Rhodanien"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "25 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-collet-brut-4-17-cl",
+    "name": "Collet Brut",
+    "description": "",
+    "price": 22.0,
+    "category": "Les Champagnes",
+    "categoryId": "champagnes-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "17 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-collet-rose-3-17-cl",
+    "name": "Collet Rosé",
+    "description": "",
+    "price": 25.0,
+    "category": "Les Champagnes",
+    "categoryId": "champagnes-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "17 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-bollinger-brut-cuvee-speciale-3-17-cl",
+    "name": "Bollinger Brut Cuvée Spéciale",
+    "description": "",
+    "price": 28.0,
+    "category": "Les Champagnes",
+    "categoryId": "champagnes-pdj",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": "17 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "tb-le-paris-lyon",
+    "name": "Le Paris-Lyon",
+    "description": "Une boisson chaude au choix — café, chocolat ou thé · Jus d'orange pressé (18 cl) · Duo de mini viennoiseries",
+    "price": 22.0,
+    "category": "Menus & Formules",
+    "categoryId": "menus-formules",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Une boisson chaude au choix",
+      "Café",
+      "Chocolat ou thé",
+      "Jus d'orange pressé (18 cl)",
+      "Duo de mini viennoiseries"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": true,
+    "course": "menu",
+    "origin": null
+  },
+  {
+    "id": "tb-le-paris-vintimille",
+    "name": "Le Paris-Vintimille",
+    "description": "Une boisson chaude au choix — café, chocolat ou thé · Jus d'orange pressé (18 cl) · Fromage blanc, compotée de fruits de saison · Baguette et pain aux céréales toastés, beurre d'Isigny, confiture ou miel",
+    "price": 27.0,
+    "category": "Menus & Formules",
+    "categoryId": "menus-formules",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Une boisson chaude au choix",
+      "Café",
+      "Chocolat ou thé",
+      "Jus d'orange pressé (18 cl)",
+      "Fromage blanc",
+      "Compotée de fruits de saison",
+      "Baguette et pain aux céréales toastés",
+      "Beurre d'Isigny",
+      "Confiture ou miel"
+    ],
+    "allergens": [
+      "gluten",
+      "lait"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": true,
+    "course": "menu",
+    "origin": null
+  },
+  {
+    "id": "tb-formule-le-train-bleu",
+    "name": "Formule « Le Train Bleu »",
+    "description": "Une boisson chaude au choix — café, chocolat ou thé · Jus d'orange pressé (18 cl) · Duo de mini viennoiseries · Baguette et pain aux céréales toastés, beurre d'Isigny, confiture ou miel · Omelette et une garniture au choix — saumon fumé, poitrine fumée, jambon « Prince de Paris » ou champignons · Salade de fruits frais de saison · Yaourt nature ou aux fruits",
+    "price": 38.0,
+    "category": "Menus & Formules",
+    "categoryId": "menus-formules",
+    "menuGroup": "Petit-Déjeuner & Brunch",
+    "ingredients": [
+      "Une boisson chaude au choix",
+      "Café",
+      "Chocolat ou thé",
+      "Jus d'orange pressé (18 cl)",
+      "Duo de mini viennoiseries",
+      "Baguette et pain aux céréales toastés",
+      "Beurre d'Isigny",
+      "Confiture ou miel",
+      "Omelette et une garniture au choix",
+      "Saumon fumé",
+      "Poitrine fumée",
+      "Jambon « Prince de Paris » ou champignons"
+    ],
+    "allergens": [
+      "gluten",
+      "lait",
+      "poissons",
+      "œufs"
+    ],
+    "dietaryTags": [],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": true,
+    "course": "menu",
+    "origin": null
+  }
+]
