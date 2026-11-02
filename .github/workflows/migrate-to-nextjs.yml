@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   migrate:
@@ -50,18 +51,63 @@ jobs:
       - name: Installer les dépendances
         run: npm install --no-audit --no-fund
 
+      - name: Versions (diagnostic)
+        run: >
+          npm ls eslint typescript eslint-config-next typescript-eslint 2>&1 | tee versions.txt || true
+
       - name: TypeScript
-        run: npx tsc --noEmit
+        continue-on-error: true
+        run: npx tsc --noEmit 2>&1 | tee tsc-out.txt || touch failed.flag
 
       - name: ESLint
-        run: npm run lint
+        continue-on-error: true
+        run: npm run lint 2>&1 | tee lint-out.txt || touch failed.flag
 
       - name: Build Next.js
-        run: npm run build
+        continue-on-error: true
+        run: npm run build 2>&1 | tee build-out.txt || touch failed.flag
+
+      - name: Vérifier le statut global
+        run: |
+          if [ -f failed.flag ]; then
+            echo "Au moins une étape a échoué — publication du diagnostic."
+            exit 1
+          fi
 
       - name: Publier sur develop et supprimer la branche temporaire
         run: |
+          rm -f tsc-out.txt lint-out.txt build-out.txt versions.txt failed.flag
           git add -A
           git commit -m "Migration vers Next.js 16 — App Router, Tailwind v4, optimisé Vercel"
           git push origin HEAD:develop
           git push origin --delete migration-nextjs
+
+      - name: Diagnostic (échec)
+        if: failure()
+        run: |
+          {
+            echo "Échec de la migration Next.js sur migration-nextjs — sorties brutes des étapes."
+            echo
+            echo "### Versions"
+            echo '~~~'
+            cat versions.txt 2>/dev/null || true
+            echo '~~~'
+            echo "### TypeScript"
+            echo '~~~'
+            cat tsc-out.txt 2>/dev/null || true
+            echo '~~~'
+            echo "### ESLint"
+            echo '~~~'
+            cat lint-out.txt 2>/dev/null || true
+            echo '~~~'
+            echo "### Build (fin)"
+            echo '~~~'
+            tail -n 120 build-out.txt 2>/dev/null || true
+            echo '~~~'
+          } > issue-body.md
+          gh issue create \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "Migration Next.js : diagnostic d'échec" \
+            --body-file issue-body.md
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
