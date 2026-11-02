@@ -9,7 +9,7 @@ export default function NotFound() {
       </p>
       <h1 className="font-display text-3xl">Restaurant introuvable</h1>
       <p className="text-sm text-ink-muted">
-        Ce menu n'est pas dans le catalogue. Maisons disponibles :{" "}
+        Ce menu n’est pas dans le catalogue. Maisons disponibles :{" "}
         {restaurantSlugs.join(", ")}.
       </p>
       <Link

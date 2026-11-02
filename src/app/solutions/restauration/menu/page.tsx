@@ -17,7 +17,7 @@ export default function MenuIndex() {
       </p>
       <h1 className="mt-2 font-display text-4xl text-ink">Menus intelligents</h1>
       <p className="mt-2 max-w-xl text-sm text-ink-muted">
-        Choisissez une maison, filtrez selon vos contraintes, estimez l'addition.
+        Choisissez une maison, filtrez selon vos contraintes, estimez l’addition.
       </p>
       <ul className="mt-8 grid gap-4 sm:grid-cols-3">
         {restaurants.map((r) => (

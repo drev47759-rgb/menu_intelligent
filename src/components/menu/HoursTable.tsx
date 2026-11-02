@@ -41,7 +41,7 @@ export function HoursTable({ hours }: { hours: OpeningHours[] }) {
         </p>
       </div>
       <table className="w-full text-sm">
-        <caption className="sr-only">Horaires d'ouverture</caption>
+        <caption className="sr-only">Horaires d’ouverture</caption>
         <tbody>
           {[...grouped.entries()].map(([day, slots]) => (
             <tr key={day} className="border-b border-line last:border-0">

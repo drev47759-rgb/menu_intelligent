@@ -7,70 +7,17 @@ on:
     branches: [develop, main]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  issues: write
-
 jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
           cache: npm
       - run: npm ci
-
-      - name: Lint
-        continue-on-error: true
-        run: npm run lint 2>&1 | tee lint.txt || touch failed.flag
-
-      - name: Typecheck
-        continue-on-error: true
-        run: npm run typecheck 2>&1 | tee tsc.txt || touch failed.flag
-
-      - name: Build
-        continue-on-error: true
-        run: npm run build 2>&1 | tee build.txt || touch failed.flag
-
-      - name: Audit production (critique)
-        continue-on-error: true
-        run: npm audit --omit=dev --audit-level=critical 2>&1 | tee audit.txt || touch failed.flag
-
-      - name: Statut global
-        run: |
-          if [ -f failed.flag ]; then
-            echo "Au moins une étape a échoué — publication du diagnostic."
-            exit 1
-          fi
-
-      - name: Diagnostic (échec)
-        if: failure()
-        run: |
-          {
-            echo "Échec du CI — sorties brutes des étapes."
-            echo
-            echo "### Lint"
-            echo '~~~'
-            cat lint.txt 2>/dev/null || true
-            echo '~~~'
-            echo "### Typecheck"
-            echo '~~~'
-            cat tsc.txt 2>/dev/null || true
-            echo '~~~'
-            echo "### Build (fin)"
-            echo '~~~'
-            tail -n 100 build.txt 2>/dev/null || true
-            echo '~~~'
-            echo "### Audit"
-            echo '~~~'
-            cat audit.txt 2>/dev/null || true
-            echo '~~~'
-          } > issue-body.md
-          gh issue create \
-            --repo "$GITHUB_REPOSITORY" \
-            --title "CI : diagnostic d'échec" \
-            --body-file issue-body.md
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run build
+      - run: npm audit --omit=dev --audit-level=critical

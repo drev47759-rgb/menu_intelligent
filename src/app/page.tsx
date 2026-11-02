@@ -11,7 +11,7 @@ import {
 import { restaurants } from "@/data/restaurants";
 
 export const metadata: Metadata = {
-  title: "Menu Intelligent — Décidez avant d'y aller",
+  title: "Menu Intelligent — Décidez avant d’y aller",
   description:
     "Cartes interactives : recherche, régimes, budget et total estimé. Train Bleu, Brasserie Bordelaise, Histoire Ancienne.",
 };
@@ -26,7 +26,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5 sm:px-6">
           <p className="font-display text-2xl">Menu Intelligent</p>
           <p className="hidden text-sm text-ink-muted sm:block">
-            Avant la visite, pas après l'addition
+            Avant la visite, pas après l’addition
           </p>
         </div>
       </header>
@@ -67,7 +67,7 @@ export default function Home() {
       <section id="restaurants" className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <h2 className="font-display text-3xl">Trois maisons</h2>
         <p className="mt-2 max-w-xl text-sm text-ink-muted">
-          Données reprises à l'identique des cartes publiées. Prix en euros,
+          Données reprises à l’identique des cartes publiées. Prix en euros,
           TTC.
         </p>
         <ul className="mt-8 grid gap-6 lg:grid-cols-3">
@@ -104,7 +104,7 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-line py-8 text-center text-xs text-ink-subtle">
-        Menu Intelligent — interface de décision avant visite. L'abus d'alcool
+        Menu Intelligent — interface de décision avant visite. L’abus d’alcool
         est dangereux pour la santé.
       </footer>
     </div>

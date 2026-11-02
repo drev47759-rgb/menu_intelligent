@@ -44,7 +44,7 @@ export function isOpenNow(
     if (h.day !== today || h.open === "Fermé") return false;
     const [oh, om] = h.open.split(":").map(Number);
     const [ch, cm] = h.close.split(":").map(Number);
-    let start = oh * 60 + om;
+    const start = oh * 60 + om;
     let end = ch * 60 + cm;
     if (end === 0) end = 24 * 60;
     return minutes >= start && minutes <= end;
