@@ -33,7 +33,7 @@ export function track(
   if (typeof window === "undefined") return;
   window.dataLayer = window.dataLayer ?? [];
   window.dataLayer.push(entry);
-  if (import.meta.env.DEV) {
+  if (process.env.NODE_ENV === "development") {
     console.info("[analytics]", entry);
   }
 }

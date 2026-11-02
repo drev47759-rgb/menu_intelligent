@@ -1,5 +1,8 @@
+"use client";
+
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Link } from "@tanstack/react-router";
+import Image from "next/image";
+import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { ActionButtons } from "@/components/menu/ActionButtons";
 import { DishCard, DrinkList } from "@/components/menu/DishCard";
@@ -41,6 +44,15 @@ export function RestaurantMenu({ restaurant, dishes }: Props) {
   const [meal, setMeal] = useState<MealSlots>(emptyMeal);
   const [activeDish, setActiveDish] = useState<Dish | null>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
+
+  // « Ouvert maintenant » calculé côté client uniquement : le rendu serveur
+  // ne connaît pas l'heure locale du visiteur (évite les écarts d'hydratation).
+  const [now, setNow] = useState<Date | null>(null);
+  useEffect(() => {
+    setNow(new Date());
+    const id = setInterval(() => setNow(new Date()), 60_000);
+    return () => clearInterval(id);
+  }, []);
 
   const groups = useMemo(() => uniqueGroups(dishes), [dishes]);
   const scope = useMemo(
@@ -144,7 +156,7 @@ export function RestaurantMenu({ restaurant, dishes }: Props) {
       .map((d) => (d as Dish).id),
   );
 
-  const open = isOpenNow(restaurant.hours);
+  const open = now ? isOpenNow(restaurant.hours, now) : false;
   const count = mealCount(meal);
   const total = mealTotal(meal);
 
@@ -157,7 +169,7 @@ export function RestaurantMenu({ restaurant, dishes }: Props) {
       <header className="border-b border-line bg-cream">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-5 sm:px-6">
           <Link
-            to="/"
+            href="/"
             className="inline-flex w-fit min-h-11 items-center gap-1.5 text-sm text-ink-muted hover:text-ink"
           >
             <ArrowLeft className="size-4" aria-hidden />
@@ -205,9 +217,13 @@ export function RestaurantMenu({ restaurant, dishes }: Props) {
       </header>
 
       <figure className="relative overflow-hidden bg-ink">
-        <img
+        <Image
           src={restaurant.image}
           alt={restaurant.imageAlt}
+          width={1600}
+          height={640}
+          priority
+          sizes="100vw"
           className="h-40 w-full object-cover opacity-75 sm:h-52"
         />
       </figure>

@@ -1,85 +1,55 @@
 # Menu Intelligent
 
-MVP d’interface de décision avant visite, pour **Le Train Bleu**, **Brasserie Bordelaise** et **Histoire Ancienne**.
+Interface de décision pour restaurants : cartes interactives avec recherche instantanée, filtres combinables (régime, budget, piquant, disponibilité) et calculateur de repas (entrée + plat + dessert, total estimé).
 
-Les cartes HTML jointes sont la source de vérité : noms, descriptions et prix sont extraits tels quels. Régimes, allergènes, piquant et disponibilité sont inférés de façon conservative (jamais de certification inventée).
+Trois maisons : **Le Train Bleu** (Paris 12e), **Brasserie Bordelaise** (Bordeaux), **Histoire Ancienne** (Calais).
 
-## Route
+## Stack
 
-```
-/solutions/restauration/menu/{nomDuRestaurant}
-```
+- [Next.js 16](https://nextjs.org) — App Router, Turbopack
+- React 19
+- TypeScript 6
+- Tailwind CSS 4 (via `@tailwindcss/postcss`)
+- ESLint 10 (flat config, `eslint-config-next`)
+- Prettier 3
 
-Slugs :
+## Développement
 
-| Slug | Maison |
-| --- | --- |
-| `le-train-bleu` | Le Train Bleu, Gare de Lyon |
-| `brasserie-bordelaise` | Brasserie Bordelaise, Bordeaux |
-| `histoire-ancienne` | Histoire Ancienne, Calais |
+    npm install
+    npm run dev        # http://localhost:3000
 
-La page d’accueil liste les trois maisons et pointe vers cette route.
+Commandes :
 
-## Intégration dans un projet Next.js `lbe`
+- `npm run build` — build de production
+- `npm run start` — serveur de production
+- `npm run lint` — ESLint
+- `npm run typecheck` — vérification TypeScript
+- `npm run format` — Prettier
 
-Ce bac d’essai tourne en TanStack Start (contrainte de la plateforme). Dans `lbe` (Next.js 16 App Router), reprenez les mêmes fichiers ainsi :
+## Structure
 
-```
-app/solutions/restauration/menu/[nomDuRestaurant]/page.tsx
-```
+- `src/app/` — routes App Router : accueil, `/solutions/restauration/menu`, `/solutions/restauration/menu/[nomDuRestaurant]` (SSG), 404
+- `src/components/menu/` — composants UI du menu (client)
+- `src/data/` — restaurants et catalogues de plats (JSON)
+- `src/lib/` — utilitaires (formatage, filtres, JSON-LD, analytics)
+- `src/types/` — types TypeScript du catalogue
 
-1. Copier `src/types/menu.ts`, `src/data/*`, `src/lib/{analytics,cn,format,jsonld,menu-query}.ts`, `src/components/menu/*`.
-2. Dans la page Next, remplacer `createFileRoute` par :
+## Déploiement Vercel
 
-```tsx
-import { notFound } from "next/navigation";
-import { getCatalog } from "@/data/catalogs";
-import { RestaurantMenu } from "@/components/menu/RestaurantMenu";
-import { JsonLd } from "@/components/menu/JsonLd";
+Zéro configuration : importer le dépôt sur [vercel.com](https://vercel.com), le framework est détecté automatiquement.
 
-export function generateStaticParams() {
-  return [
-    { nomDuRestaurant: "le-train-bleu" },
-    { nomDuRestaurant: "brasserie-bordelaise" },
-    { nomDuRestaurant: "histoire-ancienne" },
-  ];
-}
+Variable d'environnement recommandée en production :
 
-export default async function Page({
-  params,
-}: {
-  params: Promise<{ nomDuRestaurant: string }>;
-}) {
-  const { nomDuRestaurant } = await params;
-  const catalog = getCatalog(nomDuRestaurant);
-  if (!catalog) notFound();
-  return (
-    <>
-      <JsonLd {...catalog} />
-      <RestaurantMenu {...catalog} />
-    </>
-  );
-}
-```
+- `NEXT_PUBLIC_SITE_URL` — URL canonique du site (ex. `https://menu-intelligent.vercel.app`), utilisée pour les métadonnées Open Graph.
 
-3. Remplacer `Link` de TanStack par `next/link` (même `href` `/solutions/restauration/menu/${slug}`).
-4. Dépendances déjà prévues dans `lbe` : `schema-dts`, `lucide-react`, `clsx`, `tailwind-merge`.
-5. Régénérer les JSON si les HTML source changent :
+## Sécurité
 
-```
-python3 scripts/extract-menus.py
-```
+- Les correctifs des **RCE critiques Next.js d'octobre 2026** sont inclus (`next ^16.4.3`).
+- Une **release de sécurité Next.js est attendue le 3 novembre 2026** : le range `^` absorbera le patch (`npm update next`).
+- Dependabot actif : npm (groupé) + GitHub Actions, vérification hebdomadaire.
+- CI : `npm audit --omit=dev --audit-level=critical` bloquant à chaque push / PR sur `develop` et `main`.
+- En-têtes de sécurité (HSTS, `X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`) définis dans `next.config.ts`.
 
-## Fonctionnalités
+## Données
 
-- Recherche instantanée (nom, description, ingrédients)
-- Filtres combinables : régime, budget, piquant, disponibilité, catégorie
-- Badges de disponibilité et allergènes UE
-- Calculateur entrée + plat + dessert
-- CTA : Réserver, Commander, Appeler, Itinéraire
-- JSON-LD Schema.org `Restaurant` + `Menu` + `MenuSection` + `MenuItem` + `Offer`
-- Analytics : `page_view`, `search`, `filter_used`, `dish_view`, `click_reserve`, `click_order`, `click_call`, `click_directions` via `window.dataLayer`
-
-## Accessibilité
-
-HTML sémantique, skip-link, `aria-live` sur le compteur, `aria-pressed` sur les puces, dialog natif, contrastes AA, cibles ≥ 44px, `prefers-reduced-motion`.
+Prix et cartes reprises des sites publics des restaurants. L'abus d'alcool est dangereux pour la santé.

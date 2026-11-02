@@ -1,8 +1,20 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import { isOpenNow } from "@/lib/format";
 import type { OpeningHours } from "@/types/menu";
 
 export function HoursTable({ hours }: { hours: OpeningHours[] }) {
-  const open = isOpenNow(hours);
+  // « Ouvert maintenant » calculé côté client uniquement :
+  // le rendu serveur ne connaît pas l'heure locale du visiteur.
+  const [now, setNow] = useState<Date | null>(null);
+  useEffect(() => {
+    setNow(new Date());
+    const id = setInterval(() => setNow(new Date()), 60_000);
+    return () => clearInterval(id);
+  }, []);
+
+  const open = now !== null && isOpenNow(hours, now);
   const grouped = new Map<string, string[]>();
   for (const slot of hours) {
     const label =
@@ -29,7 +41,7 @@ export function HoursTable({ hours }: { hours: OpeningHours[] }) {
         </p>
       </div>
       <table className="w-full text-sm">
-        <caption className="sr-only">Horaires d’ouverture</caption>
+        <caption className="sr-only">Horaires d'ouverture</caption>
         <tbody>
           {[...grouped.entries()].map(([day, slots]) => (
             <tr key={day} className="border-b border-line last:border-0">
