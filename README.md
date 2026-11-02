@@ -44,10 +44,9 @@ Variable d'environnement recommandée en production :
 
 ### URLs
 
-- **Production** : domaine du projet Vercel (dashboard → Deployments → **Visit**) — servie par la branche `main`.
-- **Preview** : `https://menuintelligent-git-develop-drev47759-rgb.vercel.app` — mise à jour à chaque push sur `develop` ; soumise au Deployment Protection.
-- Les URL de déploiement éphémères (`menuintelligent-<id>-drev47759-rgb.vercel.app`) ne correspondent qu'à un build unique : elles peuvent renvoyer un 404 `NOT_FOUND` une fois le build supplanté — utiliser le bouton **Visit** du dashboard ou l'une des URL stables ci-dessus.
-
+- **Production** : le domaine attribué au projet est visible dans le dashboard Vercel → **Settings → Domains** — attention, le suffixe attribué par Vercel peut différer du nom du compte (ex. `menuintelligent-crev47759-rgb.vercel.app` et non `menuintelligent-drev47759-rgb.vercel.app`). Servie par la branche `main`.
+- **Preview** : alias de branche de la forme `menuintelligent-git-develop-<suffixe>.vercel.app` (même suffixe que le domaine de production) — mise à jour à chaque push sur `develop` ; soumise au Deployment Protection.
+- Les URL de déploiement éphémères (`menuintelligent-<id>-<suffixe>.vercel.app`) ne correspondent qu'à un build unique : elles peuvent renvoyer un 404 `NOT_FOUND`. Toujours utiliser le bouton **Visit** du dashboard ou les domaines listés dans Settings → Domains.
 ## Sécurité
 
 - Les correctifs des **RCE critiques Next.js d'octobre 2026** sont inclus (`next ^16.4.3`).
