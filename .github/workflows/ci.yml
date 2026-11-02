@@ -21,23 +21,59 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - name: Lint (diagnostic en cas d'échec)
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Lint
         run: |
           set +e
           npm run lint > lint-output.txt 2>&1
           code=$?
-          if [ "$code" -ne 0 ]; then
+          echo "lint_exit=$code" >> "$GITHUB_ENV"
+          exit 0
+      - name: Typecheck
+        run: |
+          set +e
+          npm run typecheck > typecheck-output.txt 2>&1
+          code=$?
+          echo "typecheck_exit=$code" >> "$GITHUB_ENV"
+          exit 0
+      - name: Build
+        run: |
+          set +e
+          npm run build > build-output.txt 2>&1
+          code=$?
+          echo "build_exit=$code" >> "$GITHUB_ENV"
+          exit 0
+      - name: Audit
+        run: |
+          set +e
+          npm audit --omit=dev --audit-level=critical > audit-output.txt 2>&1
+          code=$?
+          echo "audit_exit=$code" >> "$GITHUB_ENV"
+          exit 0
+      - name: Résultat
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set +e
+          failed=0
+          : > ci-report.md
+          for step in lint typecheck build audit; do
+            code_var="${step}_exit"
+            code="${!code_var}"
             {
-              echo "## Diagnostic lint (exit $code)"
-              echo '\`\`\`'
-              cat lint-output.txt
-              echo '\`\`\`'
-            } > /tmp/lint-issue.md
-            gh issue create --repo "$GITHUB_REPOSITORY" --title "Diagnostic lint — échec" --body-file /tmp/lint-issue.md || true
+              echo "## ${step} : exit ${code}"
+              echo
+            } >> ci-report.md
+            if [ "$code" != "0" ]; then
+              failed=1
+              {
+                echo '```'
+                tail -n 120 "${step}-output.txt"
+                echo '```'
+                echo
+              } >> ci-report.md
+            fi
+          done
+          if [ "$failed" = "1" ]; then
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "Rapport CI — échec" --body-file ci-report.md || true
+            exit 1
           fi
-          exit "$code"
-      - run: npm run typecheck
-      - run: npm run build
-      - run: npm audit --omit=dev --audit-level=critical

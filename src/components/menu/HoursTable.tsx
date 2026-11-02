@@ -9,9 +9,15 @@ export function HoursTable({ hours }: { hours: OpeningHours[] }) {
   // le rendu serveur ne connaît pas l'heure locale du visiteur.
   const [now, setNow] = useState<Date | null>(null);
   useEffect(() => {
-    setNow(new Date());
-    const id = setInterval(() => setNow(new Date()), 60_000);
-    return () => clearInterval(id);
+    const tick = () => setNow(new Date());
+    // Premier « tic » différé : jamais de setState synchrone dans le corps
+    // de l'effet (règle react-hooks/set-state-in-effect).
+    const first = setTimeout(tick, 0);
+    const id = setInterval(tick, 60_000);
+    return () => {
+      clearTimeout(first);
+      clearInterval(id);
+    };
   }, []);
 
   const open = now !== null && isOpenNow(hours, now);

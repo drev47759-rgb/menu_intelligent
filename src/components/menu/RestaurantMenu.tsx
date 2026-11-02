@@ -49,9 +49,15 @@ export function RestaurantMenu({ restaurant, dishes }: Props) {
   // ne connaît pas l'heure locale du visiteur (évite les écarts d'hydratation).
   const [now, setNow] = useState<Date | null>(null);
   useEffect(() => {
-    setNow(new Date());
-    const id = setInterval(() => setNow(new Date()), 60_000);
-    return () => clearInterval(id);
+    const tick = () => setNow(new Date());
+    // Premier « tic » différé : jamais de setState synchrone dans le corps
+    // de l'effet (règle react-hooks/set-state-in-effect).
+    const first = setTimeout(tick, 0);
+    const id = setInterval(tick, 60_000);
+    return () => {
+      clearTimeout(first);
+      clearInterval(id);
+    };
   }, []);
 
   const groups = useMemo(() => uniqueGroups(dishes), [dishes]);
@@ -66,13 +72,17 @@ export function RestaurantMenu({ restaurant, dishes }: Props) {
   const maxBound = Math.max(10, Math.ceil(max));
   const priceStep = maxBound > 200 ? 5 : 1;
 
-  useEffect(() => {
+  // Ajustement pendant le rendu (motif documenté React) : si le plafond de
+  // prix change (changement de carte), un maxPrice obsolète est réinitialisé.
+  const [prevMaxBound, setPrevMaxBound] = useState(maxBound);
+  if (prevMaxBound !== maxBound) {
+    setPrevMaxBound(maxBound);
     setFilters((current) =>
       current.maxPrice != null && current.maxPrice > maxBound
         ? { ...current, maxPrice: null }
         : current,
     );
-  }, [maxBound]);
+  }
 
   const categories = useMemo(
     () => uniqueCategories(dishes, filters.menuGroup),
