@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/solutions/restauration/menu/le-train-bleu",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Menu Intelligent — Le Train Bleu",
+      "hasCanvas": false,
+      "bodyTextLen": 6904,
+      "bodyTextHash": "e79d899124356fa68af1f06c6d14dcc10b181e4b0dee0e184311cdc6a9bbc83e",
+      "bodyTextPrefix": "Aller au menu Tous les restaurants BRASSERIE GASTRONOMIQUE · PAR",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/menu-train-bleu.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Menu Intelligent — Le Train Bleu",
+      "hasCanvas": false,
+      "bodyTextLen": 6958,
+      "bodyTextHash": "8f79426bbc6b550c9566351b9ed1264862b99c8a8f9f1897581bba6c88d6201d",
+      "bodyTextPrefix": "Aller au menu Tous les restaurants BRASSERIE GASTRONOMIQUE · PAR",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/menu-train-bleu-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/menu-train-bleu.json"
+}

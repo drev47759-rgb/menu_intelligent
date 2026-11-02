@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Menu Intelligent — Décidez avant d’y aller",
+      "hasCanvas": false,
+      "bodyTextLen": 863,
+      "bodyTextHash": "def27abdac473669d642c11a771d0c759e8ba3aab6d306a51a464b7dd63e3766",
+      "bodyTextPrefix": "Aller aux restaurants Menu Intelligent Avant la visite, pas aprè",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Menu Intelligent — Décidez avant d’y aller",
+      "hasCanvas": false,
+      "bodyTextLen": 825,
+      "bodyTextHash": "984b3da658c810740e8fa5078e492bba73f15dc55f6da3f62d7ccab32febd006",
+      "bodyTextPrefix": "Aller aux restaurants Menu Intelligent RESTAURATION La carte, co",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

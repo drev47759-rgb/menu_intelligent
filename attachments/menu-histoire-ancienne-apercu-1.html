@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carte &amp; Menus — Histoire Ancienne | Bistrot Bib Gourmand à Calais</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --dark:#1A1611; --dark2:#151109; --dark3:#100D08;
+  --cream:#FFFDF8; --paper:#F3EDDF;
+  --ink:#211C12; --ink-soft:#6D6350;
+  --onDark:#F4EEDF; --onDarkSoft:#C7BCA0; --onDarkFaint:#8D8268;
+  --accent:#8C6A2A; --accent2:#C9A23F;
+  --line:#E5DCC3; --lineDark:rgba(255,255,255,.14);
+  --script:'Alex Brush',cursive; --sans:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --radius:3px; --maxw:1180px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.skip-link{position:absolute;left:-999px;top:auto}
+.skip-link:focus{left:12px;top:12px;background:#fff;padding:8px 14px;z-index:999;border-radius:4px}
+
+/* ---------- header / masthead ---------- */
+header.masthead{background:var(--cream);padding:38px 0 30px;text-align:center;border-bottom:1px solid var(--line)}
+header.masthead .eyebrow{font-family:var(--sans);font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:.72rem;color:var(--accent);margin:0 0 6px}
+header.masthead .brand{font-family:var(--sans);font-weight:800;letter-spacing:.03em;font-size:clamp(1.6rem,6vw,2.3rem);margin:0 0 4px;color:var(--ink)}
+header.masthead .tagline{font-family:var(--sans);font-style:italic;font-weight:400;color:var(--ink-soft);font-size:.98rem;margin:0 0 18px}
+.motif-row{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px auto 10px;max-width:560px}
+.motif-row svg{flex:0 0 auto;width:54px;height:64px;opacity:.82}
+.motif-row .script-title{font-family:var(--script);font-size:clamp(2.1rem,8vw,3rem);color:var(--ink);line-height:1;padding:0 6px;white-space:normal}
+.lede{max-width:560px;margin:0 auto 18px;color:var(--ink-soft);font-size:.96rem;line-height:1.65}
+.practical-line{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;justify-content:center;font-size:.92rem;color:var(--ink-soft);margin-top:6px}
+.practical-line a{text-decoration:none;border-bottom:1px dotted currentColor}
+.phone-big{display:inline-block;margin-top:10px;font-family:var(--sans);font-weight:700;font-size:1.3rem;letter-spacing:.02em;color:var(--ink)}
+.phone-big a{text-decoration:none;color:inherit}
+
+/* ---------- page tabs (sous-menus / autres cartes) ---------- */
+nav.pagetabs{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30;overflow-x:auto;-webkit-overflow-scrolling:touch}
+nav.pagetabs::-webkit-scrollbar{display:none}
+nav.pagetabs .wrap{display:flex;gap:2px;padding:0 14px;justify-content:flex-start}
+nav.pagetabs a{flex:0 0 auto;display:inline-block;padding:14px 16px 12px;font-size:.86rem;font-weight:600;color:var(--ink-soft);text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent;letter-spacing:.01em}
+nav.pagetabs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent)}
+
+/* ---------- category tab bar (jump) ---------- */
+nav.jump{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;overflow-x:auto;-webkit-overflow-scrolling:touch}
+nav.jump.stacked{top:47px}
+nav.jump::-webkit-scrollbar{display:none}
+nav.jump ul{list-style:none;display:flex;gap:4px;margin:0;padding:9px 14px;min-width:max-content}
+nav.jump a{display:inline-block;padding:8px 14px;border-radius:20px;font-size:.82rem;font-weight:600;color:var(--ink-soft);text-decoration:none;white-space:nowrap;background:transparent;border:1px solid var(--line);transition:.15s}
+nav.jump a.is-active,nav.jump a:hover{background:var(--dark);color:var(--onDark);border-color:var(--dark)}
+
+main{display:block}
+p.intro{max-width:720px;margin:26px auto 6px;padding:0 22px;text-align:center;color:var(--ink-soft);font-size:.95rem;line-height:1.7}
+.callout{max-width:720px;margin:14px auto 8px;padding:16px 20px;text-align:center;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);color:var(--ink-soft);font-size:.92rem}
+
+/* ---------- category dark panel ---------- */
+section.category{background:var(--dark);color:var(--onDark);padding:44px 0 40px;border-bottom:1px solid rgba(255,255,255,.06)}
+section.category:nth-of-type(even){background:var(--dark2)}
+.cat-head{margin-bottom:22px}
+.cat-title{font-family:var(--script);font-size:clamp(1.9rem,7vw,2.5rem);color:var(--onDark);display:inline-block;position:relative;padding-bottom:10px;line-height:1}
+.cat-title::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,var(--accent2) 0%,rgba(255,255,255,.18) 70%)}
+.cat-title .en{display:block;font-family:var(--sans);font-style:normal;font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:.68rem;color:var(--onDarkFaint);margin-top:4px}
+.cat-meta{display:block;font-family:var(--sans);font-size:.74rem;color:var(--onDarkFaint);margin-top:8px;letter-spacing:.03em}
+.cat-note,.cat-intro{font-size:.86rem;font-style:italic;color:var(--onDarkSoft);margin:0 0 16px;line-height:1.6;max-width:640px}
+.price-note{font-style:normal;font-weight:600;color:var(--accent2);background:rgba(255,255,255,.05);display:inline-block;padding:5px 12px;border-radius:20px;border:1px solid rgba(255,255,255,.12)}
+.price-note .cents{font-size:.85em}
+.subhead{font-family:var(--sans);font-weight:700;text-transform:uppercase;letter-spacing:.09em;font-size:.76rem;color:var(--accent2);margin:26px 0 10px;padding-top:2px}
+.subhead:first-child{margin-top:0}
+
+ul.rows{list-style:none;margin:0 0 6px;padding:0}
+ul.rows li{padding:10px 0;border-bottom:1px dotted rgba(255,255,255,.14)}
+ul.rows li:last-child{border-bottom:none}
+.line1{display:flex;align-items:flex-end;gap:8px}
+.rname{font-weight:600;font-size:.99rem;color:var(--onDark)}
+.rtag{font-size:.68rem;font-weight:600;color:var(--dark);background:var(--accent2);padding:1px 7px;border-radius:9px;margin-left:2px;letter-spacing:.02em;white-space:nowrap;position:relative;top:-1px}
+.leader{flex:1 1 auto;border-bottom:1px dotted rgba(255,255,255,.32);min-width:14px;margin-bottom:.35em;height:1px}
+.rprice{font-weight:700;font-size:.98rem;white-space:nowrap;color:var(--onDark)}
+.rprice .cents,.price .cents,.sz b .cents,.price-tag .cents{font-size:.72em;font-weight:600;opacity:.82}
+.rdesc{margin:3px 0 0;font-size:.82rem;color:var(--onDarkSoft);line-height:1.55}
+.rnote{margin:3px 0 0;font-size:.78rem;color:var(--onDarkFaint);font-style:italic;line-height:1.5}
+.sizes-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;margin-top:4px}
+.sz{display:flex;align-items:baseline;gap:5px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:3px 10px 3px 12px;line-height:1.3}
+.sz b{font-size:.88rem;font-weight:700;color:var(--onDark);order:2}
+.sz small{font-size:.66rem;color:var(--onDarkFaint);text-transform:uppercase;letter-spacing:.03em;order:1}
+
+article.dish{padding:16px 0;border-bottom:1px dotted rgba(255,255,255,.14)}
+article.dish:last-child{border-bottom:none}
+.row1{display:flex;align-items:flex-end;gap:8px;flex-wrap:wrap}
+.row1 h4{margin:0;font-weight:600;font-size:1.02rem;color:var(--onDark);display:flex;align-items:center;gap:7px;flex-wrap:wrap;flex:0 1 auto}
+.row1 .leader{flex:1 1 40px}
+.row1 .price,.row1 .prices{padding-bottom:.05em}
+.badge{font-size:.64rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--dark);background:var(--accent2);padding:2px 8px;border-radius:9px}
+.ref{font-size:.7rem;color:var(--onDarkFaint);vertical-align:super}
+.price,.prices{font-weight:700;font-size:1.02rem;color:var(--onDark);white-space:nowrap}
+.desc{margin:6px 0 0;font-size:.86rem;color:var(--onDarkSoft);line-height:1.6;max-width:640px}
+.note{margin:5px 0 0;font-size:.78rem;color:var(--onDarkFaint);font-style:italic}
+
+/* ---------- formule / menu cards ---------- */
+.cards-wrap{background:var(--cream);padding:46px 0}
+.cards-grid{display:grid;grid-template-columns:1fr;gap:22px}
+@media(min-width:720px){.cards-grid{grid-template-columns:repeat(2,1fr)}}
+.menu-card,.simple-card{background:var(--dark);color:var(--onDark);border-radius:var(--radius);padding:30px 26px;position:relative;overflow:hidden}
+.menu-card::before,.simple-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.menu-card h3,.simple-card h3{font-family:var(--script);font-size:1.9rem;margin:2px 0 2px;color:var(--onDark);font-weight:400}
+.menu-card .subtitle{margin:0 0 10px;font-size:.82rem;color:var(--onDarkSoft);font-style:italic}
+.menu-card .price-tag,.simple-card .price-tag{display:inline-block;font-size:1.5rem;font-weight:800;color:var(--accent2);margin:6px 0 16px}
+.menu-card .schedule{font-size:.78rem;color:var(--onDarkFaint);margin:-6px 0 14px}
+.menu-card .course{text-align:center;font-size:.92rem;margin:0;padding:9px 0;color:var(--onDark)}
+.menu-card .diamond{text-align:center;color:var(--accent2);font-size:.7rem;opacity:.8}
+.menu-card .alt{display:block;font-size:.72rem;color:var(--onDarkFaint);font-style:italic;margin:2px 0}
+.menu-card .pairing{list-style:none;margin:14px 0 4px;padding:14px 0 0;border-top:1px solid rgba(255,255,255,.1);text-align:left}
+.menu-card .pairing li{font-size:.84rem;color:var(--onDarkSoft);padding:4px 0 4px 18px;position:relative}
+.menu-card .pairing li::before{content:"";position:absolute;left:2px;top:11px;width:6px;height:6px;border-radius:50%;background:var(--accent2)}
+.choice-groups{margin:14px 0 4px;padding:14px 0 0;border-top:1px solid rgba(255,255,255,.1);text-align:left}
+.choice-group{padding:6px 0}
+.choice-group b{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent2);margin-bottom:3px}
+.choice-group span{font-size:.85rem;color:var(--onDarkSoft);line-height:1.55}
+.menu-card .note,.simple-card .note{margin-top:12px;text-align:left}
+.simple-card ul{list-style:none;margin:0;padding:0}
+.simple-card li{display:flex;align-items:baseline;gap:8px;padding:8px 0;border-bottom:1px dotted rgba(255,255,255,.14);font-size:.92rem}
+.simple-card li:last-child{border-bottom:none}
+.simple-card li .sc-name{flex:1}
+.simple-card li b{font-weight:700;color:var(--accent2)}
+
+/* ---------- producers ---------- */
+section.producers{background:var(--paper);padding:42px 0}
+section.producers h2{font-family:var(--script);font-size:2rem;font-weight:400;text-align:center;margin:0 0 26px;color:var(--ink)}
+.producers-grid{display:grid;grid-template-columns:1fr;gap:18px}
+@media(min-width:640px){.producers-grid{grid-template-columns:repeat(2,1fr)}}
+.producer{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.producer .pname{font-weight:700;margin-bottom:4px;color:var(--ink)}
+.producer .pdesc{margin:0;font-size:.86rem;color:var(--ink-soft);line-height:1.55}
+
+/* ---------- footnotes ---------- */
+.footnotes{max-width:720px;margin:30px auto;padding:0 22px}
+.footnotes p{font-size:.78rem;color:var(--ink-soft);line-height:1.6;margin:4px 0}
+
+/* ---------- footer ---------- */
+footer.site{background:var(--dark3);color:var(--onDarkSoft);padding:40px 0 34px;text-align:center}
+footer.site strong{display:block;font-family:var(--script);font-size:1.8rem;font-weight:400;color:var(--onDark);margin-bottom:10px}
+footer.site p{margin:4px 0;font-size:.86rem}
+footer.site a{color:var(--accent2);text-decoration:none;border-bottom:1px dotted currentColor}
+footer.site .hist{max-width:560px;margin:16px auto 0;font-size:.78rem;font-style:italic;color:var(--onDarkFaint);line-height:1.6}
+
+@media(min-width:820px){
+  .wrap{padding:0 32px}
+  section.category{padding:60px 0 52px}
+}
+
+/* ---------- Group B: header extras (rating, quickbar, cta) ---------- */
+.rating-badge{display:inline-block;margin:6px 0 14px;font-size:.86rem;font-weight:600;color:var(--ink);text-decoration:none;background:var(--paper);border:1px solid var(--line);padding:6px 14px;border-radius:20px}
+.quickbar{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;font-size:.9rem;color:var(--ink-soft);margin-top:4px}
+.quickbar a{text-decoration:none;border-bottom:1px dotted currentColor}
+.cta-btn{display:inline-block;margin-top:16px;background:var(--dark);color:var(--onDark);text-decoration:none;font-weight:600;font-size:.86rem;letter-spacing:.03em;padding:12px 26px;border-radius:26px}
+
+/* ---------- Group B: hero / ardoise ---------- */
+.hero-band{background:var(--paper);padding:34px 0;text-align:center;border-bottom:1px solid var(--line)}
+.hero-band h2{font-family:var(--script);font-weight:400;font-size:clamp(1.7rem,6vw,2.2rem);margin:0 0 10px;color:var(--ink)}
+.hero-band p{max-width:600px;margin:0 auto;color:var(--ink-soft);font-size:.94rem;line-height:1.6}
+.hero-list{list-style:none;max-width:560px;margin:16px auto 0;padding:0;text-align:left;columns:1;font-size:.9rem;color:var(--ink-soft)}
+.hero-list li{padding:4px 0 4px 18px;position:relative}
+.hero-list li::before{content:"—";position:absolute;left:0;color:var(--accent)}
+
+/* ---------- Group B: menu-section (flat, no accordion) ---------- */
+.group-title{font-family:var(--script);font-weight:400;text-align:center;font-size:clamp(1.7rem,6vw,2.2rem);color:var(--ink);margin:0 0 8px;padding-top:8px}
+.group-sub{text-align:center;color:var(--ink-soft);font-size:.92rem;max-width:600px;margin:0 auto 8px;line-height:1.6}
+.section-note,.section-range{font-size:.84rem;font-style:italic;color:var(--onDarkSoft);margin:0 0 14px;max-width:640px}
+.empty-note{font-size:.88rem;color:var(--onDarkSoft);background:rgba(255,255,255,.05);border:1px dashed rgba(255,255,255,.22);border-radius:6px;padding:14px 16px;line-height:1.6}
+.allergen-note,.extras-note{max-width:820px;margin:26px auto;padding:16px 20px;background:var(--paper);border-left:4px solid var(--accent);font-size:.86rem;color:var(--ink-soft);line-height:1.6;border-radius:0 4px 4px 0}
+.extras-note h4{margin:0 0 6px;color:var(--ink);font-size:.9rem}
+.extras-note .exline{display:block;margin:2px 0}
+
+/* ---------- Group B: reviews / faq / infos ---------- */
+.section-block{background:var(--cream);padding:44px 0}
+.section-block.alt{background:var(--paper)}
+.review-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:22px}
+@media(min-width:640px){.review-grid{grid-template-columns:repeat(3,1fr)}}
+.review-card{display:block;background:var(--dark);color:var(--onDark);border-radius:var(--radius);padding:18px 20px;text-decoration:none}
+.review-card .review-name{display:block;font-weight:700;font-size:.92rem;margin-bottom:4px}
+.review-card .review-rating{display:block;color:var(--accent2);font-weight:600;font-size:.88rem;margin-bottom:6px}
+.review-card .review-count{color:var(--onDarkFaint);font-weight:400}
+.review-card .review-note{display:block;font-size:.8rem;color:var(--onDarkSoft)}
+.faq-list{max-width:760px;margin:24px auto 0}
+.faq-item{border-bottom:1px solid var(--line);padding:14px 0}
+.faq-item summary{font-weight:600;cursor:pointer;font-size:.98rem;color:var(--ink)}
+.faq-item p{margin:10px 0 0;color:var(--ink-soft);font-size:.9rem;line-height:1.6}
+table.hours{border-collapse:collapse;margin:22px auto;font-size:.92rem}
+table.hours th,table.hours td{text-align:left;padding:6px 20px 6px 0;border-bottom:1px dotted var(--line);font-weight:400;color:var(--ink-soft)}
+table.hours th{font-weight:600;color:var(--ink)}
+.infos-grid{display:grid;grid-template-columns:1fr;gap:14px;max-width:900px;margin:10px auto 0}
+@media(min-width:640px){.infos-grid{grid-template-columns:repeat(3,1fr)}}
+.info-card{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.info-card h4{margin:0 0 6px;font-size:.92rem;color:var(--ink)}
+.info-card p{margin:0;font-size:.85rem;color:var(--ink-soft);line-height:1.55}
+
+/* ---------- Group C: hero with photo ---------- */
+.hero-photo{position:relative;background:var(--dark3);color:var(--onDark)}
+.hero-photo img{width:100%;height:46vh;min-height:260px;max-height:460px;object-fit:cover;opacity:.55}
+.hero-photo .hero-inner{position:relative;margin-top:-140px;padding:0 22px 34px;text-align:center}
+.hero-photo .hero-badge{display:inline-block;background:var(--accent2);color:var(--dark);font-weight:700;font-size:.76rem;padding:5px 14px;border-radius:20px;margin-bottom:12px}
+.hero-photo .hero-eyebrow{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--onDarkSoft);margin:0 0 6px}
+.hero-photo h1{font-family:var(--script);font-weight:400;font-size:clamp(2.2rem,9vw,3.4rem);margin:0 0 10px;color:var(--onDark)}
+.hero-photo .hero-tagline{max-width:520px;margin:0 auto 16px;font-size:.96rem;color:var(--onDarkSoft);line-height:1.6}
+.hero-photo .hero-cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+.hero-photo .hero-facts{list-style:none;padding:0;margin:0;font-size:.86rem;color:var(--onDarkFaint)}
+.hero-photo .hero-facts li{display:inline;margin:0 8px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:.86rem;padding:12px 24px;border-radius:26px}
+.btn--primary{background:var(--accent2);color:var(--dark)}
+.btn--ghost{border:1px solid rgba(255,255,255,.4);color:var(--onDark)}
+.intro-band{background:var(--paper);padding:34px 0;text-align:center}
+.intro-band p{max-width:640px;margin:0 auto 10px;color:var(--ink-soft);font-size:.94rem;line-height:1.7}
+.intro-award{display:inline-block;margin-top:6px;font-weight:700;color:var(--accent);font-size:.86rem;letter-spacing:.02em}
+
+/* ---------- Group C: dish tags ---------- */
+.dish-tags{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0;padding:0}
+.dish-tags li{font-size:.66rem;font-weight:600;letter-spacing:.03em;color:var(--onDarkFaint);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:2px 9px}
+
+/* ---------- Group C: formula cards with courses & calendar ---------- */
+.course-block{margin:16px 0}
+.course-block .clabel{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--accent2);margin:0 0 8px}
+.course-block ul{list-style:none;margin:0;padding:0}
+.course-block li{font-size:.88rem;color:var(--onDarkSoft);padding:6px 0 6px 16px;position:relative;line-height:1.55;border-bottom:1px dotted rgba(255,255,255,.1)}
+.course-block li:last-child{border-bottom:none}
+.course-block li::before{content:"\2022";position:absolute;left:0;color:var(--accent2)}
+.jeudis-table{width:100%;border-collapse:collapse;margin-top:12px;font-size:.86rem}
+.jeudis-table td{padding:7px 10px 7px 0;border-bottom:1px dotted rgba(255,255,255,.12);vertical-align:top}
+.jeudis-table td:first-child{font-weight:700;color:var(--accent2);white-space:nowrap;width:64px}
+.jeudis-table td:last-child{color:var(--onDarkSoft)}
+
+/* ---------- Group C: special menus (fêtes) ---------- */
+.special-badge{display:inline-block;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--onDarkFaint);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:3px 10px;margin-bottom:10px}
+.special-meta{color:var(--accent2);font-weight:600;font-size:.88rem;margin:0 0 4px}
+.special-kids{margin-top:14px;font-size:.84rem;color:var(--onDarkSoft);font-style:italic}
+.linklist{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;list-style:none;padding:0;margin:0}
+
+/* ---------- Group C: wine regions / glass wines / bar ---------- */
+.wine-regions-grid{display:grid;grid-template-columns:1fr;gap:26px;margin-top:18px}
+@media(min-width:820px){.wine-regions-grid{grid-template-columns:1fr 1fr}}
+.wine-region-block h4{font-family:var(--sans);font-weight:700;font-size:.86rem;text-transform:uppercase;letter-spacing:.07em;color:var(--accent2);margin:0 0 10px;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,.15)}
+.wine-row{padding:9px 0;border-bottom:1px dotted rgba(255,255,255,.13)}
+.wine-row:last-child{border-bottom:none}
+.wine-row .wname{font-weight:600;font-size:.92rem;color:var(--onDark)}
+.wine-row .wnote{font-weight:400;font-style:italic;font-size:.8rem;color:var(--onDarkFaint)}
+.wine-row .wmeta{display:block;font-size:.76rem;color:var(--onDarkFaint);margin:1px 0 4px}
+.wine-row .wprices{display:flex;gap:14px;flex-wrap:wrap}
+.wine-row .wprices span{font-size:.86rem;color:var(--onDarkSoft)}
+.wine-row .wprices b{color:var(--onDark);font-weight:700}
+.vins-maison-box{margin-top:24px;padding:16px 18px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:6px}
+.vins-maison-box strong{display:block;color:var(--accent2);font-size:.9rem;margin-bottom:8px}
+.vins-maison-box ul{list-style:none;margin:0;padding:0;font-size:.86rem;color:var(--onDarkSoft)}
+.vins-maison-box li{padding:2px 0}
+.bar-grid{display:grid;grid-template-columns:1fr;gap:30px;margin-top:10px}
+@media(min-width:720px){.bar-grid{grid-template-columns:1fr 1fr}}
+.bar-item-desc{margin:2px 0 0;font-size:.8rem;color:var(--onDarkFaint);font-style:italic}
+
+/* ---------- Group C: legend / tags ---------- */
+.legend-tags{list-style:none;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:0;margin:16px 0}
+.legend-tags li{font-size:.78rem;font-weight:600;color:var(--ink);background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:4px 12px}
+
+/* ---------- Shared: simple photo band (real, sourced photos) ---------- */
+.photo-band{width:100%;overflow:hidden;background:var(--dark3);line-height:0}
+.photo-band img{width:100%;height:38vh;min-height:220px;max-height:420px;object-fit:cover;display:block}
+.photo-band figcaption{background:var(--dark3);color:var(--onDarkFaint);font-size:.68rem;text-align:right;padding:5px 14px;line-height:1.4}
+.photo-band figcaption a{color:inherit}
+
+/* ---------- Shared: 2-column photo+text category panel (disposition de référence) ---------- */
+section.category.has-photo{padding:0}
+section.category.has-photo .photo-row{display:flex;align-items:stretch;max-width:var(--maxw);margin:0 auto;min-height:340px}
+section.category.has-photo.photo-right .photo-row{flex-direction:row-reverse}
+.cat-photo-col{flex:0 0 36%;position:relative;background:var(--dark3);overflow:hidden}
+.cat-photo-col img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cat-photo-col figcaption{position:absolute;left:0;right:0;bottom:0;padding:5px 8px;font-size:.6rem;line-height:1.3;color:rgba(255,255,255,.85);background:linear-gradient(0deg,rgba(0,0,0,.55),transparent)}
+.cat-text-col{flex:1;min-width:0;padding:34px 20px}
+@media(min-width:600px){.cat-photo-col{flex-basis:40%}.cat-text-col{padding:38px 30px}}
+@media(min-width:820px){.cat-photo-col{flex-basis:38%}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+<header class="masthead" style="padding:18px 0">
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+    <span class="brand" style="font-weight:800;font-size:1.1rem">Histoire Ancienne</span>
+    <div><a class="header__call" href="tel:+33321341120" style="text-decoration:none;border-bottom:1px dotted currentColor">03 21 34 11 20</a><a class="btn btn--line btn--compact" href="https://www.histoire-ancienne.com/reservations.php" style="border:1px solid var(--line);border-radius:20px;padding:6px 14px;font-size:.82rem;text-decoration:none;margin-left:10px">Réserver</a></div>
+  </div>
+</header>
+<nav class="jump" aria-label="Sections"><ul><li><a href="#formules">Formules</a></li><li><a href="#carte">La carte</a></li><li><a href="#vins">Vins</a></li><li><a href="#boissons">Bar</a></li><li><a href="#fetes">Jours de fête</a></li><li><a href="#infos">Infos</a></li></ul></nav>
+<div class="hero-photo">
+  <img src="https://www.histoire-ancienne.com/wp-content/uploads/2015/02/blog2.jpg" alt="La salle du restaurant Histoire Ancienne, décor art-déco, à Calais" loading="lazy">
+  <div class="wrap hero-inner">
+    <span class="hero-badge">★ Bib Gourmand — Guide MICHELIN 2026</span><br><p class="hero-eyebrow">Bistrot à la française · Calais</p>
+    <h1>Histoire Ancienne</h1>
+    <p class="hero-tagline">Cuisine bistrotière du jour, canaille et revisitée, par Patrick Comte, artisan-restaurateur.</p>
+    <div class="hero-cta">
+      <a class="btn btn--primary" href="https://www.histoire-ancienne.com/reservations.php">Réserver en ligne</a>
+      <a class="btn btn--ghost" href="tel:+33321341120">03 21 34 11 20</a>
+    </div>
+    <ul class="hero-facts"><li>20 rue Royale, 62100 Calais</li><li>Fermé le dimanche et le lundi</li></ul>
+  </div>
+</div>
+<div class="intro-band"><div class="wrap"><p>Un bistrot, une institution du bien manger.</p><p>Fresque à la « Lautrec », bonbonnières à l’ancienne, bar en zinc et objets chinés : un lieu authentique au style art-déco soigné, au cœur de Calais. Patrick Comte, artisan-restaurateur, y compose une cuisine du jour à partir de produits frais et de saison — sage et classique, avec un brin de canaille.</p><p class="intro-award">Distingué Bib Gourmand au Guide MICHELIN France</p></div></div>
+<main id="main">
+<section class="cards-wrap" id="formules"><div class="wrap"><div class="cat-head" style="text-align:center;display:block"><p class="eyebrow" style="text-align:center">À table</p><h2 class="cat-title" style="display:inline-block;color:var(--ink)">Les Formules</h2></div><p class="lede" style="">Trois formules à composer, le rendez-vous hebdomadaire des Jeudis, et un menu pour les petits gourmets. Prix nets, service compris.</p></div><div class="wrap"><div class="cards-grid"><div class="menu-card" id="FOR-BIB"><h3 style="font-family:var(--sans);font-weight:700;font-size:1.1rem">Bib Gourmand</h3>
+    <span class="rprice">40<span class="cents">€00</span></span><div class="course-block"><p class="clabel">Entrée au choix</p><ul><li>Terrine de foie gras de canard — Confiture d’oignons rouges aux framboises</li><li>Burrata / crevettes royales / tomates — Merlu fumé, citron, pistaches</li><li>Œuf poché / Hollandaise — Jeunes pousses d’épinards, saumon fumé</li></ul></div><div class="course-block"><p class="clabel">Plat au choix</p><ul><li>Dos de maigre — Ravigotte de salicornes à la menthe fraîche, caponata d’aubergines aux cranberries, crème émulsionnée, pommes « Anglaise »</li><li>Bar et girolles en persillade — Purée de rattes du Touquet, croustilles de parmesan (+7.00 €)</li><li>Faux-filet grillé — Sauce béarnaise, gratin de pommes de terre au maroilles, salade</li></ul></div><div class="course-block"><p class="clabel">Fromage ou dessert au choix</p><ul><li>Au choix « à la carte » — Commande en début de repas, merci de votre compréhension</li></ul></div><p class="note" style="margin-top:12px">Toute modification sera facturée « à la carte ».</p></div><div class="menu-card" id="FOR-HA"><h3 style="font-family:var(--sans);font-weight:700;font-size:1.1rem">Histoire Ancienne</h3>
+    <span class="rprice">29<span class="cents">€00</span></span><div class="course-block"><p class="clabel">Entrée au choix</p><ul><li>Corned-beef maison — Beurre noisette aux pikles</li><li>Velouté de champignons — Espuma à l’ail fumé, croûtons</li><li>Tartare de truite fumée — Houmous, tomates, coriandre, graine de courges</li></ul></div><div class="course-block"><p class="clabel">Plat au choix</p><ul><li>Gratin à l’armoricaine — Poulpes, calamars, macaronis, champignons</li><li>Lard fermier — Jus réduit Picon-bière, cornichon, frites maison, mayo légère, salade</li><li>Fricassée de rognons de veau à la graine de moutarde — Frites maison (+6.00 €)</li></ul></div><div class="course-block"><p class="clabel">Dessert au choix</p><ul><li>Vacherin mûres — Mi-figues mi-raisins, coulis violette</li><li>Pana cota vanille — Croustillant de blé, sauce caramel mou rhum-raisin</li></ul></div><p class="note" style="margin-top:12px">Entrée + plat + dessert. Hors samedi soir.</p></div><div class="menu-card" id="FOR-DEJ"><h3 style="font-family:var(--sans);font-weight:700;font-size:1.1rem">Formule-Déjeuner</h3>
+    <span class="rprice">26<span class="cents">€00</span></span><div class="course-block"><p class="clabel">Entrée au choix</p><ul><li>Corned-beef maison — Beurre noisette aux pikles</li><li>Velouté de champignons — Espuma à l’ail fumé, croûtons</li><li>Tartare de truite fumée — Houmous, tomates, coriandre, graine de courges</li></ul></div><div class="course-block"><p class="clabel">Plat au choix</p><ul><li>Gratin à l’armoricaine — Poulpes, calamars, macaronis, champignons</li><li>Lard fermier — Jus réduit Picon-bière, cornichon, frites maison, mayo légère, salade</li><li>Fricassée de rognons de veau à la graine de moutarde — Frites maison (+6.00 €)</li></ul></div><div class="course-block"><p class="clabel">Dessert au choix</p><ul><li>Vacherin mûres — Mi-figues mi-raisins, coulis violette</li><li>Pana cota vanille — Croustillant de blé, sauce caramel mou rhum-raisin</li></ul></div><p class="note" style="margin-top:12px">Entrée + plat, ou plat + dessert. Hors week-end et jours fériés. Toute modification sera facturée « à la carte ».</p></div><div class="menu-card" id="FOR-JEU"><h3 style="font-family:var(--sans);font-weight:700;font-size:1.1rem">Les Jeudis de l’Histoire Ancienne</h3>
+    <span class="rprice">26<span class="cents">€00</span></span><p class="rdesc" style="margin-bottom:10px">Un jeudi, un plat unique canaille, en rotation. Calendrier à confirmer auprès du restaurant au-delà des dates indiquées.</p><table class="jeudis-table"><tr><td>1 Oct</td><td>Tête de veau, sauce gribiche (tête, cervelle, langue), légumes du pot-au-feu, pommes à l’anglaise</td></tr><tr><td>8 Oct</td><td>Cassoulet maison servi gratiné &amp; salade (lard, agneau, saucisse au couteau, confit de canard)</td></tr><tr><td>15 Oct</td><td>Tête de veau, sauce gribiche (tête, cervelle, langue), légumes du pot-au-feu, pommes à l’anglaise</td></tr><tr><td>22 Oct</td><td>Crépinette de pied de cochon, réduction de balsamique aux échalotes, frites maison, salade</td></tr><tr><td>29 Oct</td><td>Crépinette de pied de cochon, réduction de balsamique aux échalotes, frites maison, salade</td></tr><tr><td>5 Nov</td><td>Tête de veau, sauce gribiche (tête, cervelle, langue), légumes du pot-au-feu, pommes à l’anglaise</td></tr><tr><td>12 Nov</td><td>Cassoulet maison servi gratiné &amp; salade (lard, agneau, saucisse au couteau, confit de canard)</td></tr><tr><td>19 Nov</td><td>Tête de veau, sauce gribiche (tête, cervelle, langue), légumes du pot-au-feu, pommes à l’anglaise</td></tr><tr><td>26 Nov</td><td>Crépinette de pied de cochon, réduction de balsamique aux échalotes, frites maison, salade</td></tr><tr><td>3 Déc</td><td>Tête de veau, sauce gribiche (tête, cervelle, langue), légumes du pot-au-feu, pommes à l’anglaise</td></tr><tr><td>10 Déc</td><td>Cassoulet maison servi gratiné &amp; salade (lard, agneau, saucisse au couteau, confit de canard)</td></tr><tr><td>17 Déc</td><td>Tête de veau, sauce gribiche (tête, cervelle, langue), légumes du pot-au-feu, pommes à l’anglaise</td></tr></table></div><div class="menu-card" id="ENF-001"><h3 style="font-family:var(--sans);font-weight:700;font-size:1.1rem">Menu P’tit Gourmet</h3>
+    <span class="rprice">15<span class="cents">€00</span></span><div class="course-block"><p class="clabel">Plat au choix</p><ul><li>Filet de saumon grillé, sauce béarnaise, frites maison</li><li>Faux-filet, sauce béarnaise, frites maison</li></ul></div><div class="course-block"><p class="clabel">Dessert au choix</p><ul><li>Glace chocolat, sauce caramel, chantilly, Smarties</li><li>Glace « barbe à papa », coulis de fruits rouges, chantilly, marshmallow</li></ul></div><p class="note" style="margin-top:12px">Pour les enfants de moins de 12 ans.</p></div></div></div></section>
+<div id="carte-wrap"><div class="wrap"><div class="cat-head" style="text-align:center;display:block"><p class="eyebrow" style="text-align:center">À la carte</p><h2 class="cat-title" style="display:inline-block;color:var(--ink)">La Carte</h2></div><p class="lede" style="">Une cuisine sincère à redécouvrir chaque saison.</p></div></div><section class="category has-photo" id="entrees"><div class="photo-row"><div class="cat-photo-col"><img src="https://images.unsplash.com/photo-1758972574371-57cf8c42bae8?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Terrine de foie gras, photo d'illustration" loading="lazy"><figcaption>Photo d'illustration — non contractuelle</figcaption></div><div class="cat-text-col"><div class="cat-head"><h2 class="cat-title">Les Entrées</h2></div><article class="dish"><div class="row1"><h4>Tartare de truite fumée</h4><span class="leader"></span><span class="price">13<span class="cents">€50</span></span></div><p class="desc">Houmous, tomates, coriandre, graine de courges</p><ul class="dish-tags"><li>Poissons</li></ul></article><article class="dish"><div class="row1"><h4>Corned-beef maison</h4><span class="leader"></span><span class="price">13<span class="cents">€50</span></span></div><p class="desc">Beurre noisette aux pikles</p><ul class="dish-tags"><li>Lait</li></ul></article><article class="dish"><div class="row1"><h4>Œuf poché / Hollandaise</h4><span class="leader"></span><span class="price">15<span class="cents">€50</span></span></div><p class="desc">Jeunes pousses d’épinards, saumon fumé</p><ul class="dish-tags"><li>Œufs</li><li>Poissons</li><li>Lait</li></ul></article><article class="dish"><div class="row1"><h4>Terrine de foie gras de canard</h4><span class="leader"></span><span class="price">15<span class="cents">€50</span></span></div><p class="desc">Confiture d’oignons rouges aux framboises</p></article><article class="dish"><div class="row1"><h4>Burrata / crevettes royales / tomates</h4><span class="leader"></span><span class="price">15<span class="cents">€50</span></span></div><p class="desc">Merlu fumé, citron, pistaches</p><ul class="dish-tags"><li>Lait</li><li>Crustacés</li><li>Poissons</li><li>Fruits à coque</li></ul></article><article class="dish"><div class="row1"><h4>Velouté de champignons</h4><span class="leader"></span><span class="price">13<span class="cents">€50</span></span></div><p class="desc">Espuma à l’ail fumé, croûtons</p><ul class="dish-tags"><li>Lait</li><li>Gluten</li></ul></article></div></div></section><section class="category" id="poissons"><div class="wrap"><div class="cat-inner"><div class="cat-head"><h2 class="cat-title">Les Poissons</h2></div><article class="dish"><div class="row1"><h4>Dos de maigre, ravigote</h4><span class="leader"></span><span class="price">27<span class="cents">€00</span></span></div><p class="desc">Ravigote de salicornes à la menthe fraîche, caponata d’aubergines aux cranberries, crème émulsionnée, pommes « Anglaise »</p><ul class="dish-tags"><li>Poissons</li><li>Lait</li></ul></article><article class="dish"><div class="row1"><h4>Bar et girolles en persillade</h4><span class="leader"></span><span class="price">30<span class="cents">€00</span></span></div><p class="desc">Purée de ratte du Touquet, croustille de parmesan</p><ul class="dish-tags"><li>Poissons</li><li>Lait</li></ul></article></div></div></section><section class="category" id="vegetarien"><div class="wrap"><div class="cat-inner"><div class="cat-head"><h2 class="cat-title">Côté Végétarien</h2></div><article class="dish"><div class="row1"><h4>Caponata d’aubergines aux cranberries &amp; œuf miroir</h4><span class="leader"></span><span class="price">20<span class="cents">€00</span></span></div><p class="desc">Beurre émulsion, croûtons, pommes « Anglaise »</p><ul class="dish-tags"><li>Œufs</li><li>Lait</li><li>Gluten</li><li>Végétarien</li></ul></article></div></div></section><section class="category" id="viandes"><div class="wrap"><div class="cat-inner"><div class="cat-head"><h2 class="cat-title">Les Viandes</h2></div><article class="dish"><div class="row1"><h4>Filet de bœuf (200 g), sauce béarnaise</h4><span class="leader"></span><span class="price">32<span class="cents">€00</span></span></div><p class="desc">Frites maison, salade, beurre façon maître d’hôtel ail et persil</p><ul class="dish-tags"><li>Œufs</li><li>Lait</li></ul></article><article class="dish"><div class="row1"><h4>Véritable steack au poivre (coupé dans le filet, 200 g)</h4><span class="leader"></span><span class="price">32<span class="cents">€00</span></span></div><p class="desc">Flambé au cognac, frites maison, salade</p></article><article class="dish"><div class="row1"><h4>Faux-filet grillé, sauce béarnaise</h4><span class="leader"></span><span class="price">27<span class="cents">€00</span></span></div><p class="desc">Gratin de pommes de terre au maroilles, salade</p><ul class="dish-tags"><li>Œufs</li><li>Lait</li></ul></article><article class="dish"><div class="row1"><h4>Fricassée de rognons de veau à la graine de moutarde</h4><span class="leader"></span><span class="price">27<span class="cents">€00</span></span></div><p class="desc">Frites maison</p><ul class="dish-tags"><li>Moutarde</li><li>Lait</li></ul></article></div></div></section><section class="category" id="fromage"><div class="wrap"><div class="cat-inner"><div class="cat-head"><h2 class="cat-title">Fromage</h2></div><article class="dish"><div class="row1"><h4>Assiette de fromages « bio » de Wierre-Effroy</h4><span class="leader"></span><span class="price">12<span class="cents">€00</span></span></div><ul class="dish-tags"><li>Lait</li><li>Végétarien</li></ul></article></div></div></section><section class="category" id="desserts"><div class="wrap"><div class="cat-inner"><div class="cat-head"><h2 class="cat-title">Les Desserts</h2></div><article class="dish"><div class="row1"><h4>Vacherin mûres</h4><span class="leader"></span><span class="price">11<span class="cents">€00</span></span></div><p class="desc">Mi-figues mi-raisins, coulis violette</p><ul class="dish-tags"><li>Œufs</li><li>Lait</li><li>Végétarien</li></ul></article><article class="dish"><div class="row1"><h4>Mi-cuit coulant au chocolat Valrhona</h4><span class="leader"></span><span class="price">11<span class="cents">€00</span></span></div><p class="desc">Cœur spéculoos</p><ul class="dish-tags"><li>Œufs</li><li>Lait</li><li>Gluten</li><li>Végétarien</li></ul></article><article class="dish"><div class="row1"><h4>Pana cota vanille</h4><span class="leader"></span><span class="price">11<span class="cents">€00</span></span></div><p class="desc">Croustillant de blé, sauce caramel mou rhum-raisin</p><ul class="dish-tags"><li>Lait</li><li>Gluten</li><li>Végétarien</li><li>Contient de l’alcool</li></ul></article><article class="dish"><div class="row1"><h4>Poire pochée</h4><span class="leader"></span><span class="price">11<span class="cents">€00</span></span></div><p class="desc">Biscuit financier, glace au lait d’amande, sauce chocolat Valrhona</p><ul class="dish-tags"><li>Œufs</li><li>Lait</li><li>Gluten</li><li>Fruits à coque</li><li>Végétarien</li></ul></article></div></div></section><section class="category" id="cafes-gourmands"><div class="wrap"><div class="cat-inner"><div class="cat-head"><h2 class="cat-title">Cafés gourmands</h2></div><article class="dish"><div class="row1"><h4>Café vraiment gourmand</h4><span class="leader"></span><span class="price">13<span class="cents">€00</span></span></div><p class="note">+ 5 € dans le menu Bib Gourmand</p><ul class="dish-tags"><li>Lait</li></ul></article><article class="dish"><div class="row1"><h4>Irish-coffee vraiment gourmand</h4><span class="leader"></span><span class="price">18<span class="cents">€00</span></span></div><p class="note">+ 11 € dans le menu Bib Gourmand</p><ul class="dish-tags"><li>Lait</li><li>Contient de l’alcool</li></ul></article><article class="dish"><div class="row1"><h4>Champagne vraiment gourmand</h4><span class="leader"></span><span class="price">18<span class="cents">€00</span></span></div><p class="note">+ 11 € dans le menu Bib Gourmand</p><ul class="dish-tags"><li>Lait</li><li>Contient de l’alcool</li></ul></article></div></div></section>
+<section class="category" id="vins"><div class="wrap"><div class="cat-inner">
+    <div class="cat-head" style="text-align:center;display:block"><p class="eyebrow" style="text-align:center">Cave</p><h2 class="cat-title" style="display:inline-block;color:var(--onDark)">Carte des vins</h2><p class="lede" style="color:var(--onDarkSoft)">Bordelais, Bourgogne, vallée du Rhône, Loire et au-delà — une sélection à la bouteille ou au verre.</p></div><h3 class="subhead" style="text-align:center">Vins en bouteille</h3><div class="wine-regions-grid"><div class="wine-region-block"><h4>Bordelais</h4><div class="wine-row"><span class="wname">Château Frontenac</span> <span class="wnote">(Vin maison)</span><span class="wmeta">Bordeaux</span><span class="wprices"><span><b>29<span class="cents">€00</span></b> 75 cl</span><span><b>19<span class="cents">€00</span></b> 37,5 cl</span></span></div><div class="wine-row"><span class="wname">Château Pierrail</span><span class="wmeta">Bordeaux</span><span class="wprices"><span><b>36<span class="cents">€00</span></b> 75 cl</span><span><b>24<span class="cents">€00</span></b> 37,5 cl</span></span></div><div class="wine-row"><span class="wname">Château les Roques</span><span class="wmeta">Côte de Bourg</span><span class="wprices"><span><b>35<span class="cents">€00</span></b> 75 cl</span><span><b>23<span class="cents">€00</span></b> 37,5 cl</span></span></div><div class="wine-row"><span class="wname">Château d’Arvigny</span><span class="wmeta">Haut-Médoc</span><span class="wprices"><span><b>35<span class="cents">€00</span></b> 75 cl</span></span></div><div class="wine-row"><span class="wname">Château Alix</span> <span class="wnote">(Médaille d’or Bordeaux)</span><span class="wmeta">Pessac-Léognan</span><span class="wprices"><span><b>55<span class="cents">€00</span></b> 75 cl</span></span></div><div class="wine-row"><span class="wname">La Salle de Pougeaux</span><span class="wmeta">Moulis</span><span class="wprices"><span><b>56<span class="cents">€00</span></b> 75 cl</span></span></div><div class="wine-row"><span class="wname">Baron Nathaniel</span><span class="wmeta">Pauillac</span><span class="wprices"><span><b>70<span class="cents">€00</span></b> 75 cl</span></span></div><div class="wine-row"><span class="wname">Pavillon du Glana</span><span class="wmeta">Saint-Julien</span><span class="wprices"><span><b>76<span class="cents">€00</span></b> 75 cl</span></span></div></div><div class="wine-region-block"><h4>Bourgogne</h4><div class="wine-row"><span class="wname">Premier Cru, Louis Latour</span><span class="wmeta">Savigny-lès-Beaune</span><span class="wprices"><span><b>105<span class="cents">€00</span></b> 75 cl</span></span></div><div class="wine-row"><span class="wname">Mâcon Vigneron de Mancey</span><span class="wmeta">Coteaux du Mâconnais</span><span class="wprices"><span><b>35<span class="cents">€00</span></b> 75 cl</span></span></div><div class="wine-row"><span class="wname">Domaine Michel Juillot</span><span class="wmeta">Mercurey</span><span class="wprices"><span><b>67<span class="cents">€00</span></b> 75 cl</span></span></div><div class="wine-row"><span class="wname">Domaine Jean-Marc Brocard</span><span class="wmeta">Chablis</span><span class="wprices"><span><b>48<span class="cents">€00</span></b> 75 cl</span><span><b>28<span class="cents">€00</span></b> 37,5 cl</span></span></div><div class="wine-row"><span class="wname">Domaine Simonet-Fèbvre</span> <span class="wnote">(100 % Sauvignon)</span><span class="wmeta">Saint-Bris</span><span class="wprices"><span><b>32<span class="cents">€00</span></b> 75 cl</span></span></div><div class="wine-row"><span class="wname">Domaine Simonet-Fèbvre</span> <span class="wnote">(100 % Chardonnay (mention telle qu’indiquée sur la carte))</span><span class="wmeta">Bourgogne Aligoté</span><span class="wprices"><span><b>36<span class="cents">€00</span></b> 75 cl</span></span></div></div><div class="wine-region-block"><h4>Beaujolais</h4><div class="wine-row"><span class="wname">Domaine Piron</span><span class="wmeta">Brouilly</span><span class="wprices"><span><b>39<span class="cents">€00</span></b> 75 cl</span></span></div></div><div class="wine-region-block"><h4>Vallée du Rhône</h4><div class="wine-row"><span class="wname">Viridi, Maison Brotte</span> <span class="wnote">(BIO)</span><span class="wmeta">Côtes-du-Rhône bio</span><span class="wprices"><span><b>35<span class="cents">€00</span></b> 75 cl</span></span></div><div class="wine-row"><span class="wname">La Petite Ruche, Chapoutier</span><span class="wmeta">Crozes-Hermitage</span><span class="wprices"><span><b>56<span class="cents">€00</span></b> 75 cl</span><span><b>32<span class="cents">€00</span></b> 37,5 cl</span></span></div><div class="wine-row"><span class="wname">Domaine de l’Ange</span><span class="wmeta">Châteauneuf-du-Pape</span><span class="wprices"><span><b>73<span class="cents">€00</span></b> 75 cl</span></span></div><div class="wine-row"><span class="wname">Cuvée Prestige</span><span class="wmeta">Vacqueyras</span><span class="wprices"><span><b>38<span class="cents">€00</span></b> 75 cl</span><span><b>24<span class="cents">€00</span></b> 37,5 cl</span></span></div><div class="wine-row"><span class="wname">Chapoutier</span><span class="wmeta">Saint-Joseph</span><span class="wprices"><span><b>72<span class="cents">€00</span></b> 75 cl</span><span><b>35<span class="cents">€00</span></b> 37,5 cl</span></span></div><div class="wine-row"><span class="wname">Les Charmilles</span> <span class="wnote">(Vin maison)</span><span class="wmeta">Côtes-du-Rhône</span><span class="wprices"><span><b>29<span class="cents">€00</span></b> 75 cl</span></span></div></div><div class="wine-region-block"><h4>Vallée de la Loire</h4><div class="wine-row"><span class="wname">Domaine de la Chevalerie, Vieilles Vignes</span><span class="wmeta">Saint-Nicolas-de-Bourgueil</span><span class="wprices"><span><b>33<span class="cents">€00</span></b> 75 cl</span></span></div><div class="wine-row"><span class="wname">Château de Sancerre</span><span class="wmeta">Sancerre</span><span class="wprices"><span><b>52<span class="cents">€00</span></b> 75 cl</span></span></div><div class="wine-row"><span class="wname">Sylvain Bailly</span><span class="wmeta">Sancerre</span><span class="wprices"><span><b>52<span class="cents">€00</span></b> 75 cl</span></span></div><div class="wine-row"><span class="wname">Domaine Figeat, Cuvée XXL</span><span class="wmeta">Pouilly-Fumé</span><span class="wprices"><span><b>45<span class="cents">€00</span></b> 75 cl</span></span></div></div><div class="wine-region-block"><h4>Pays d’Oc</h4><div class="wine-row"><span class="wname">Marius, Maison Chapoutier</span><span class="wmeta">Pays d’Oc</span><span class="wprices"><span><b>32<span class="cents">€00</span></b> 75 cl</span></span></div></div><div class="wine-region-block"><h4>Alsace</h4><div class="wine-row"><span class="wname">Pinot noir, Maison Kientz</span><span class="wmeta">Alsace</span><span class="wprices"><span><b>24<span class="cents">€00</span></b> 37,5 cl</span></span></div><div class="wine-row"><span class="wname">Maison Kientz</span><span class="wmeta">Gewurztraminer</span><span class="wprices"><span><b>36<span class="cents">€00</span></b> 75 cl</span></span></div></div><div class="wine-region-block"><h4>Landes</h4><div class="wine-row"><span class="wname">Le Roi Bœuf, Lionel Osmin</span><span class="wmeta">Marcillac</span><span class="wprices"><span><b>45<span class="cents">€00</span></b> 75 cl</span></span></div></div><div class="wine-region-block"><h4>Provence</h4><div class="wine-row"><span class="wname">M de Minuty</span> <span class="wnote">(rosé)</span><span class="wmeta">Côtes-de-Provence</span><span class="wprices"><span><b>45<span class="cents">€00</span></b> 75 cl</span></span></div></div><div class="wine-region-block"><h4>Corse</h4><div class="wine-row"><span class="wname">Domaine de Terra-Vecchia, Cuvée Stella</span> <span class="wnote">(rosé)</span><span class="wmeta">Corse</span><span class="wprices"><span><b>28<span class="cents">€00</span></b> 75 cl</span></span></div></div></div><div class="vins-maison-box"><strong>Nos vins « maison » — 29,00 € la bouteille</strong><ul><li>Château Frontenac — Bordeaux rouge</li><li>Les Charmilles — Côte-du-Rhône blanc</li></ul></div><h3 class="subhead" style="text-align:center;margin-top:36px">Vin au verre</h3><ul class="rows"><li><div class="line1"><span class="rname">Chinon, Maison Couly-Dutheil</span><span class="leader"></span><span class="rprice">6<span class="cents">€00</span></span></div><p class="rdesc">Loire — Cépage : 100 % Chenin</p></li><li><div class="line1"><span class="rname">Été Indien, Domaine Paraza</span><span class="leader"></span><span class="rprice">7<span class="cents">€00</span></span></div><p class="rdesc">Minervois — Vin de macération type « orange », 100 % Gewurztraminer : fleurs blanches, poire, miel, fruité et sec</p></li><li><div class="line1"><span class="rname">Vézelay, Domaine Simonet-Fèvres</span><span class="leader"></span><span class="rprice">8<span class="cents">€00</span></span></div><p class="rdesc">Bourgogne — Minéral, idéal sur un poisson — Cépage : 100 % Chardonnay</p></li><li><div class="line1"><span class="rname">Pouilly-Fumé Cuvée XXL, Domaine Figeat</span><span class="leader"></span><span class="rprice">9<span class="cents">€50</span></span></div><p class="rdesc">Loire — Coup de cœur Guide Hachette — Cépage : 100 % Sauvignon</p></li><li><div class="line1"><span class="rname">Villa Chambre d’Amour, Lionel Osmin</span><span class="leader"></span><span class="rprice">6<span class="cents">€50</span></span></div><p class="rdesc">Sud-Ouest — Légèrement sucré, élégant à l’apéritif ou avec du foie gras, notes d’agrumes</p></li><li><div class="line1"><span class="rname">Chinon, Maison Couly-Dutheil</span><span class="leader"></span><span class="rprice">6<span class="cents">€00</span></span></div><p class="rdesc">Loire — Cépage : 100 % Cabernet franc</p></li><li><div class="line1"><span class="rname">Les Hauts de Naudon, Domaine du Château Pierrail</span><span class="leader"></span><span class="rprice">7<span class="cents">€00</span></span></div><p class="rdesc">Bordelais — </p></li><li><div class="line1"><span class="rname">Des Lyres de Pinot Noir, Domaine Simonet-Fèbvre</span><span class="leader"></span><span class="rprice">8<span class="cents">€50</span></span></div><p class="rdesc">Bourgogne — Vignoble en Auxois, notes de framboise, cerise, cassis — Cépage : 100 % Pinot noir</p></li><li><div class="line1"><span class="rname">Le Roi Bœuf, Lionel Osmin</span><span class="leader"></span><span class="rprice">9<span class="cents">€50</span></span></div><p class="rdesc">Landes — AOP Marcillac, récolté sur les terres de Michel Guérard, cuvée des fêtes des bœufs gras de Bazas</p></li><li><div class="line1"><span class="rname">M de Minuty</span><span class="leader"></span><span class="rprice">9<span class="cents">€50</span></span></div><p class="rdesc">Provence — Côtes-de-Provence AOP</p></li></ul><p class="cat-note" style="margin-top:18px">L'ensemble de cette carte est susceptible de contenir des sulfites.</p></div></div></section>
+<section class="category" id="boissons"><div class="wrap"><div class="cat-inner"><div class="cat-head" style="text-align:center;display:block"><p class="eyebrow" style="text-align:center">Au bar</p><h2 class="cat-title" style="display:inline-block;color:var(--onDark)">Carte des boissons</h2></div><div class="bar-grid"><div class="wine-region-block"><h4>Champagne</h4><ul class="rows"><li><div class="line1"><span class="rname">La coupe de champagne, Axel Yaz</span><span class="leader"></span><span class="rprice">13<span class="cents">€00</span></span></div></li><li><div class="line1"><span class="rname">Besserat de Bellefon <small style="color:var(--onDarkFaint);font-weight:400">la bouteille</small></span><span class="leader"></span><span class="rprice">85<span class="cents">€00</span></span></div></li><li><div class="line1"><span class="rname">Pommery <small style="color:var(--onDarkFaint);font-weight:400">la bouteille</small></span><span class="leader"></span><span class="rprice">85<span class="cents">€00</span></span></div></li><li><div class="line1"><span class="rname">Ruinart <small style="color:var(--onDarkFaint);font-weight:400">la bouteille</small></span><span class="leader"></span><span class="rprice">130<span class="cents">€00</span></span></div></li></ul></div><div class="wine-region-block"><h4>Apéritifs</h4><ul class="rows"><li><div class="line1"><span class="rname">Kir royal</span><span class="leader"></span><span class="rprice">9<span class="cents">€50</span></span></div></li><li><div class="line1"><span class="rname">Kir vin blanc</span><span class="leader"></span><span class="rprice">6<span class="cents">€00</span></span></div><p class="bar-item-desc">Cassis, mûre, violette, pêche, fraise des bois</p></li><li><div class="line1"><span class="rname">Picon-bière ou picon-vin blanc</span><span class="leader"></span><span class="rprice">7<span class="cents">€00</span></span></div></li><li><div class="line1"><span class="rname">Martini blanc / rouge, Ricard</span><span class="leader"></span><span class="rprice">6<span class="cents">€00</span></span></div></li><li><div class="line1"><span class="rname">Porto Graham’s rouge / blanc</span><span class="leader"></span><span class="rprice">7<span class="cents">€00</span></span></div></li><li><div class="line1"><span class="rname">Pineau des Charentes</span><span class="leader"></span><span class="rprice">6<span class="cents">€00</span></span></div></li></ul></div><div class="wine-region-block"><h4>Whisky</h4><ul class="rows"><li><div class="line1"><span class="rname">Teacher’s</span><span class="leader"></span><span class="rprice">7<span class="cents">€50</span></span></div></li><li><div class="line1"><span class="rname">Jack Daniel’s</span><span class="leader"></span><span class="rprice">8<span class="cents">€50</span></span></div></li><li><div class="line1"><span class="rname">Cardhu 12 ans Single Malt</span><span class="leader"></span><span class="rprice">8<span class="cents">€50</span></span></div></li><li><div class="line1"><span class="rname">Togouchi (Japonais)</span><span class="leader"></span><span class="rprice">9<span class="cents">€00</span></span></div></li><li><div class="line1"><span class="rname">Knokando 12 ans Single Malt</span><span class="leader"></span><span class="rprice">9<span class="cents">€00</span></span></div></li><li><div class="line1"><span class="rname">Chivas 12 ans Blended</span><span class="leader"></span><span class="rprice">10<span class="cents">€00</span></span></div></li><li><div class="line1"><span class="rname">Pointe Blanche (single malt, Île de Ré)</span><span class="leader"></span><span class="rprice">10<span class="cents">€00</span></span></div></li></ul></div><div class="wine-region-block"><h4>Cocktails</h4><ul class="rows"><li><div class="line1"><span class="rname">Cocktail maison</span><span class="leader"></span><span class="rprice">13<span class="cents">€00</span></span></div><p class="bar-item-desc">Méthode champenoise, Picon, Grand-Marnier</p></li><li><div class="line1"><span class="rname">Spritz</span><span class="leader"></span><span class="rprice">10<span class="cents">€00</span></span></div></li><li><div class="line1"><span class="rname">Américano maison</span><span class="leader"></span><span class="rprice">9<span class="cents">€00</span></span></div></li><li><div class="line1"><span class="rname">Campari-orange</span><span class="leader"></span><span class="rprice">8<span class="cents">€00</span></span></div></li><li><div class="line1"><span class="rname">Gin ou vodka tonic</span><span class="leader"></span><span class="rprice">10<span class="cents">€00</span></span></div></li><li><div class="line1"><span class="rname">Cocktail de jus de fruits</span><span class="leader"></span><span class="rprice">7<span class="cents">€50</span></span></div></li></ul></div><div class="wine-region-block"><h4>Bières</h4><ul class="rows"><li><div class="line1"><span class="rname">Anosteké (pression) 25 cl</span><span class="leader"></span><span class="rprice">5<span class="cents">€50</span></span></div><p class="bar-item-desc">Élue meilleure bière au monde 2021/2022</p></li><li><div class="line1"><span class="rname">Anosteké (pression) 33 cl</span><span class="leader"></span><span class="rprice">7<span class="cents">€50</span></span></div></li><li><div class="line1"><span class="rname">Anosteké (pression) 50 cl</span><span class="leader"></span><span class="rprice">9<span class="cents">€50</span></span></div></li><li><div class="line1"><span class="rname">Hoopy Yuzu, Brasserie des Célestins (33 cl)</span><span class="leader"></span><span class="rprice">7<span class="cents">€50</span></span></div></li><li><div class="line1"><span class="rname">Blanche de Wissant, Brasserie Noyon (33 cl)</span><span class="leader"></span><span class="rprice">7<span class="cents">€50</span></span></div></li><li><div class="line1"><span class="rname">La Goudale sans alcool (33 cl)</span><span class="leader"></span><span class="rprice">6<span class="cents">€50</span></span></div></li></ul></div><div class="wine-region-block"><h4>Soft</h4><ul class="rows"><li><div class="line1"><span class="rname">Bulles d’Opale — pétillant pomme/cassis bio</span><span class="leader"></span><span class="rprice">8<span class="cents">€00</span></span></div><p class="bar-item-desc">Sans sucre ajouté (22 kcal), fabriqué à Pernes-lès-Boulogne</p></li><li><div class="line1"><span class="rname">Jus de fruit Granini</span><span class="leader"></span><span class="rprice">6<span class="cents">€00</span></span></div><p class="bar-item-desc">Orange, pamplemousse, pomme, abricot, ananas, tomate</p></li><li><div class="line1"><span class="rname">Lipton Ice Tea, Schweppes, Orangina, Limonade, Coca-Cola</span><span class="leader"></span><span class="rprice">6<span class="cents">€00</span></span></div></li><li><div class="line1"><span class="rname">Cocktail de jus de fruits</span><span class="leader"></span><span class="rprice">7<span class="cents">€50</span></span></div><p class="bar-item-desc">Fraise, pamplemousse, sirop de litchi</p></li></ul></div><div class="wine-region-block"><h4>Eaux</h4><ul class="rows"><li><div class="line1"><span class="rname">Vittel</span><span class="leader"></span><span class="rprice">7<span class="cents">€50</span></span></div><p class="bar-item-desc">Litre / 1,5 L à 5,00 €</p></li><li><div class="line1"><span class="rname">Perrier fines bulles</span><span class="leader"></span><span class="rprice">7<span class="cents">€50</span></span></div><p class="bar-item-desc">Litre / 1,5 L à 5,00 €</p></li></ul></div><div class="wine-region-block"><h4>Boissons chaudes</h4><ul class="rows"><li><div class="line1"><span class="rname">Expresso Méo</span><span class="leader"></span><span class="rprice">3<span class="cents">€00</span></span></div></li><li><div class="line1"><span class="rname">Double expresso Méo</span><span class="leader"></span><span class="rprice">4<span class="cents">€20</span></span></div></li><li><div class="line1"><span class="rname">Cappuccino</span><span class="leader"></span><span class="rprice">5<span class="cents">€50</span></span></div></li><li><div class="line1"><span class="rname">Thé Daman noir ou vert</span><span class="leader"></span><span class="rprice">5<span class="cents">€50</span></span></div></li><li><div class="line1"><span class="rname">Infusion Daman</span><span class="leader"></span><span class="rprice">5<span class="cents">€50</span></span></div><p class="bar-item-desc">Tilleul, tilleul-menthe, verveine-menthe</p></li><li><div class="line1"><span class="rname">Irish-coffee</span><span class="leader"></span><span class="rprice">13<span class="cents">€00</span></span></div></li></ul></div></div></div></div></section>
+<section class="cards-wrap" id="fetes"><div class="wrap"><div class="cat-head" style="text-align:center;display:block"><p class="eyebrow" style="text-align:center">Occasions</p><h2 class="cat-title" style="display:inline-block;color:var(--ink)">Menus d’exception</h2></div><p class="lede" style="">Un menu dédié est composé pour chaque grande occasion — Noël, Saint-Sylvestre, Saint-Valentin, Fête des Mères. Les deux exemples ci-dessous sont ceux des dernières éditions ; un nouveau menu est créé chaque année, contactez le restaurant pour la formule et le tarif à venir.</p></div><div class="wrap"><div class="cards-grid"><div class="menu-card" id="fete-meres-2026"><span class="special-badge">Exemple — édition passée</span><h3 style="font-family:var(--sans);font-weight:700;font-size:1.1rem">Menu « Bonne Fête Maman »</h3><p class="special-meta">Dimanche 31 mai 2026 · 60 €</p><div class="course-block"><p class="clabel">Mise en bouche</p><ul><li>Tartare de tomates / burrata en espuma, sorbet citron-basilic, crumble à l’ail noir</li></ul></div><div class="course-block"><p class="clabel">Entrée au choix</p><ul><li>Terrine de foie gras de canard, vinaigrette asperges et petits-pois</li><li>Rémoulade de gambas en mimosa, avocat, céleri, crémeux piquillos, huile de coriandre</li></ul></div><div class="course-block"><p class="clabel">Plat au choix</p><ul><li>Dos de maigre, beurre émulsionné au vinaigre de mûres, betterave, rhubarbe, croquette de pomme de terre</li><li>Tournedos de veau, crème au vin jaune, asperges, fricassée de champignons, purée</li></ul></div><div class="course-block"><p class="clabel">Dessert au choix</p><ul><li>Éclair fraises, framboises, hibiscus</li><li>Finger pistache, chocolat</li></ul></div><p class="special-kids">Menu P’tit Lou (- de 12 ans) : 15 €</p></div><div class="menu-card" id="noel-2025"><span class="special-badge">Exemple — édition passée</span><h3 style="font-family:var(--sans);font-weight:700;font-size:1.1rem">Déjeuner de Noël</h3><p class="special-meta">Jeudi 25 décembre 2025 · 75 €</p><div class="course-block"><p class="clabel">Mise en bouche</p><ul><li>Velouté céleri / pomme Granny, haddock fumé, mouillette au beurre homardine</li></ul></div><div class="course-block"><p class="clabel">Entrée au choix</p><ul><li>Foie gras de canard poêlé, tarte fine betteraves, oignons rouges, cranberries, jus corsé au vinaigre de framboise</li><li>Saint-Jacques marinées, pikles de topinambours et champignons, avocat, crème épaisse à l’huile de truffe</li></ul></div><div class="course-block"><p class="clabel">Plat au choix</p><ul><li>Filet de Saint-Pierre, espuma de beurre noisette, citron, salicornes, croûtons, purée de panais, carottes miso-miel</li><li>Suprême de poularde, crème au vin jaune, fricassée de ris de veau, champignons, châtaignes, purée de rattes, potimaron</li></ul></div><div class="course-block"><p class="clabel">Dessert au choix</p><ul><li>Île flottante mangue-passion, nougatine sésame</li><li>Meringue aux noisettes et glace au café irlandais, crème marron, siphon de chocolat chaud</li></ul></div></div><div class="menu-card" style="text-align:center"><p class="rdesc" style="margin-bottom:12px">Également proposés selon la saison</p><ul class="linklist"><li><a class="btn btn--ghost" style="border:1px solid rgba(255,255,255,.3);color:inherit" href="https://www.histoire-ancienne.com/pdf/menu-st-valentin.pdf">Menu de la Saint-Valentin</a></li><li><a class="btn btn--ghost" style="border:1px solid rgba(255,255,255,.3);color:inherit" href="https://www.histoire-ancienne.com/pdf/menu-st-sylvestre.pdf">Menu de la Saint-Sylvestre</a></li></ul></div></div></div></section>
+<section class="section-block" id="allergenes"><div class="wrap" style="text-align:center">
+    <h2 class="group-title">Allergènes &amp; régimes</h2><p class="group-sub">Les 14 allergènes à déclaration obligatoire (règlement UE 1169/2011) :</p>
+    <ul class="legend-tags"><li>Gluten</li><li>Crustacés</li><li>Œufs</li><li>Poissons</li><li>Arachides</li><li>Soja</li><li>Lait</li><li>Fruits à coque</li><li>Céleri</li><li>Moutarde</li><li>Sésame</li><li>Sulfites</li><li>Lupin</li><li>Mollusques</li></ul><p class="group-sub" style="font-size:.8rem">Les mentions indiquées sur chaque plat correspondent aux ingrédients explicitement cités sur la carte. Sauces, bouillons et assaisonnements peuvent en contenir d'autres : merci de signaler toute allergie ou intolérance à notre équipe en salle avant de commander.</p>
+  </div></section>
+<section class="section-block alt" id="infos"><div class="wrap" style="text-align:center">
+    <h2 class="group-title">Infos &amp; réservation</h2>
+    <div class="infos-grid"><div class="info-card"><h4>Adresse &amp; accès</h4><address style="font-style:normal;color:var(--ink-soft)">20 rue Royale 62100 Calais</address></div><div class="info-card"><h4>Horaires</h4><table class="hours"><tr><th scope="row">Mardi – dimanche, midi</th><td>12h00</td></tr><tr><th scope="row">Mardi – dimanche, soir</th><td>18h45</td></tr><tr><th scope="row">Lundi</th><td>Fermé</td></tr></table><p class="info-card p" style="font-size:.84rem;color:var(--ink-soft);margin-top:8px">Horaires de service à partir des heures indiquées ; dernier service selon affluence.</p></div><div class="info-card"><h4>Contact &amp; réservation</h4></div></div>
+  </div></section>
+</main>
+<footer class="site"><div class="wrap"><strong>Histoire Ancienne</strong><p>Histoire Ancienne — Bistrot Bib Gourmand à Calais<br/>
+  20 rue Royale, 62100 Calais · 03 21 34 11 20<br/>
+  © 2026 · <a href="https://www.histoire-ancienne.com">histoire-ancienne.com</a></p></div></footer>
+</body>
+</html>

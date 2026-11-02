@@ -1,0 +1,2991 @@
+[
+  {
+    "id": "ha-bib-gourmand",
+    "name": "Bib Gourmand",
+    "description": "Toute modification sera facturée « à la carte ». — Terrine de foie gras de canard — Confiture d’oignons rouges aux framboises · Burrata / crevettes royales / tomates — Merlu fumé, citron, pistaches · Œuf poché / Hollandaise — Jeunes pousses d’épinards, saumon fumé · Dos de maigre — Ravigotte de salicornes à la menthe fraîche, caponata d’aubergines aux cranberries, crème émulsionnée, pommes « Anglaise » · Bar et girolles en persillade — Purée de rattes du Touquet, croustilles de parmesan (+7.00 €) · Faux-filet grillé — Sauce b",
+    "price": 40.0,
+    "category": "Les Formules",
+    "categoryId": "formules",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Toute modification sera facturée « à la carte »",
+      "Terrine de foie gras de canard",
+      "Confiture d’oignons rouges aux framboises",
+      "Burrata / crevettes royales / tomates",
+      "Merlu fumé",
+      "Citron",
+      "Pistaches",
+      "Œuf poché / Hollandaise",
+      "Jeunes pousses d’épinards",
+      "Saumon fumé",
+      "Dos de maigre",
+      "Ravigotte de salicornes à la menthe fraîche"
+    ],
+    "allergens": [
+      "crustacés",
+      "fruits à coque",
+      "lait",
+      "poissons",
+      "œufs"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": true,
+    "course": "menu",
+    "origin": null
+  },
+  {
+    "id": "ha-histoire-ancienne",
+    "name": "Histoire Ancienne",
+    "description": "Entrée + plat + dessert. Hors samedi soir. — Corned-beef maison — Beurre noisette aux pikles · Velouté de champignons — Espuma à l’ail fumé, croûtons · Tartare de truite fumée — Houmous, tomates, coriandre, graine de courges · Gratin à l’armoricaine — Poulpes, calamars, macaronis, champignons · Lard fermier — Jus réduit Picon-bière, cornichon, frites maison, mayo légère, salade · Fricassée de rognons de veau à la graine de moutarde — Frites maison (+6.00 €) · Vacherin mûres — Mi-figues mi-raisins, coulis violette · Pana",
+    "price": 29.0,
+    "category": "Les Formules",
+    "categoryId": "formules",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Entrée + plat + dessert. Hors samedi soir",
+      "Corned-beef maison",
+      "Beurre noisette aux pikles",
+      "Velouté de champignons",
+      "Espuma à l’ail fumé",
+      "Croûtons",
+      "Tartare de truite fumée",
+      "Houmous",
+      "Tomates",
+      "Coriandre",
+      "Graine de courges",
+      "Gratin à l’armoricaine"
+    ],
+    "allergens": [
+      "fruits à coque",
+      "gluten",
+      "lait",
+      "mollusques",
+      "moutarde",
+      "poissons",
+      "œufs"
+    ],
+    "dietaryTags": [],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": true,
+    "course": "menu",
+    "origin": null
+  },
+  {
+    "id": "ha-formule-dejeuner",
+    "name": "Formule-Déjeuner",
+    "description": "Entrée + plat, ou plat + dessert. Hors week-end et jours fériés. Toute modification sera facturée « à la carte ». — Corned-beef maison — Beurre noisette aux pikles · Velouté de champignons — Espuma à l’ail fumé, croûtons · Tartare de truite fumée — Houmous, tomates, coriandre, graine de courges · Gratin à l’armoricaine — Poulpes, calamars, macaronis, champignons · Lard fermier — Jus réduit Picon-bière, cornichon, frites maison, mayo légère, salade · Fricassée de rognons de veau à la graine de moutarde — Frites maison (+6.00 €) · Vacherin mûres — Mi-figues mi-raisins, coulis violette · Pana",
+    "price": 26.0,
+    "category": "Les Formules",
+    "categoryId": "formules",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Entrée + plat",
+      "Corned-beef maison",
+      "Beurre noisette aux pikles",
+      "Velouté de champignons",
+      "Espuma à l’ail fumé",
+      "Croûtons",
+      "Tartare de truite fumée",
+      "Houmous",
+      "Tomates",
+      "Coriandre",
+      "Graine de courges",
+      "Gratin à l’armoricaine"
+    ],
+    "allergens": [
+      "fruits à coque",
+      "gluten",
+      "lait",
+      "mollusques",
+      "moutarde",
+      "poissons",
+      "œufs"
+    ],
+    "dietaryTags": [],
+    "spiceLevel": 0,
+    "availability": "lunch-only",
+    "portion": null,
+    "isFeatured": true,
+    "course": "menu",
+    "origin": null
+  },
+  {
+    "id": "ha-les-jeudis-de-l-histoire-ancienne",
+    "name": "Les Jeudis de l’Histoire Ancienne",
+    "description": "",
+    "price": 26.0,
+    "category": "Les Formules",
+    "categoryId": "formules",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": true,
+    "course": "menu",
+    "origin": null
+  },
+  {
+    "id": "ha-menu-p-tit-gourmet",
+    "name": "Menu P’tit Gourmet",
+    "description": "Pour les enfants de moins de 12 ans. — Filet de saumon grillé, sauce béarnaise, frites maison · Faux-filet, sauce béarnaise, frites maison · Glace chocolat, sauce caramel, chantilly, Smarties · Glace « barbe à papa », coulis de fruits rouges, chantilly, marshmallow",
+    "price": 15.0,
+    "category": "Les Formules",
+    "categoryId": "formules",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Pour les enfants de moins de 12 ans",
+      "Filet de saumon grillé",
+      "Sauce béarnaise",
+      "Frites maison",
+      "Faux-filet",
+      "Sauce béarnaise",
+      "Frites maison",
+      "Glace chocolat",
+      "Sauce caramel",
+      "Chantilly",
+      "Smarties",
+      "Glace « barbe à papa »"
+    ],
+    "allergens": [
+      "lait",
+      "moutarde",
+      "poissons"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": true,
+    "course": "menu",
+    "origin": null
+  },
+  {
+    "id": "ha-tartare-de-truite-fumee",
+    "name": "Tartare de truite fumée",
+    "description": "Houmous, tomates, coriandre, graine de courges",
+    "price": 13.5,
+    "category": "Les Entrées",
+    "categoryId": "entrees",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Houmous",
+      "Tomates",
+      "Coriandre",
+      "Graine de courges"
+    ],
+    "allergens": [
+      "poissons"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "ha-corned-beef-maison",
+    "name": "Corned-beef maison",
+    "description": "Beurre noisette aux pikles",
+    "price": 13.5,
+    "category": "Les Entrées",
+    "categoryId": "entrees",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Beurre noisette aux pikles"
+    ],
+    "allergens": [
+      "fruits à coque",
+      "lait"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "ha-uf-poche-hollandaise",
+    "name": "Œuf poché / Hollandaise",
+    "description": "Jeunes pousses d’épinards, saumon fumé",
+    "price": 15.5,
+    "category": "Les Entrées",
+    "categoryId": "entrees",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Jeunes pousses d’épinards",
+      "Saumon fumé"
+    ],
+    "allergens": [
+      "lait",
+      "poissons",
+      "œufs"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "ha-terrine-de-foie-gras-de-canard",
+    "name": "Terrine de foie gras de canard",
+    "description": "Confiture d’oignons rouges aux framboises",
+    "price": 15.5,
+    "category": "Les Entrées",
+    "categoryId": "entrees",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Confiture d’oignons rouges aux framboises"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "ha-burrata-crevettes-royales-tomates",
+    "name": "Burrata / crevettes royales / tomates",
+    "description": "Merlu fumé, citron, pistaches",
+    "price": 15.5,
+    "category": "Les Entrées",
+    "categoryId": "entrees",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Merlu fumé",
+      "Citron",
+      "Pistaches"
+    ],
+    "allergens": [
+      "crustacés",
+      "fruits à coque",
+      "lait",
+      "poissons"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "ha-veloute-de-champignons",
+    "name": "Velouté de champignons",
+    "description": "Espuma à l’ail fumé, croûtons",
+    "price": 13.5,
+    "category": "Les Entrées",
+    "categoryId": "entrees",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Espuma à l’ail fumé",
+      "Croûtons"
+    ],
+    "allergens": [
+      "gluten",
+      "lait"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "starter",
+    "origin": null
+  },
+  {
+    "id": "ha-dos-de-maigre-ravigote",
+    "name": "Dos de maigre, ravigote",
+    "description": "Ravigote de salicornes à la menthe fraîche, caponata d’aubergines aux cranberries, crème émulsionnée, pommes « Anglaise »",
+    "price": 27.0,
+    "category": "Les Poissons",
+    "categoryId": "poissons",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Ravigote de salicornes à la menthe fraîche",
+      "Caponata d’aubergines aux cranberries",
+      "Crème émulsionnée",
+      "Pommes « Anglaise »"
+    ],
+    "allergens": [
+      "lait",
+      "poissons"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "ha-bar-et-girolles-en-persillade",
+    "name": "Bar et girolles en persillade",
+    "description": "Purée de ratte du Touquet, croustille de parmesan",
+    "price": 30.0,
+    "category": "Les Poissons",
+    "categoryId": "poissons",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Purée de ratte du Touquet",
+      "Croustille de parmesan"
+    ],
+    "allergens": [
+      "lait",
+      "poissons"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "ha-caponata-d-aubergines-aux-cranberries-uf-miroir",
+    "name": "Caponata d’aubergines aux cranberries & œuf miroir",
+    "description": "Beurre émulsion, croûtons, pommes « Anglaise »",
+    "price": 20.0,
+    "category": "Côté Végétarien",
+    "categoryId": "vegetarien",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Beurre émulsion",
+      "Croûtons",
+      "Pommes « Anglaise »"
+    ],
+    "allergens": [
+      "gluten",
+      "lait",
+      "œufs"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "ha-filet-de-b-uf-200-g-sauce-bearnaise",
+    "name": "Filet de bœuf (200 g), sauce béarnaise",
+    "description": "Frites maison, salade, beurre façon maître d’hôtel ail et persil",
+    "price": 32.0,
+    "category": "Les Viandes",
+    "categoryId": "viandes",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Frites maison",
+      "Salade",
+      "Beurre façon maître d’hôtel ail et persil"
+    ],
+    "allergens": [
+      "lait",
+      "moutarde",
+      "œufs"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "ha-veritable-steack-au-poivre-coupe-dans-le-filet-200-g",
+    "name": "Véritable steack au poivre (coupé dans le filet, 200 g)",
+    "description": "Flambé au cognac, frites maison, salade",
+    "price": 32.0,
+    "category": "Les Viandes",
+    "categoryId": "viandes",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Flambé au cognac",
+      "Frites maison",
+      "Salade"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 2,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "ha-faux-filet-grille-sauce-bearnaise",
+    "name": "Faux-filet grillé, sauce béarnaise",
+    "description": "Gratin de pommes de terre au maroilles, salade",
+    "price": 27.0,
+    "category": "Les Viandes",
+    "categoryId": "viandes",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Gratin de pommes de terre au maroilles",
+      "Salade"
+    ],
+    "allergens": [
+      "lait",
+      "moutarde",
+      "œufs"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "ha-fricassee-de-rognons-de-veau-a-la-graine-de-moutarde",
+    "name": "Fricassée de rognons de veau à la graine de moutarde",
+    "description": "Frites maison",
+    "price": 27.0,
+    "category": "Les Viandes",
+    "categoryId": "viandes",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Frites maison"
+    ],
+    "allergens": [
+      "lait",
+      "moutarde"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "main",
+    "origin": null
+  },
+  {
+    "id": "ha-assiette-de-fromages-bio-de-wierre-effroy",
+    "name": "Assiette de fromages « bio » de Wierre-Effroy",
+    "description": "",
+    "price": 12.0,
+    "category": "Fromage",
+    "categoryId": "fromage",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "ha-vacherin-mures",
+    "name": "Vacherin mûres",
+    "description": "Mi-figues mi-raisins, coulis violette",
+    "price": 11.0,
+    "category": "Les Desserts",
+    "categoryId": "desserts",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Mi-figues mi-raisins",
+      "Coulis violette"
+    ],
+    "allergens": [
+      "lait",
+      "œufs"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "ha-mi-cuit-coulant-au-chocolat-valrhona",
+    "name": "Mi-cuit coulant au chocolat Valrhona",
+    "description": "Cœur spéculoos",
+    "price": 11.0,
+    "category": "Les Desserts",
+    "categoryId": "desserts",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Cœur spéculoos"
+    ],
+    "allergens": [
+      "gluten",
+      "lait",
+      "œufs"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "ha-pana-cota-vanille",
+    "name": "Pana cota vanille",
+    "description": "Croustillant de blé, sauce caramel mou rhum-raisin",
+    "price": 11.0,
+    "category": "Les Desserts",
+    "categoryId": "desserts",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Croustillant de blé",
+      "Sauce caramel mou rhum-raisin"
+    ],
+    "allergens": [
+      "gluten",
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "ha-poire-pochee",
+    "name": "Poire pochée",
+    "description": "Biscuit financier, glace au lait d’amande, sauce chocolat Valrhona",
+    "price": 11.0,
+    "category": "Les Desserts",
+    "categoryId": "desserts",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Biscuit financier",
+      "Glace au lait d’amande",
+      "Sauce chocolat Valrhona"
+    ],
+    "allergens": [
+      "fruits à coque",
+      "gluten",
+      "lait",
+      "œufs"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "dessert",
+    "origin": null
+  },
+  {
+    "id": "ha-cafe-vraiment-gourmand",
+    "name": "Café vraiment gourmand",
+    "description": "+ 5 € dans le menu Bib Gourmand",
+    "price": 13.0,
+    "category": "Cafés gourmands",
+    "categoryId": "cafes-gourmands",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "+ 5 € dans le menu Bib Gourmand"
+    ],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-irish-coffee-vraiment-gourmand",
+    "name": "Irish-coffee vraiment gourmand",
+    "description": "+ 11 € dans le menu Bib Gourmand",
+    "price": 18.0,
+    "category": "Cafés gourmands",
+    "categoryId": "cafes-gourmands",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "+ 11 € dans le menu Bib Gourmand"
+    ],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-champagne-vraiment-gourmand",
+    "name": "Champagne vraiment gourmand",
+    "description": "+ 11 € dans le menu Bib Gourmand",
+    "price": 18.0,
+    "category": "Cafés gourmands",
+    "categoryId": "cafes-gourmands",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "+ 11 € dans le menu Bib Gourmand"
+    ],
+    "allergens": [
+      "lait",
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-chateau-frontenac-75-cl",
+    "name": "Château Frontenac",
+    "description": "Bordeaux — (Vin maison)",
+    "price": 29.0,
+    "category": "Carte des vins — Bordelais",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Bordeaux",
+      "(Vin maison)"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-chateau-frontenac-2-37-5-cl",
+    "name": "Château Frontenac",
+    "description": "Bordeaux — (Vin maison)",
+    "price": 19.0,
+    "category": "Carte des vins — Bordelais",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Bordeaux",
+      "(Vin maison)"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "37,5 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-chateau-pierrail-75-cl",
+    "name": "Château Pierrail",
+    "description": "Bordeaux",
+    "price": 36.0,
+    "category": "Carte des vins — Bordelais",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Bordeaux"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-chateau-pierrail-2-37-5-cl",
+    "name": "Château Pierrail",
+    "description": "Bordeaux",
+    "price": 24.0,
+    "category": "Carte des vins — Bordelais",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Bordeaux"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "37,5 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-chateau-les-roques-75-cl",
+    "name": "Château les Roques",
+    "description": "Côte de Bourg",
+    "price": 35.0,
+    "category": "Carte des vins — Bordelais",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Côte de Bourg"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-chateau-les-roques-2-37-5-cl",
+    "name": "Château les Roques",
+    "description": "Côte de Bourg",
+    "price": 23.0,
+    "category": "Carte des vins — Bordelais",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Côte de Bourg"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "37,5 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-chateau-d-arvigny-75-cl",
+    "name": "Château d’Arvigny",
+    "description": "Haut-Médoc",
+    "price": 35.0,
+    "category": "Carte des vins — Bordelais",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Haut-Médoc"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-chateau-alix-75-cl",
+    "name": "Château Alix",
+    "description": "Pessac-Léognan — (Médaille d’or Bordeaux)",
+    "price": 55.0,
+    "category": "Carte des vins — Bordelais",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Pessac-Léognan",
+      "(Médaille d’or Bordeaux)"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-la-salle-de-pougeaux-75-cl",
+    "name": "La Salle de Pougeaux",
+    "description": "Moulis",
+    "price": 56.0,
+    "category": "Carte des vins — Bordelais",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Moulis"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-baron-nathaniel-75-cl",
+    "name": "Baron Nathaniel",
+    "description": "Pauillac",
+    "price": 70.0,
+    "category": "Carte des vins — Bordelais",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Pauillac"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-pavillon-du-glana-75-cl",
+    "name": "Pavillon du Glana",
+    "description": "Saint-Julien",
+    "price": 76.0,
+    "category": "Carte des vins — Bordelais",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Saint-Julien"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-premier-cru-louis-latour-75-cl",
+    "name": "Premier Cru, Louis Latour",
+    "description": "Savigny-lès-Beaune",
+    "price": 105.0,
+    "category": "Carte des vins — Bourgogne",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Savigny-lès-Beaune"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-macon-vigneron-de-mancey-75-cl",
+    "name": "Mâcon Vigneron de Mancey",
+    "description": "Coteaux du Mâconnais",
+    "price": 35.0,
+    "category": "Carte des vins — Bourgogne",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Coteaux du Mâconnais"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-domaine-michel-juillot-75-cl",
+    "name": "Domaine Michel Juillot",
+    "description": "Mercurey",
+    "price": 67.0,
+    "category": "Carte des vins — Bourgogne",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Mercurey"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-domaine-jean-marc-brocard-75-cl",
+    "name": "Domaine Jean-Marc Brocard",
+    "description": "Chablis",
+    "price": 48.0,
+    "category": "Carte des vins — Bourgogne",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Chablis"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-domaine-jean-marc-brocard-2-37-5-cl",
+    "name": "Domaine Jean-Marc Brocard",
+    "description": "Chablis",
+    "price": 28.0,
+    "category": "Carte des vins — Bourgogne",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Chablis"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "37,5 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-domaine-simonet-febvre-75-cl",
+    "name": "Domaine Simonet-Fèbvre",
+    "description": "Saint-Bris — (100 % Sauvignon)",
+    "price": 32.0,
+    "category": "Carte des vins — Bourgogne",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Saint-Bris",
+      "(100 % Sauvignon)"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-domaine-simonet-febvre-2-75-cl",
+    "name": "Domaine Simonet-Fèbvre",
+    "description": "Bourgogne Aligoté — (100 % Chardonnay (mention telle qu’indiquée sur la carte))",
+    "price": 36.0,
+    "category": "Carte des vins — Bourgogne",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Bourgogne Aligoté",
+      "(100 % Chardonnay (mention telle qu’indiquée sur la carte))"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-domaine-piron-75-cl",
+    "name": "Domaine Piron",
+    "description": "Brouilly",
+    "price": 39.0,
+    "category": "Carte des vins — Beaujolais",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Brouilly"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-viridi-maison-brotte-75-cl",
+    "name": "Viridi, Maison Brotte",
+    "description": "Côtes-du-Rhône bio — (BIO)",
+    "price": 35.0,
+    "category": "Carte des vins — Vallée du Rhône",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Côtes-du-Rhône bio",
+      "(BIO)"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-la-petite-ruche-chapoutier-75-cl",
+    "name": "La Petite Ruche, Chapoutier",
+    "description": "Crozes-Hermitage",
+    "price": 56.0,
+    "category": "Carte des vins — Vallée du Rhône",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Crozes-Hermitage"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-la-petite-ruche-chapoutier-2-37-5-cl",
+    "name": "La Petite Ruche, Chapoutier",
+    "description": "Crozes-Hermitage",
+    "price": 32.0,
+    "category": "Carte des vins — Vallée du Rhône",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Crozes-Hermitage"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "37,5 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-domaine-de-l-ange-75-cl",
+    "name": "Domaine de l’Ange",
+    "description": "Châteauneuf-du-Pape",
+    "price": 73.0,
+    "category": "Carte des vins — Vallée du Rhône",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Châteauneuf-du-Pape"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-cuvee-prestige-75-cl",
+    "name": "Cuvée Prestige",
+    "description": "Vacqueyras",
+    "price": 38.0,
+    "category": "Carte des vins — Vallée du Rhône",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Vacqueyras"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-cuvee-prestige-2-37-5-cl",
+    "name": "Cuvée Prestige",
+    "description": "Vacqueyras",
+    "price": 24.0,
+    "category": "Carte des vins — Vallée du Rhône",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Vacqueyras"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "37,5 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-chapoutier-75-cl",
+    "name": "Chapoutier",
+    "description": "Saint-Joseph",
+    "price": 72.0,
+    "category": "Carte des vins — Vallée du Rhône",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Saint-Joseph"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-chapoutier-2-37-5-cl",
+    "name": "Chapoutier",
+    "description": "Saint-Joseph",
+    "price": 35.0,
+    "category": "Carte des vins — Vallée du Rhône",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Saint-Joseph"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "37,5 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-les-charmilles-75-cl",
+    "name": "Les Charmilles",
+    "description": "Côtes-du-Rhône — (Vin maison)",
+    "price": 29.0,
+    "category": "Carte des vins — Vallée du Rhône",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Côtes-du-Rhône",
+      "(Vin maison)"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-domaine-de-la-chevalerie-vieilles-vignes-75-cl",
+    "name": "Domaine de la Chevalerie, Vieilles Vignes",
+    "description": "Saint-Nicolas-de-Bourgueil",
+    "price": 33.0,
+    "category": "Carte des vins — Vallée de la Loire",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Saint-Nicolas-de-Bourgueil"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-chateau-de-sancerre-75-cl",
+    "name": "Château de Sancerre",
+    "description": "Sancerre",
+    "price": 52.0,
+    "category": "Carte des vins — Vallée de la Loire",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Sancerre"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-sylvain-bailly-75-cl",
+    "name": "Sylvain Bailly",
+    "description": "Sancerre",
+    "price": 52.0,
+    "category": "Carte des vins — Vallée de la Loire",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Sancerre"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-domaine-figeat-cuvee-xxl-75-cl",
+    "name": "Domaine Figeat, Cuvée XXL",
+    "description": "Pouilly-Fumé",
+    "price": 45.0,
+    "category": "Carte des vins — Vallée de la Loire",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Pouilly-Fumé"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-marius-maison-chapoutier-75-cl",
+    "name": "Marius, Maison Chapoutier",
+    "description": "Pays d’Oc",
+    "price": 32.0,
+    "category": "Carte des vins — Pays d’Oc",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Pays d’Oc"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-pinot-noir-maison-kientz-37-5-cl",
+    "name": "Pinot noir, Maison Kientz",
+    "description": "Alsace",
+    "price": 24.0,
+    "category": "Carte des vins — Alsace",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Alsace"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "37,5 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-maison-kientz-75-cl",
+    "name": "Maison Kientz",
+    "description": "Gewurztraminer",
+    "price": 36.0,
+    "category": "Carte des vins — Alsace",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Gewurztraminer"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-le-roi-b-uf-lionel-osmin-75-cl",
+    "name": "Le Roi Bœuf, Lionel Osmin",
+    "description": "Marcillac",
+    "price": 45.0,
+    "category": "Carte des vins — Landes",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Marcillac"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-m-de-minuty-75-cl",
+    "name": "M de Minuty",
+    "description": "Côtes-de-Provence — (rosé)",
+    "price": 45.0,
+    "category": "Carte des vins — Provence",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Côtes-de-Provence",
+      "(rosé)"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-domaine-de-terra-vecchia-cuvee-stella-75-cl",
+    "name": "Domaine de Terra-Vecchia, Cuvée Stella",
+    "description": "Corse — (rosé)",
+    "price": 28.0,
+    "category": "Carte des vins — Corse",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Corse",
+      "(rosé)"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "75 cl",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-chinon-maison-couly-dutheil",
+    "name": "Chinon, Maison Couly-Dutheil",
+    "description": "Loire — Cépage : 100 % Chenin",
+    "price": 6.0,
+    "category": "Carte des vins — Vin au verre",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Loire",
+      "Cépage : 100 % Chenin"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-ete-indien-domaine-paraza",
+    "name": "Été Indien, Domaine Paraza",
+    "description": "Minervois — Vin de macération type « orange », 100 % Gewurztraminer : fleurs blanches, poire, miel, fruité et sec",
+    "price": 7.0,
+    "category": "Carte des vins — Vin au verre",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Minervois",
+      "Vin de macération type « orange »",
+      "100 % Gewurztraminer : fleurs blanches",
+      "Poire",
+      "Miel",
+      "Fruité et sec"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-vezelay-domaine-simonet-fevres",
+    "name": "Vézelay, Domaine Simonet-Fèvres",
+    "description": "Bourgogne — Minéral, idéal sur un poisson — Cépage : 100 % Chardonnay",
+    "price": 8.0,
+    "category": "Carte des vins — Vin au verre",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Bourgogne",
+      "Minéral",
+      "Idéal sur un poisson",
+      "Cépage : 100 % Chardonnay"
+    ],
+    "allergens": [
+      "poissons",
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-pouilly-fume-cuvee-xxl-domaine-figeat",
+    "name": "Pouilly-Fumé Cuvée XXL, Domaine Figeat",
+    "description": "Loire — Coup de cœur Guide Hachette — Cépage : 100 % Sauvignon",
+    "price": 9.5,
+    "category": "Carte des vins — Vin au verre",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Loire",
+      "Coup de cœur Guide Hachette",
+      "Cépage : 100 % Sauvignon"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-villa-chambre-d-amour-lionel-osmin",
+    "name": "Villa Chambre d’Amour, Lionel Osmin",
+    "description": "Sud-Ouest — Légèrement sucré, élégant à l’apéritif ou avec du foie gras, notes d’agrumes",
+    "price": 6.5,
+    "category": "Carte des vins — Vin au verre",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Sud-Ouest",
+      "Légèrement sucré",
+      "Élégant à l’apéritif ou avec du foie gras",
+      "Notes d’agrumes"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-chinon-maison-couly-dutheil-2",
+    "name": "Chinon, Maison Couly-Dutheil",
+    "description": "Loire — Cépage : 100 % Cabernet franc",
+    "price": 6.0,
+    "category": "Carte des vins — Vin au verre",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Loire",
+      "Cépage : 100 % Cabernet franc"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-les-hauts-de-naudon-domaine-du-chateau-pierrail",
+    "name": "Les Hauts de Naudon, Domaine du Château Pierrail",
+    "description": "Bordelais —",
+    "price": 7.0,
+    "category": "Carte des vins — Vin au verre",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Bordelais —"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-des-lyres-de-pinot-noir-domaine-simonet-febvre",
+    "name": "Des Lyres de Pinot Noir, Domaine Simonet-Fèbvre",
+    "description": "Bourgogne — Vignoble en Auxois, notes de framboise, cerise, cassis — Cépage : 100 % Pinot noir",
+    "price": 8.5,
+    "category": "Carte des vins — Vin au verre",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Bourgogne",
+      "Vignoble en Auxois",
+      "Notes de framboise",
+      "Cerise",
+      "Cassis",
+      "Cépage : 100 % Pinot noir"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-le-roi-b-uf-lionel-osmin-2",
+    "name": "Le Roi Bœuf, Lionel Osmin",
+    "description": "Landes — AOP Marcillac, récolté sur les terres de Michel Guérard, cuvée des fêtes des bœufs gras de Bazas",
+    "price": 9.5,
+    "category": "Carte des vins — Vin au verre",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Landes",
+      "AOP Marcillac",
+      "Récolté sur les terres de Michel Guérard",
+      "Cuvée des fêtes des bœufs gras de Bazas"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-m-de-minuty-2",
+    "name": "M de Minuty",
+    "description": "Provence — Côtes-de-Provence AOP",
+    "price": 9.5,
+    "category": "Carte des vins — Vin au verre",
+    "categoryId": "vins",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Provence",
+      "Côtes-de-Provence AOP"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-la-coupe-de-champagne-axel-yaz",
+    "name": "La coupe de champagne, Axel Yaz",
+    "description": "",
+    "price": 13.0,
+    "category": "Carte des boissons — Champagne",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-besserat-de-bellefon-la-bouteille",
+    "name": "Besserat de Bellefon",
+    "description": "",
+    "price": 85.0,
+    "category": "Carte des boissons — Champagne",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "la bouteille",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-pommery-la-bouteille",
+    "name": "Pommery",
+    "description": "",
+    "price": 85.0,
+    "category": "Carte des boissons — Champagne",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "la bouteille",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-ruinart-la-bouteille",
+    "name": "Ruinart",
+    "description": "",
+    "price": 130.0,
+    "category": "Carte des boissons — Champagne",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": "la bouteille",
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-kir-royal",
+    "name": "Kir royal",
+    "description": "",
+    "price": 9.5,
+    "category": "Carte des boissons — Apéritifs",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-kir-vin-blanc",
+    "name": "Kir vin blanc",
+    "description": "Cassis, mûre, violette, pêche, fraise des bois",
+    "price": 6.0,
+    "category": "Carte des boissons — Apéritifs",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Cassis",
+      "Mûre",
+      "Violette",
+      "Pêche",
+      "Fraise des bois"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-picon-biere-ou-picon-vin-blanc",
+    "name": "Picon-bière ou picon-vin blanc",
+    "description": "",
+    "price": 7.0,
+    "category": "Carte des boissons — Apéritifs",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-martini-blanc-rouge-ricard",
+    "name": "Martini blanc / rouge, Ricard",
+    "description": "",
+    "price": 6.0,
+    "category": "Carte des boissons — Apéritifs",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-porto-graham-s-rouge-blanc",
+    "name": "Porto Graham’s rouge / blanc",
+    "description": "",
+    "price": 7.0,
+    "category": "Carte des boissons — Apéritifs",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-pineau-des-charentes",
+    "name": "Pineau des Charentes",
+    "description": "",
+    "price": 6.0,
+    "category": "Carte des boissons — Apéritifs",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-teacher-s",
+    "name": "Teacher’s",
+    "description": "",
+    "price": 7.5,
+    "category": "Carte des boissons — Whisky",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-jack-daniel-s",
+    "name": "Jack Daniel’s",
+    "description": "",
+    "price": 8.5,
+    "category": "Carte des boissons — Whisky",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-cardhu-12-ans-single-malt",
+    "name": "Cardhu 12 ans Single Malt",
+    "description": "",
+    "price": 8.5,
+    "category": "Carte des boissons — Whisky",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-togouchi-japonais",
+    "name": "Togouchi (Japonais)",
+    "description": "",
+    "price": 9.0,
+    "category": "Carte des boissons — Whisky",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-knokando-12-ans-single-malt",
+    "name": "Knokando 12 ans Single Malt",
+    "description": "",
+    "price": 9.0,
+    "category": "Carte des boissons — Whisky",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-chivas-12-ans-blended",
+    "name": "Chivas 12 ans Blended",
+    "description": "",
+    "price": 10.0,
+    "category": "Carte des boissons — Whisky",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-pointe-blanche-single-malt-ile-de-re",
+    "name": "Pointe Blanche (single malt, Île de Ré)",
+    "description": "",
+    "price": 10.0,
+    "category": "Carte des boissons — Whisky",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-cocktail-maison",
+    "name": "Cocktail maison",
+    "description": "Méthode champenoise, Picon, Grand-Marnier",
+    "price": 13.0,
+    "category": "Carte des boissons — Cocktails",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Méthode champenoise",
+      "Picon",
+      "Grand-Marnier"
+    ],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-spritz",
+    "name": "Spritz",
+    "description": "",
+    "price": 10.0,
+    "category": "Carte des boissons — Cocktails",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-americano-maison",
+    "name": "Américano maison",
+    "description": "",
+    "price": 9.0,
+    "category": "Carte des boissons — Cocktails",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-campari-orange",
+    "name": "Campari-orange",
+    "description": "",
+    "price": 8.0,
+    "category": "Carte des boissons — Cocktails",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-gin-ou-vodka-tonic",
+    "name": "Gin ou vodka tonic",
+    "description": "",
+    "price": 10.0,
+    "category": "Carte des boissons — Cocktails",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-cocktail-de-jus-de-fruits",
+    "name": "Cocktail de jus de fruits",
+    "description": "",
+    "price": 7.5,
+    "category": "Carte des boissons — Cocktails",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [
+      "sulfites"
+    ],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-anosteke-pression-25-cl",
+    "name": "Anosteké (pression) 25 cl",
+    "description": "Élue meilleure bière au monde 2021/2022",
+    "price": 5.5,
+    "category": "Carte des boissons — Bières",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Élue meilleure bière au monde 2021/2022"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-anosteke-pression-33-cl",
+    "name": "Anosteké (pression) 33 cl",
+    "description": "",
+    "price": 7.5,
+    "category": "Carte des boissons — Bières",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-anosteke-pression-50-cl",
+    "name": "Anosteké (pression) 50 cl",
+    "description": "",
+    "price": 9.5,
+    "category": "Carte des boissons — Bières",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-hoopy-yuzu-brasserie-des-celestins-33-cl",
+    "name": "Hoopy Yuzu, Brasserie des Célestins (33 cl)",
+    "description": "",
+    "price": 7.5,
+    "category": "Carte des boissons — Bières",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-blanche-de-wissant-brasserie-noyon-33-cl",
+    "name": "Blanche de Wissant, Brasserie Noyon (33 cl)",
+    "description": "",
+    "price": 7.5,
+    "category": "Carte des boissons — Bières",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-la-goudale-sans-alcool-33-cl",
+    "name": "La Goudale sans alcool (33 cl)",
+    "description": "",
+    "price": 6.5,
+    "category": "Carte des boissons — Bières",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-bulles-d-opale-petillant-pomme-cassis-bio",
+    "name": "Bulles d’Opale — pétillant pomme/cassis bio",
+    "description": "Sans sucre ajouté (22 kcal), fabriqué à Pernes-lès-Boulogne",
+    "price": 8.0,
+    "category": "Carte des boissons — Soft",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Sans sucre ajouté (22 kcal)",
+      "Fabriqué à Pernes-lès-Boulogne"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-jus-de-fruit-granini",
+    "name": "Jus de fruit Granini",
+    "description": "Orange, pamplemousse, pomme, abricot, ananas, tomate",
+    "price": 6.0,
+    "category": "Carte des boissons — Soft",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Orange",
+      "Pamplemousse",
+      "Pomme",
+      "Abricot",
+      "Ananas",
+      "Tomate"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-lipton-ice-tea-schweppes-orangina-limonade-coca-cola",
+    "name": "Lipton Ice Tea, Schweppes, Orangina, Limonade, Coca-Cola",
+    "description": "",
+    "price": 6.0,
+    "category": "Carte des boissons — Soft",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-cocktail-de-jus-de-fruits-2",
+    "name": "Cocktail de jus de fruits",
+    "description": "Fraise, pamplemousse, sirop de litchi",
+    "price": 7.5,
+    "category": "Carte des boissons — Soft",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Fraise",
+      "Pamplemousse",
+      "Sirop de litchi"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-vittel",
+    "name": "Vittel",
+    "description": "Litre / 1,5 L à 5,00 €",
+    "price": 7.5,
+    "category": "Carte des boissons — Eaux",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Litre / 1",
+      "5 L à 5",
+      "00 €"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-perrier-fines-bulles",
+    "name": "Perrier fines bulles",
+    "description": "Litre / 1,5 L à 5,00 €",
+    "price": 7.5,
+    "category": "Carte des boissons — Eaux",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Litre / 1",
+      "5 L à 5",
+      "00 €"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-expresso-meo",
+    "name": "Expresso Méo",
+    "description": "",
+    "price": 3.0,
+    "category": "Carte des boissons — Boissons chaudes",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-double-expresso-meo",
+    "name": "Double expresso Méo",
+    "description": "",
+    "price": 4.2,
+    "category": "Carte des boissons — Boissons chaudes",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-cappuccino",
+    "name": "Cappuccino",
+    "description": "",
+    "price": 5.5,
+    "category": "Carte des boissons — Boissons chaudes",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [
+      "lait"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-the-daman-noir-ou-vert",
+    "name": "Thé Daman noir ou vert",
+    "description": "",
+    "price": 5.5,
+    "category": "Carte des boissons — Boissons chaudes",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-infusion-daman",
+    "name": "Infusion Daman",
+    "description": "Tilleul, tilleul-menthe, verveine-menthe",
+    "price": 5.5,
+    "category": "Carte des boissons — Boissons chaudes",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Tilleul",
+      "Tilleul-menthe",
+      "Verveine-menthe"
+    ],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-irish-coffee",
+    "name": "Irish-coffee",
+    "description": "",
+    "price": 13.0,
+    "category": "Carte des boissons — Boissons chaudes",
+    "categoryId": "boissons",
+    "menuGroup": "La Carte",
+    "ingredients": [],
+    "allergens": [],
+    "dietaryTags": [
+      "vegetarian",
+      "gluten-free",
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": false,
+    "course": "drink",
+    "origin": null
+  },
+  {
+    "id": "ha-menu-bonne-fete-maman",
+    "name": "Menu « Bonne Fête Maman »",
+    "description": "Tartare de tomates / burrata en espuma, sorbet citron-basilic, crumble à l’ail noir · Terrine de foie gras de canard, vinaigrette asperges et petits-pois · Rémoulade de gambas en mimosa, avocat, céleri, crémeux piquillos, huile de coriandre · Dos de maigre, beurre émulsionné au vinaigre de mûres, betterave, rhubarbe, croquette de pomme de terre · Tournedos de veau, crème au vin jaune, asperges, fricassée de champignons, purée · Éclair fraises, framboises, hibiscus · Finger pi",
+    "price": 60.0,
+    "category": "Menus d’exception",
+    "categoryId": "fetes",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Tartare de tomates / burrata en espuma",
+      "Sorbet citron-basilic",
+      "Crumble à l’ail noir",
+      "Terrine de foie gras de canard",
+      "Vinaigrette asperges et petits-pois",
+      "Rémoulade de gambas en mimosa",
+      "Avocat",
+      "Céleri",
+      "Crémeux piquillos",
+      "Huile de coriandre",
+      "Dos de maigre",
+      "Beurre émulsionné au vinaigre de mûres"
+    ],
+    "allergens": [
+      "crustacés",
+      "céleri",
+      "gluten",
+      "lait",
+      "poissons",
+      "œufs"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 1,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": true,
+    "course": "menu",
+    "origin": null
+  },
+  {
+    "id": "ha-dejeuner-de-noel",
+    "name": "Déjeuner de Noël",
+    "description": "Velouté céleri / pomme Granny, haddock fumé, mouillette au beurre homardine · Foie gras de canard poêlé, tarte fine betteraves, oignons rouges, cranberries, jus corsé au vinaigre de framboise · Saint-Jacques marinées, pikles de topinambours et champignons, avocat, crème épaisse à l’huile de truffe · Filet de Saint-Pierre, espuma de beurre noisette, citron, salicornes, croûtons, purée de panais, carottes miso-miel · Suprême de poularde, crème au vin jaune, fricassée de ris de ",
+    "price": 75.0,
+    "category": "Menus d’exception",
+    "categoryId": "fetes",
+    "menuGroup": "La Carte",
+    "ingredients": [
+      "Velouté céleri / pomme Granny",
+      "Haddock fumé",
+      "Mouillette au beurre homardine",
+      "Foie gras de canard poêlé",
+      "Tarte fine betteraves",
+      "Oignons rouges",
+      "Cranberries",
+      "Jus corsé au vinaigre de framboise",
+      "Saint-Jacques marinées",
+      "Pikles de topinambours et champignons",
+      "Avocat",
+      "Crème épaisse à l’huile de truffe"
+    ],
+    "allergens": [
+      "céleri",
+      "fruits à coque",
+      "gluten",
+      "lait",
+      "mollusques",
+      "poissons",
+      "soja"
+    ],
+    "dietaryTags": [
+      "no-pork"
+    ],
+    "spiceLevel": 0,
+    "availability": "available",
+    "portion": null,
+    "isFeatured": true,
+    "course": "menu",
+    "origin": null
+  }
+]
