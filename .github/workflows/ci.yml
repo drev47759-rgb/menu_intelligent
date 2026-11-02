@@ -7,6 +7,10 @@ on:
     branches: [develop, main]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  issues: write
+
 jobs:
   ci:
     runs-on: ubuntu-latest
@@ -17,7 +21,23 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run lint
+      - name: Lint (diagnostic en cas d'échec)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set +e
+          npm run lint > lint-output.txt 2>&1
+          code=$?
+          if [ "$code" -ne 0 ]; then
+            {
+              echo "## Diagnostic lint (exit $code)"
+              echo '\`\`\`'
+              cat lint-output.txt
+              echo '\`\`\`'
+            } > /tmp/lint-issue.md
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "Diagnostic lint — échec" --body-file /tmp/lint-issue.md || true
+          fi
+          exit "$code"
       - run: npm run typecheck
       - run: npm run build
       - run: npm audit --omit=dev --audit-level=critical
