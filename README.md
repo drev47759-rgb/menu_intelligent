@@ -44,7 +44,7 @@ Variable d'environnement recommandée en production :
 
 ### URLs
 
-- **Production** : le domaine attribué au projet est visible dans le dashboard Vercel → **Settings → Domains** — attention, le suffixe attribué par Vercel peut différer du nom du compte (ex. `menuintelligent-crev47759-rgb.vercel.app` et non `menuintelligent-drev47759-rgb.vercel.app`). Servie par la branche `main`.
+- **Production** : `https://onmangequoi-mu.vercel.app` (domaine attribué au projet, visible dans le dashboard → Settings → Domains). Servie par la branche `main`.
 - **Preview** : alias de branche de la forme `menuintelligent-git-develop-<suffixe>.vercel.app` (même suffixe que le domaine de production) — mise à jour à chaque push sur `develop` ; soumise au Deployment Protection.
 - Les URL de déploiement éphémères (`menuintelligent-<id>-<suffixe>.vercel.app`) ne correspondent qu'à un build unique : elles peuvent renvoyer un 404 `NOT_FOUND`. Toujours utiliser le bouton **Visit** du dashboard ou les domaines listés dans Settings → Domains.
 ## Sécurité
