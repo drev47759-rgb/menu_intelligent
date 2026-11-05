@@ -7,7 +7,8 @@ Branche de test : `feat/decouverte-aleatoire-datagouv`.
 ```
 API Recherche d'entreprises (Sirene / data.gouv)   [gratuit, sans auth]
         │  tirage aléatoire : mot-clé + page aléatoire (NAF 56.10A, actifs)
-        │  ou commune ciblée (API Geo → code_commune)
+        │  ou ciblage : commune (API Geo → code_commune) et/ou nom
+        │  (recherche plein texte sur la dénomination)
         ▼
 SIRET du siège + adresse étendue
         ▼
@@ -81,18 +82,29 @@ La page d'accueil embarque un bouton **J'ai de la chance**
   format PDF est signalé par une **icône distinctive** — badge ambre
   « Menu PDF uniquement » (icône document) + liens directs vers les PDF.
 
-### Ciblage par ville
+### Ciblage par nom et par ville
 
-Un **champ texte « Ville »** accompagne le bouton : la saisie libre est
-résolue en commune réelle via l'**API Geo** (geo.api.gouv.fr, gratuite),
-puis le tirage filtre sur `code_commune` (codes postaux en repli) tout en
-restant aléatoire dans tout le bassin de la commune (page tirée au
-hasard). Champ vide = tirage dans toute la France.
+Deux **champs texte** accompagnent le bouton : **Nom du restaurant**
+et **Ville** (tous deux optionnels, indépendants et combinables).
 
-- Ville inconnue → erreur 400 explicite « Ville introuvable ».
-- Tous les restaurants actifs de la ville déjà enregistrés → 409 « déjà
-  dans votre liste ».
-- Paramètre : `/api/discovery?ville=Strasbourg&exclude=…`.
+- **Nom** : recherche plein texte sur la dénomination/enseigne (paramètre
+  `q` de l'API Recherche d'entreprises), bornée au NAF
+  restauration et à la commune si une ville est aussi saisie ; la page
+  est tirée au hasard dans tout le bassin des résultats (une chaîne à
+  nombreux établissements reste tirée équitablement).
+- **Ville** : la saisie libre est résolue en commune réelle via l'**API
+  Geo** (geo.api.gouv.fr, gratuite), puis le tirage filtre sur
+  `code_commune` (codes postaux en repli) tout en restant
+  aléatoire dans tout le bassin de la commune.
+- Champs vides = tirage dans toute la France, sans filtre de nom ni de
+  ville.
+
+- Nom sans aucun restaurant actif correspondant → 404 « Aucun
+  restaurant en activité ne correspond à “nom”… ».
+- Ville inconnue → 400 « Ville introuvable ».
+- Tous les restaurants actifs correspondants déjà enregistrés → 409
+  « déjà dans votre liste » (décidé après plusieurs pages tirées).
+- Paramètre : `/api/discovery?nom=Gurtlerhoft&ville=Strasbourg&exclude=…`.
 
 ### Peuplement automatique des menus (y compris PDF)
 

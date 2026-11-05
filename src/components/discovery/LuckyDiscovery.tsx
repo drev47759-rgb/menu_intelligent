@@ -50,12 +50,16 @@ const VERIF_LABEL: Record<string, string> = {
 const linkClass =
   "inline-flex items-center gap-1.5 rounded-full bg-cream px-3 py-1.5 text-sm font-medium text-ink shadow-border hover:bg-paper";
 
+const inputClass =
+  "min-h-11 rounded-full border border-line bg-cream px-4 text-sm text-ink transition-colors duration-(--motion-fast) placeholder:text-ink-subtle focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
+
 const ERREUR_DEFAUT =
   "Le tirage a échoué. Relancez : la base Sirene reste gratuite.";
 
 export function LuckyDiscovery() {
   const [status, setStatus] = useState<Status>("idle");
   const [ville, setVille] = useState("");
+  const [nom, setNom] = useState("");
   const [result, setResult] = useState<DiscoveryResult | null>(null);
   const [added, setAdded] = useState<boolean | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
@@ -67,11 +71,13 @@ export function LuckyDiscovery() {
     setErrorMsg(null);
     try {
       // Le tirage exclut les SIRET déjà dans la liste de l'utilisateur :
-      // chaque clic ajoute un NOUVEAU restaurant. La ville (optionnelle)
-      // cible le tirage sur une commune précise.
+      // chaque clic ajoute un NOUVEAU restaurant. Les champs optionnels
+      // ciblent le tirage : nom (dénomination) et/ou ville (commune).
       const params = new URLSearchParams();
-      const saisie = ville.trim();
-      if (saisie.length > 0) params.set("ville", saisie);
+      const saisieVille = ville.trim();
+      if (saisieVille.length > 0) params.set("ville", saisieVille);
+      const saisieNom = nom.trim();
+      if (saisieNom.length > 0) params.set("nom", saisieNom);
       const sirets = getSirets();
       if (sirets.length > 0) params.set("exclude", sirets.join(","));
 
@@ -120,11 +126,19 @@ export function LuckyDiscovery() {
       <div className="flex flex-wrap items-center gap-3">
         <input
           type="text"
+          value={nom}
+          onChange={(event) => setNom(event.target.value)}
+          placeholder="Nom du restaurant (ex. Gurtlerhoft)"
+          aria-label="Nom du restaurant ciblé pour le tirage (optionnel)"
+          className={inputClass + " w-64"}
+        />
+        <input
+          type="text"
           value={ville}
           onChange={(event) => setVille(event.target.value)}
           placeholder="Ville (ex. Strasbourg)"
           aria-label="Ville ciblée pour le tirage (optionnel)"
-          className="min-h-11 w-52 rounded-full border border-line bg-cream px-4 text-sm text-ink transition-colors duration-(--motion-fast) placeholder:text-ink-subtle focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          className={inputClass + " w-52"}
         />
         <button
           type="button"
@@ -137,14 +151,15 @@ export function LuckyDiscovery() {
           ) : (
             <Dices className="size-4" aria-hidden />
           )}
-          {busy ? "Tirage en cours…" : "J’ai de la chance"}
+          {busy ? "Tirage en cours…" : "J'ai de la chance"}
         </button>
       </div>
       <p className="mt-3 text-sm leading-normal text-ink-muted">
         Un restaurant au hasard, <strong>SIRET en activité</strong>{" "}
         uniquement — carte peuplée automatiquement, il rejoint la liste avec
-        les mêmes actions que les maisons préchargées. Laissez la ville vide
-        pour tirer dans toute la France.
+        les mêmes actions que les maisons préchargées. Ciblez par nom
+        et/ou par ville, ou laissez les champs vides pour tirer dans
+        toute la France.
       </p>
 
       <div aria-live="polite">
