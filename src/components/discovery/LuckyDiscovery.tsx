@@ -50,48 +50,65 @@ const VERIF_LABEL: Record<string, string> = {
 const linkClass =
   "inline-flex items-center gap-1.5 rounded-full bg-cream px-3 py-1.5 text-sm font-medium text-ink shadow-border hover:bg-paper";
 
+const ERREUR_DEFAUT =
+  "Le tirage a échoué. Relancez : la base Sirene reste gratuite.";
+
 export function LuckyDiscovery() {
   const [status, setStatus] = useState<Status>("idle");
+  const [ville, setVille] = useState("");
   const [result, setResult] = useState<DiscoveryResult | null>(null);
   const [added, setAdded] = useState<boolean | null>(null);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   async function roll() {
     setStatus("loading");
     setResult(null);
     setAdded(null);
+    setErrorMsg(null);
     try {
       // Le tirage exclut les SIRET déjà dans la liste de l'utilisateur :
-      // chaque clic ajoute un NOUVEAU restaurant.
+      // chaque clic ajoute un NOUVEAU restaurant. La ville (optionnelle)
+      // cible le tirage sur une commune précise.
+      const params = new URLSearchParams();
+      const saisie = ville.trim();
+      if (saisie.length > 0) params.set("ville", saisie);
       const sirets = getSirets();
-      const url =
-        "/api/discovery" +
-        (sirets.length > 0
-          ? "?exclude=" + encodeURIComponent(sirets.join(","))
-          : "");
-      const res = await fetch(url, { cache: "no-store" });
-      if (!res.ok) throw new Error("discovery_failed");
-      const data = (await res.json()) as DiscoveryResult;
+      if (sirets.length > 0) params.set("exclude", sirets.join(","));
 
+      const res = await fetch("/api/discovery?" + params.toString(), {
+        cache: "no-store",
+      });
+      const data: unknown = await res.json().catch(() => null);
+      if (!res.ok) {
+        const msg = (data as { error?: string } | null)?.error;
+        setErrorMsg(msg ?? ERREUR_DEFAUT);
+        setStatus("error");
+        return;
+      }
+
+      const payload = data as DiscoveryResult;
       // Le restaurant découvert rejoint la liste complète (localStorage) :
-      // la grille des restaurants se met à jour toute seule.
+      // la grille des restaurants se met à jour toute seule. Le menu est
+      // peuplé automatiquement côté serveur — l'utilisateur n'a rien à
+      // chercher à la main.
       const isAdded = saveEntry({
-        siret: data.restaurant.siret,
+        siret: payload.restaurant.siret,
         savedAt: new Date().toISOString(),
-        restaurant: data.catalogue.restaurant,
-        dishes: data.catalogue.dishes,
-        menuFormat: data.menuFormat,
-        menusPdf: data.menusPdf,
-        plateformes: data.plateformes,
-        verification: data.verification,
-        siteOfficiel: data.siteOfficiel,
-        source: data.source,
+        restaurant: payload.catalogue.restaurant,
+        dishes: payload.catalogue.dishes,
+        menuFormat: payload.menuFormat,
+        menusPdf: payload.menusPdf,
+        plateformes: payload.plateformes,
+        verification: payload.verification,
+        siteOfficiel: payload.siteOfficiel,
+        source: payload.source,
       });
 
-      setResult(data);
+      setResult(payload);
       setAdded(isAdded);
       setStatus("done");
     } catch {
-      setResult(null);
+      setErrorMsg(ERREUR_DEFAUT);
       setStatus("error");
     }
   }
@@ -100,7 +117,15 @@ export function LuckyDiscovery() {
 
   return (
     <div className="rounded-2xl bg-paper p-6 shadow-border">
-      <div className="flex flex-wrap items-center gap-4">
+      <div className="flex flex-wrap items-center gap-3">
+        <input
+          type="text"
+          value={ville}
+          onChange={(event) => setVille(event.target.value)}
+          placeholder="Ville (ex. Strasbourg)"
+          aria-label="Ville ciblée pour le tirage (optionnel)"
+          className="min-h-11 w-52 rounded-full border border-line bg-cream px-4 text-sm text-ink transition-colors duration-(--motion-fast) placeholder:text-ink-subtle focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        />
         <button
           type="button"
           onClick={roll}
@@ -114,18 +139,17 @@ export function LuckyDiscovery() {
           )}
           {busy ? "Tirage en cours…" : "J’ai de la chance"}
         </button>
-        <p className="text-sm leading-normal text-ink-muted">
-          Un restaurant au hasard, <strong>SIRET en activité</strong>{" "}
-          uniquement — il rejoint la liste avec les mêmes actions que les
-          maisons préchargées.
-        </p>
       </div>
+      <p className="mt-3 text-sm leading-normal text-ink-muted">
+        Un restaurant au hasard, <strong>SIRET en activité</strong>{" "}
+        uniquement — carte peuplée automatiquement, il rejoint la liste avec
+        les mêmes actions que les maisons préchargées. Laissez la ville vide
+        pour tirer dans toute la France.
+      </p>
 
       <div aria-live="polite">
-        {status === "error" && (
-          <p className="mt-4 text-sm text-danger">
-            Le tirage a échoué. Relancez : la base Sirene reste gratuite.
-          </p>
+        {status === "error" && errorMsg !== null && (
+          <p className="mt-4 text-sm text-danger">{errorMsg}</p>
         )}
         {status === "done" && result && (
           <DiscoveryCard result={result} added={added} onRelance={roll} />
@@ -146,6 +170,7 @@ function DiscoveryCard({
 }) {
   const r = result.restaurant;
   const rest = result.catalogue.restaurant;
+  const nbPlats = result.catalogue.dishes.length;
   return (
     <div className="mt-6 rounded-xl bg-cream p-5 shadow-border">
       <div className="flex flex-wrap items-start justify-between gap-3">
@@ -169,6 +194,14 @@ function DiscoveryCard({
 
       <div className="mt-4 flex flex-wrap items-center gap-2">
         <MenuFormatBadge format={result.menuFormat} />
+        {nbPlats > 0 ? (
+          <span className="inline-flex items-center rounded-full bg-cream px-3 py-1 text-xs font-semibold text-ink shadow-border">
+            {nbPlats} plat{nbPlats > 1 ? "s" : ""} extrait
+            {nbPlats > 1 ? "s" : ""}
+            {result.menuFormat === "pdf" ? " du PDF" : " de la carte"} —
+            automatiquement
+          </span>
+        ) : null}
         {result.verification.statut === "verifie" ? (
           <span className="inline-flex items-center gap-1.5 rounded-full bg-cream px-3 py-1 text-xs font-semibold text-ink shadow-border">
             <BadgeCheck className="size-3.5 text-available" aria-hidden />
@@ -275,7 +308,8 @@ function DiscoveryCard({
 
 /**
  * Format du menu détecté. Un restaurant dont le menu n'existe qu'au format
- * PDF porte une icône distinctive (badge ambre « Menu PDF uniquement »).
+ * PDF porte une icône distinctive (badge ambre « Menu PDF uniquement ») —
+ * mais ses plats sont quand même extraits automatiquement du PDF.
  */
 function MenuFormatBadge({ format }: { format: DiscoveryResult["menuFormat"] }) {
   if (format === "pdf") {

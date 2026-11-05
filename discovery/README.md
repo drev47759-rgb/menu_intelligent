@@ -7,6 +7,7 @@ Branche de test : `feat/decouverte-aleatoire-datagouv`.
 ```
 API Recherche d'entreprises (Sirene / data.gouv)   [gratuit, sans auth]
         │  tirage aléatoire : mot-clé + page aléatoire (NAF 56.10A, actifs)
+        │  ou commune ciblée (API Geo → code_commune)
         ▼
 SIRET du siège + adresse étendue
         ▼
@@ -15,13 +16,15 @@ Recherche du site web officiel (DuckDuckGo HTML)     [gratuit, sans clé]
 Vérification d'officialité : SIRET / SIREN / adresse étendue
 trouvé dans la page Mentions légales ou le footer du site
         ▼
-Recherche des menus PDF rattachés au restaurant (pages carte/menu, liens .pdf)
+Peuplement automatique des plats : pages carte HTML → sinon parsing
+direct des menus PDF (FlateDecode + opérateurs texte, sans dépendance)
         ▼
-Peuplement : téléchargement des PDF → texte (pypdf) → catalogue JSON
-au format Dish (src/types/menu.ts)
+Catalogue complet : fiche Restaurant + plats Dish
+au format des maisons préchargées (src/types/menu.ts)
 ```
 
-Script : `scripts/discover-restaurant.py` (stdlib uniquement ; `pypdf` optionnel pour l'étape PDF).
+Script de référence : `scripts/discover-restaurant.py` (stdlib uniquement ;
+`pypdf` optionnel pour l'étape PDF).
 
 ## Test réel du 5 novembre 2026
 
@@ -78,6 +81,37 @@ La page d'accueil embarque un bouton **J'ai de la chance**
   format PDF est signalé par une **icône distinctive** — badge ambre
   « Menu PDF uniquement » (icône document) + liens directs vers les PDF.
 
+### Ciblage par ville
+
+Un **champ texte « Ville »** accompagne le bouton : la saisie libre est
+résolue en commune réelle via l'**API Geo** (geo.api.gouv.fr, gratuite),
+puis le tirage filtre sur `code_commune` (codes postaux en repli) tout en
+restant aléatoire dans tout le bassin de la commune (page tirée au
+hasard). Champ vide = tirage dans toute la France.
+
+- Ville inconnue → erreur 400 explicite « Ville introuvable ».
+- Tous les restaurants actifs de la ville déjà enregistrés → 409 « déjà
+  dans votre liste ».
+- Paramètre : `/api/discovery?ville=Strasbourg&exclude=…`.
+
+### Peuplement automatique des menus (y compris PDF)
+
+Les données du menu sont **toujours peuplées automatiquement** —
+l'utilisateur n'a jamais à chercher quoi que ce soit à la main :
+
+1. les plats sont extraits de **chaque page visitée** du site officiel
+   (une carte tient parfois dans l'accueil) ;
+2. si rien n'a été extrait et que des menus PDF existent, les plats sont
+   extraits **directement dans les PDF** côté serveur
+   (`src/lib/discovery/pdf-menu.ts`) : décompression des flux
+   FlateDecode via `node:zlib`, lecture des opérateurs texte
+   Tj/TJ, recollage des fragments « nom » + « prix », puis la même
+   heuristique « nom … prix € » que pour le HTML. **Aucune dépendance
+   ajoutée.**
+3. best-effort documenté : un PDF exotique (polices CID, texte en image)
+   produit zéro plat et retombe sur les liens PDF — jamais d'action
+   manuelle exigée, simplement moins de filtres disponibles.
+
 ### Intégration à la liste des restaurants
 
 Chaque restaurant découvert **rejoint la liste complète** (page d'accueil et
@@ -100,9 +134,10 @@ itinéraire, réservation.
   générique ; sans téléphone connu, le bouton « Appeler » disparaît au
   profit du site officiel et de l'itinéraire ; sans horaires connus, la
   section Horaires l'indique.
-- Un restaurant dont le menu n'est que PDF n'a pas de plat structuré : sa
-  page menu affiche les liens PDF et les plateformes (Uber Eats,
-  Deliveroo, TripAdvisor) à la place des filtres.
+- Un restaurant dont le menu n'est que PDF garde son badge distinctif ;
+  ses plats, extraits du PDF, rendent la page menu filtrable comme les
+  autres. Si aucun plat n'a pu être extrait, la page affiche les liens
+  PDF et les plateformes avec un bandeau explicatif.
 - Thème dédié `decouverte` (accent ambre) pour distinguer les
   restaurants découverts des maisons préchargées ; badge
   « Découverte » sur les cartes, bouton « Retirer » disponible.
