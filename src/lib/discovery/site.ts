@@ -1,4 +1,5 @@
 import type { DiscoveredRestaurant, MenuFormat, VerificationInfo } from "@/types/discovery";
+import { htmlToLines, parseRawDishes, type RawDish } from "./menu-extract";
 import { fetchText, safeHost } from "./websearch";
 
 const MENTIONS_HINT = /mentions?[-\s]?l[eé]gales?|legal-notice/i;
@@ -105,23 +106,36 @@ export async function verifyOfficial(
   return { statut: "non-verifie", methode: null, page: null };
 }
 
+/** Résultat de l'exploration du menu sur le site officiel. */
+export interface MenuExploration {
+  format: MenuFormat;
+  /** Liens PDF trouvés (carte, menus, brochures). */
+  pdfs: string[];
+  /** Plats extraits des pages carte HTML (heuristique « nom … prix € »). */
+  rawDishes: RawDish[];
+}
+
 /**
- * Détection du format du menu sur le site officiel : parcours en largeur
- * des pages carte/menu (8 pages max, même domaine).
+ * Exploration du menu officiel : parcours en largeur des pages carte/menu
+ * (8 pages max, même domaine). Collecte les liens PDF et les plats
+ * présents dans les cartes HTML — c'est ce qui permet d'ajouter le
+ * restaurant à la liste avec une vraie carte filtrable.
  * - "pdf"     : le menu n'existe que par des liens PDF ;
  * - "mixte"   : carte HTML + menu PDF ;
  * - "html"    : carte en ligne ;
  * - "inconnu" : rien de localisé.
  */
-export async function detectMenuFormat(
+export async function exploreMenu(
   siteUrl: string,
-): Promise<{ format: MenuFormat; pdfs: string[] }> {
+): Promise<MenuExploration> {
   const host = safeHost(siteUrl);
-  if (!host) return { format: "inconnu", pdfs: [] };
+  if (!host) return { format: "inconnu", pdfs: [], rawDishes: [] };
 
   const queue: string[] = [siteUrl];
   const seen = new Set<string>();
   const pdfs: string[] = [];
+  const dishKeys = new Set<string>();
+  const rawDishes: RawDish[] = [];
   let menuPages = 0;
   let visited = 0;
 
@@ -134,7 +148,15 @@ export async function detectMenuFormat(
     const html = await fetchText(url);
     if (html === null) continue;
     visited += 1;
-    if (MENU_HINT.test(url)) menuPages += 1;
+    if (MENU_HINT.test(url)) {
+      menuPages += 1;
+      for (const raw of parseRawDishes(htmlToLines(html))) {
+        const key = raw.name.toLowerCase() + "|" + raw.category;
+        if (dishKeys.has(key)) continue;
+        dishKeys.add(key);
+        rawDishes.push(raw);
+      }
+    }
     for (const link of extractLinks(html, url)) {
       if (/\.pdf($|\?|#)/i.test(link)) {
         if (!pdfs.includes(link)) pdfs.push(link);
@@ -144,8 +166,8 @@ export async function detectMenuFormat(
     }
   }
 
-  if (pdfs.length > 0 && menuPages === 0) return { format: "pdf", pdfs };
-  if (pdfs.length > 0) return { format: "mixte", pdfs };
-  if (menuPages > 0) return { format: "html", pdfs };
-  return { format: "inconnu", pdfs };
+  if (pdfs.length > 0 && menuPages === 0) return { format: "pdf", pdfs, rawDishes };
+  if (pdfs.length > 0) return { format: "mixte", pdfs, rawDishes };
+  if (menuPages > 0) return { format: "html", pdfs, rawDishes };
+  return { format: "inconnu", pdfs, rawDishes };
 }

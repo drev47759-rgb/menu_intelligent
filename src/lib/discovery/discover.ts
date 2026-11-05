@@ -1,12 +1,14 @@
 import type {
   DiscoveryResult,
   DiscoveredRestaurant,
+  MenuFormat,
   PlatformLink,
   VerificationInfo,
 } from "@/types/discovery";
 import { drawActiveRestaurants } from "./datagouv";
 import { findOfficialSiteCandidates, findPlatformLink } from "./websearch";
-import { detectMenuFormat, verifyOfficial } from "./site";
+import { verifyOfficial, exploreMenu, type MenuExploration } from "./site";
+import { buildCatalog } from "./mapping";
 
 const SOURCE =
   "Tirage aléatoire — API Recherche d'entreprises (données Sirene, data.gouv.fr), NAF 56.10A, établissements en activité uniquement.";
@@ -34,24 +36,31 @@ async function platformLinksFor(
 
 /**
  * Découverte d'un restaurant au hasard :
- * 1. tirage Sirene — SIRET du siège en activité uniquement ;
+ * 1. tirage Sirene — SIRET du siège en activité uniquement (les SIRET
+ *    déjà enregistrés chez l'utilisateur sont exclus via exclude) ;
  * 2. recherche du site officiel puis vérification par le SIRET
  *    (ou l'adresse étendue) dans les mentions légales ou le footer ;
- * 3. détection du format du menu (PDF uniquement = signalé dans l'UI) ;
- * 4. recherche du restaurant sur Uber Eats, Deliveroo et TripAdvisor.
+ * 3. exploration du menu officiel : format (PDF uniquement = signalé
+ *    dans l'UI) et plats extraits des cartes HTML ;
+ * 4. catalogue complet (Restaurant + Dish) — le restaurant rejoint la
+ *    liste avec les mêmes actions que les maisons préchargées ;
+ * 5. recherche du restaurant sur Uber Eats, Deliveroo et TripAdvisor.
  * Renvoie le premier restaurant dont le site est vérifié ; à défaut, le
  * dernier restaurant actif tiré (site non vérifié), sans jamais lever
  * d'erreur tant qu'un établissement actif a été tiré.
  */
 export async function discoverLuckyRestaurant(
-  options: { deadlineMs?: number } = {},
+  options: { deadlineMs?: number; exclude?: string[] } = {},
 ): Promise<DiscoveryResult> {
   const deadline = Date.now() + (options.deadlineMs ?? 40_000);
+  const excluded = new Set(options.exclude ?? []);
   let fallback: DiscoveryResult | null = null;
 
   for (let attempt = 0; attempt < MAX_ATTEMPTS && Date.now() < deadline; attempt++) {
-    const candidates = await drawActiveRestaurants();
-    const candidate = candidates[Math.floor(Math.random() * candidates.length)];
+    const pool = (await drawActiveRestaurants()).filter(
+      (c) => !excluded.has(c.siret),
+    );
+    const candidate = pool[Math.floor(Math.random() * pool.length)];
     if (!candidate) {
       await delay(400);
       continue;
@@ -77,9 +86,11 @@ export async function discoverLuckyRestaurant(
       }
     }
 
-    const menu = siteOfficiel
-      ? await detectMenuFormat(siteOfficiel)
-      : { format: "inconnu" as const, pdfs: [] as string[] };
+    const menu: MenuExploration = siteOfficiel
+      ? await exploreMenu(siteOfficiel)
+      : { format: "inconnu" as MenuFormat, pdfs: [], rawDishes: [] };
+
+    const catalogue = buildCatalog(candidate, siteOfficiel, verification, menu);
 
     const result: DiscoveryResult = {
       restaurant: candidate,
@@ -89,6 +100,7 @@ export async function discoverLuckyRestaurant(
       menusPdf: menu.pdfs.slice(0, 4),
       plateformes: [],
       source: SOURCE,
+      catalogue,
     };
 
     if (verification.statut === "verifie") {

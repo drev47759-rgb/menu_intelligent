@@ -1,3 +1,5 @@
+import type { RestaurantCatalog } from "@/types/menu";
+
 /** Types du module de découverte aléatoire (bouton « J'ai de la chance »). */
 
 /** Format de menu détecté sur le site officiel du restaurant. */
@@ -45,4 +47,10 @@ export interface DiscoveryResult {
   menusPdf: string[];
   plateformes: PlatformLink[];
   source: string;
+  /**
+   * Catalogue peuplé côté serveur : fiche Restaurant + plats extraits de la
+   * carte du site officiel. Intégrable directement dans la liste des
+   * restaurants et la page menu (mêmes actions que les maisons préchargées).
+   */
+  catalogue: RestaurantCatalog;
 }

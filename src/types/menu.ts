@@ -59,12 +59,17 @@ export interface Restaurant {
   cuisineType: string;
   tagline: string;
   description: string;
+  /** Vide pour un restaurant découvert : vignette générique affichée. */
   image: string;
   imageAlt: string;
   mapsQuery: string;
   city: string;
   priceHint: string;
-  theme: "train-bleu" | "bordelaise" | "histoire";
+  theme:
+    | "train-bleu"
+    | "bordelaise"
+    | "histoire"
+    | "decouverte";
 }
 
 export interface RestaurantCatalog {
