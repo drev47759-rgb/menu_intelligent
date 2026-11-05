@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 import type { ReactNode } from "react";
+import Link from "next/link";
 import {
+  ArrowRight,
   BadgeCheck,
   Bike,
   Dices,
@@ -16,6 +18,7 @@ import {
   Star,
   UtensilsCrossed,
 } from "lucide-react";
+import { getSirets, saveEntry } from "@/lib/discovered-store";
 import type { DiscoveryResult, PlatformLink } from "@/types/discovery";
 
 type Status = "idle" | "loading" | "done" | "error";
@@ -50,15 +53,42 @@ const linkClass =
 export function LuckyDiscovery() {
   const [status, setStatus] = useState<Status>("idle");
   const [result, setResult] = useState<DiscoveryResult | null>(null);
+  const [added, setAdded] = useState<boolean | null>(null);
 
   async function roll() {
     setStatus("loading");
     setResult(null);
+    setAdded(null);
     try {
-      const res = await fetch("/api/discovery", { cache: "no-store" });
+      // Le tirage exclut les SIRET déjà dans la liste de l'utilisateur :
+      // chaque clic ajoute un NOUVEAU restaurant.
+      const sirets = getSirets();
+      const url =
+        "/api/discovery" +
+        (sirets.length > 0
+          ? "?exclude=" + encodeURIComponent(sirets.join(","))
+          : "");
+      const res = await fetch(url, { cache: "no-store" });
       if (!res.ok) throw new Error("discovery_failed");
       const data = (await res.json()) as DiscoveryResult;
+
+      // Le restaurant découvert rejoint la liste complète (localStorage) :
+      // la grille des restaurants se met à jour toute seule.
+      const isAdded = saveEntry({
+        siret: data.restaurant.siret,
+        savedAt: new Date().toISOString(),
+        restaurant: data.catalogue.restaurant,
+        dishes: data.catalogue.dishes,
+        menuFormat: data.menuFormat,
+        menusPdf: data.menusPdf,
+        plateformes: data.plateformes,
+        verification: data.verification,
+        siteOfficiel: data.siteOfficiel,
+        source: data.source,
+      });
+
       setResult(data);
+      setAdded(isAdded);
       setStatus("done");
     } catch {
       setResult(null);
@@ -85,9 +115,9 @@ export function LuckyDiscovery() {
           {busy ? "Tirage en cours…" : "J’ai de la chance"}
         </button>
         <p className="text-sm leading-normal text-ink-muted">
-          Un restaurant au hasard, <strong>SIRET en activité</strong> uniquement —
-          données Sirene de data.gouv, recherche sur Uber Eats, Deliveroo et
-          TripAdvisor.
+          Un restaurant au hasard, <strong>SIRET en activité</strong>{" "}
+          uniquement — il rejoint la liste avec les mêmes actions que les
+          maisons préchargées.
         </p>
       </div>
 
@@ -98,7 +128,7 @@ export function LuckyDiscovery() {
           </p>
         )}
         {status === "done" && result && (
-          <DiscoveryCard result={result} onRelance={roll} />
+          <DiscoveryCard result={result} added={added} onRelance={roll} />
         )}
       </div>
     </div>
@@ -107,22 +137,21 @@ export function LuckyDiscovery() {
 
 function DiscoveryCard({
   result,
+  added,
   onRelance,
 }: {
   result: DiscoveryResult;
+  added: boolean | null;
   onRelance: () => void;
 }) {
   const r = result.restaurant;
+  const rest = result.catalogue.restaurant;
   return (
     <div className="mt-6 rounded-xl bg-cream p-5 shadow-border">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
-          <h3 className="font-display text-2xl">
-            {r.enseigne ?? r.nomComplet}
-          </h3>
-          {r.enseigne && (
-            <p className="mt-0.5 text-sm text-ink-muted italic">{r.nomComplet}</p>
-          )}
+          <h3 className="font-display text-2xl">{rest.name}</h3>
+          <p className="mt-0.5 text-sm text-ink-muted italic">{rest.tagline}</p>
         </div>
         <span className="inline-flex items-center gap-1.5 rounded-full bg-cream px-3 py-1 text-xs font-semibold text-available shadow-border">
           <span className="size-2 rounded-full bg-available" aria-hidden />
@@ -132,7 +161,7 @@ function DiscoveryCard({
 
       <p className="mt-3 flex items-start gap-2 text-sm text-ink-soft">
         <MapPin className="mt-0.5 size-4 shrink-0" aria-hidden />
-        <span>{r.adresseEtendue}</span>
+        <span>{rest.address}</span>
       </p>
       <p className="mt-1 text-xs text-ink-subtle">
         SIRET {r.siret} — NAF {r.naf} — {r.codePostal} {r.commune}
@@ -153,6 +182,16 @@ function DiscoveryCard({
             Site officiel non vérifié
           </span>
         )}
+        {added === true ? (
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-cream px-3 py-1 text-xs font-semibold text-available shadow-border">
+            <BadgeCheck className="size-3.5" aria-hidden />
+            Ajouté à la liste des restaurants
+          </span>
+        ) : added === false ? (
+          <span className="inline-flex items-center rounded-full bg-cream px-3 py-1 text-xs font-semibold text-ink-subtle shadow-border">
+            Déjà dans la liste
+          </span>
+        ) : null}
       </div>
 
       <ul className="mt-4 flex flex-wrap gap-2">
@@ -212,21 +251,30 @@ function DiscoveryCard({
         <p className="max-w-md text-xs leading-normal text-ink-subtle">
           {result.source}
         </p>
-        <button
-          type="button"
-          onClick={onRelance}
-          className="inline-flex items-center gap-1.5 text-sm font-semibold text-ink hover:text-accent"
-        >
-          <RotateCcw className="size-4" aria-hidden />
-          Relancer
-        </button>
+        <div className="flex items-center gap-2">
+          <Link
+            href={"/solutions/restauration/menu/" + rest.slug}
+            className="inline-flex min-h-11 items-center gap-1.5 rounded-full bg-ink px-5 text-sm font-semibold text-cream hover:opacity-90"
+          >
+            Voir le menu
+            <ArrowRight className="size-4" aria-hidden />
+          </Link>
+          <button
+            type="button"
+            onClick={onRelance}
+            className="inline-flex min-h-11 items-center gap-1.5 rounded-full px-3 text-sm font-semibold text-ink hover:text-accent"
+          >
+            <RotateCcw className="size-4" aria-hidden />
+            Relancer
+          </button>
+        </div>
       </div>
     </div>
   );
 }
 
 /**
- * Format du menu détecté. Un restaurant dont le menu n’existe qu’au format
+ * Format du menu détecté. Un restaurant dont le menu n'existe qu'au format
  * PDF porte une icône distinctive (badge ambre « Menu PDF uniquement »).
  */
 function MenuFormatBadge({ format }: { format: DiscoveryResult["menuFormat"] }) {
