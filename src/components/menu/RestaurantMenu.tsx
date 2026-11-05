@@ -334,7 +334,7 @@ export function RestaurantMenu({ restaurant, dishes }: Props) {
                 {grouped.map(([category, items]) => (
                   <a
                     key={category}
-                    href={`#cat-${categorySlug(category)}`
+                    href={`#cat-${categorySlug(category)}`}
                     className="inline-flex min-h-11 shrink-0 items-center rounded-full bg-paper px-3 text-xs font-semibold whitespace-nowrap text-ink-soft shadow-border hover:text-ink"
                   >
                     {category}
@@ -371,12 +371,12 @@ export function RestaurantMenu({ restaurant, dishes }: Props) {
               grouped.map(([category, items]) => (
                 <section
                   key={category}
-                  id={`cat-${categorySlug(category)}`
+                  id={`cat-${categorySlug(category)}`}
                   className="mb-10 scroll-mt-24"
-                  aria-labelledby={`heading-${categorySlug(category)}`
+                  aria-labelledby={`heading-${categorySlug(category)}`}
                 >
                   <h2
-                    id={`heading-${categorySlug(category)}`
+                    id={`heading-${categorySlug(category)}`}
                     className="mb-4 font-display text-3xl text-ink"
                   >
                     {category}
