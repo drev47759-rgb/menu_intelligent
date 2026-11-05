@@ -66,19 +66,17 @@ KEYWORDS = [
 # Domaines de resultats qui ne sont JAMAIS le site officiel du restaurant.
 DIR_DOMAINS = re.compile(
     r"(?:^|\.)(?:"
-    r"tripadvisor|thefork|pagesjaunes|petitfute|restaurantguru|yelp|opentable|"
-    r"justeat|deliveroo|ubereat|lacarte\.menu|menuweb\.menu|eatbu|eat-list|"
-    r"societe\.com|pappers|rubypayeur|verif|viamichelin|mappy|kompass|"
-    r"annuaire-entreprises|annuaire-mairie|pagesjaunes|gowork|dandb|linkedin|"
-    r"facebook|instagram|xing|goldenpages|kompass|gaultmillau|"
-    r"guides-touristiques|visitstrasbourg|tourisme64|en\.|de\.|nl\."
-    r")\b|"
-    r"^(?:www\.)?(?:societe|pappers|verif|rubypayeur)\.",
+    r"tripadvisor|thefork|pagesjaunes|petitfute|restaurantguru|yelp|"
+    r"justeat|deliveroo|ubereat|lacarte\.menu|menuweb\.menu|eatbu|"
+    r"societe\.com|pappers|rubypayeur|verif\.com|viamichelin|mappy|"
+    r"annuaire-entreprises|annuaire-mairie|gowork|linkedin|facebook|"
+    r"instagram|gaultmillau|kompass|dandb"
+    r")\b",
     re.I,
 )
 
 MENU_HINT = re.compile(r"carte|menu|menus|plats|desserts|entr|food|gastronom", re.I)
-MENTIONS_HINT = re.compile(r"mentions?[- ]l[eé]gales?|legal-notice|mentions", re.I)
+MENTIONS_HINT = re.compile(r"mentions?[- ]l[eé]gales?|legal-notice", re.I)
 PRICE_RE = re.compile(r"(\d{1,3})[.,](\d{2})\s*(?:\u20ac|EUR)?", re.I)
 PORTION_RE = re.compile(
     r"(petite(?:\s*portion)?)\s*(\d{1,3})[.,](\d{2}).*?"
@@ -131,7 +129,7 @@ def strip_tags(html: str) -> str:
     return re.sub(r"[ \t]+", " ", text)
 
 
-def fetch(url: str, binary: bool = False) -> tuple[int, bytes]:
+def fetch(url: str, binary: bool = False):
     req = urllib.request.Request(
         url,
         headers={
@@ -142,11 +140,10 @@ def fetch(url: str, binary: bool = False) -> tuple[int, bytes]:
     )
     try:
         with urllib.request.urlopen(req, timeout=TIMEOUT) as res:
-            body = res.read()
-            return res.status, (body if binary else body)
+            return res.status, res.read()
     except urllib.error.HTTPError as e:
-        return e.code, e.read() if binary else str(e).encode()
-    except Exception as e:  # réseau, timeout, SSL...
+        return e.code, (e.read() if binary else str(e).encode())
+    except Exception as e:  # reseau, timeout, SSL...
         return 0, str(e).encode()
 
 
@@ -168,7 +165,7 @@ def extract_links(html: str, base: str) -> list[str]:
     return out
 
 
-# ------------------------------------------------ étape 1-2 : tirage data.gouv
+# ------------------------------------------------ etape 1-2 : tirage data.gouv
 
 def draw_candidates() -> list[dict]:
     """Tirage aleatoire : mot-cle au hasard + page au hasard de l'API."""
@@ -214,7 +211,7 @@ def draw_candidates() -> list[dict]:
     return out
 
 
-def get_by_siret(siret: str) -> dict | None:
+def get_by_siret(siret: str):
     status, text = fetch_text(f"{API}?q={siret}&per_page=1")
     if status != 200:
         return None
@@ -241,7 +238,7 @@ def get_by_siret(siret: str) -> dict | None:
     }
 
 
-# --------------------------------------------- étape 3 : recherche du site web
+# --------------------------------------------- etape 3 : recherche du site web
 
 def ddg_search(query: str, limit: int = 6) -> list[str]:
     """Recherche DuckDuckGo HTML (gratuit, sans cle) -> URLs candidates."""
@@ -269,38 +266,40 @@ def ddg_search(query: str, limit: int = 6) -> list[str]:
     return out
 
 
-# ------------------------------- étape 4 : verification mentions legales/footer
+# ------------------------------- etape 4 : verification mentions legales/footer
 
-def verify_official(site_url: str, candidate: dict) -> dict | None:
+def verify_official(site_url: str, candidate: dict):
     """Le SIRET / SIREN / adresse etendue doit figurer dans les mentions
     legales ou le footer du site. Renvoie la preuve, sinon None."""
-    siret = candidate["siret_siege"] or ""
-    siren = candidate["siren"] or ""
+    siret = candidate.get("siret_siege") or ""
+    siren = candidate.get("siren") or ""
     tokens = [
         norm(x)
-        for x in (candidate["numero_voie"], candidate["libelle_voie"],
-                  candidate["code_postal"], candidate["commune"])
+        for x in (
+            candidate.get("numero_voie"),
+            candidate.get("libelle_voie"),
+            candidate.get("code_postal"),
+            candidate.get("commune"),
+        )
         if x
     ]
 
     status, home = fetch_text(site_url)
     if status != 200 or not home:
         return None
-    pages: list[tuple[str, str]] = [(site_url, home)]
+    pages = [(site_url, home)]
     seen = {site_url}
     for link in extract_links(home, site_url):
         if link in seen:
             continue
-        if MENTIONS_HINT.search(link) or MENTIONS_HINT.search(
-            re.sub(r"[^A-Za-z\u00c0-\u017f]+", " ", link)
-        ):
+        if MENTIONS_HINT.search(link):
             st, page_html = fetch_text(link)
             if st == 200 and page_html:
                 pages.append((link, page_html))
             seen.add(link)
 
     for page_url, page_html in pages[:6]:
-        # footer inclus : le texte de la page enti ere est examine
+        # footer inclus : le texte de la page entiere est examine
         text = strip_tags(page_html)
         compact = re.sub(r"\s", "", text)
         if siret and siret in compact:
@@ -312,12 +311,12 @@ def verify_official(site_url: str, candidate: dict) -> dict | None:
             return {
                 "methode": "adresse-etendue",
                 "page": page_url,
-                "preuve": "adresse " + candidate["adresse_etendue"],
+                "preuve": "adresse " + str(candidate.get("adresse_etendue")),
             }
     return None
 
 
-# ---------------------------------------- étape 5 : recherche des menus PDF
+# ---------------------------------------- etape 5 : recherche des menus PDF
 
 def find_menu_pdfs(site_url: str, max_pages: int = 12) -> list[str]:
     """Parcours en largeur des pages carte/menu du site -> liens PDF."""
@@ -360,9 +359,9 @@ def download_pdfs(pdfs: list[str], out_dir: Path) -> list[Path]:
     return saved
 
 
-# ------------------------------------------- étape 6 : peuplement des donnees
+# ------------------------------------------- etape 6 : peuplement des donnees
 
-def pdf_text(path: Path) -> str | None:
+def pdf_text(path: Path):
     try:
         from pypdf import PdfReader  # optionnel
     except ImportError:
@@ -431,21 +430,26 @@ def parse_dishes(text: str, menu_group: str = "La Carte") -> list[dict]:
         portion = PORTION_RE.search(line)
         if portion and name_buf:
             name = " ".join(name_buf).strip()
-            dishes.append({"name": name, "price": float(portion.group(2) + "." + portion.group(3)),
-                           "portion": "Petite portion", "category": category, "course": course,
-                           "menuGroup": menu_group})
-            dishes.append({"name": name, "price": float(portion.group(5) + "." + portion.group(6)),
-                           "portion": "Grande portion", "category": category, "course": course,
-                           "menuGroup": menu_group})
+            dishes.append(
+                {"name": name,
+                 "price": float(portion.group(2) + "." + portion.group(3)),
+                 "portion": "Petite portion", "category": category,
+                 "course": course, "menuGroup": menu_group})
+            dishes.append(
+                {"name": name,
+                 "price": float(portion.group(5) + "." + portion.group(6)),
+                 "portion": "Grande portion", "category": category,
+                 "course": course, "menuGroup": menu_group})
             flush()
             continue
         price = PRICE_RE.search(line)
         if price and name_buf:
             name = " ".join(name_buf).strip()
-            dishes.append({"name": name,
-                           "price": float(price.group(1) + "." + price.group(2)),
-                           "portion": None, "category": category,
-                           "course": course, "menuGroup": menu_group})
+            dishes.append(
+                {"name": name,
+                 "price": float(price.group(1) + "." + price.group(2)),
+                 "portion": None, "category": category,
+                 "course": course, "menuGroup": menu_group})
             flush()
             continue
         if len(line) > 2 and not re.search(r"^\W+$", line):
@@ -491,10 +495,10 @@ def to_dish_catalog(items: list[dict], prefix: str) -> list[dict]:
 # ------------------------------------------------------------------------ main
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap = argparse.ArgumentParser(description="Decouverte aleatoire de restaurant (data.gouv).")
     ap.add_argument("--seed", type=int, default=None)
     ap.add_argument("--max-tries", type=int, default=40, help="nb max de candidats evalues")
-    ap.add_argument("--siret", help="mode cible : d\xc3\xa9couvre depuis un SIRET connu")
+    ap.add_argument("--siret", help="mode cible : decouvre depuis un SIRET connu")
     ap.add_argument("--html-fallback", action="store_true",
                     help="accepter le texte des pages carte HTML si aucun PDF")
     ap.add_argument("--out-dir", default="discovery")
@@ -514,7 +518,6 @@ def main() -> int:
         "resultat": None,
     }
 
-    candidates: list[dict] = []
     if args.siret:
         c = get_by_siret(args.siret)
         candidates = [c] if c else []
@@ -524,13 +527,15 @@ def main() -> int:
     tries = 0
     while candidates and tries < args.max_tries:
         cand = candidates.pop(0)
+        if not cand:
+            continue
         tries += 1
         query = f"{cand['nom_complet']} {cand['commune']} restaurant"
         sites = ddg_search(query)
         verdict = {
             "nom": cand["nom_complet"],
-            "siret_siege": cand["siret_siege"],
-            "commune": cand["commune"],
+            "siret_siege": cand.get("siret_siege"),
+            "commune": cand.get("commune"),
             "sites_candidats": sites[:3],
             "issue": "aucun site candidat hors annuaires",
         }
@@ -538,27 +543,35 @@ def main() -> int:
             proof = verify_official(site, cand)
             if not proof:
                 continue
+            slug = slugify(str(cand["nom_complet"]))
+            run_dir = (
+                Path(args.out_dir)
+                / f"run-{datetime.now(timezone.utc).strftime('%Y%m%d-%H%M%S')}-{slug}"
+            )
+            run_dir.mkdir(parents=True, exist_ok=True)
             pdfs = find_menu_pdfs(site)
             entry = dict(verdict)
             entry.update({"site_officiel": site, "verification": proof, "menus_pdf": pdfs})
+            dishes: list[dict] = []
+            saved: list[Path] = []
             if pdfs:
-                saved = download_pdfs(pdfs, Path(args.out_dir))
+                saved = download_pdfs(pdfs, run_dir)
                 entry["pdf_telecharges"] = [p.name for p in saved]
-            if pdfs and any((Path(args.out_dir) / n).exists() for n in entry["pdf_telecharges"]):
                 texts = [t for p in saved if (t := pdf_text(p))]
                 dishes = [d for t in texts for d in parse_dishes(t)]
                 entry["source_peuplement"] = "menu PDF"
+            if dishes:
                 entry["nb_plats"] = len(dishes)
-            elif args.html_fallback and not pdfs:
+            elif args.html_fallback:
                 pages = carte_pages_text(site)
                 dishes = [d for _, t in pages for d in parse_dishes(t)]
                 entry["source_peuplement"] = "pages carte HTML (fallback documente)"
                 entry["nb_plats"] = len(dishes)
             else:
-                entry["issue"] = "site officiel verifie mais aucun menu PDF"
+                entry["issue"] = "site officiel verifie mais aucun menu PDF exploitable"
                 report["candidats_evalues"].append(entry)
                 continue
-            catalog = to_dish_catalog(dishes, slugify(str(cand["nom_complet"]))[:2])
+            catalog = to_dish_catalog(dishes, slug[:2])
             report["candidats_evalues"].append(entry)
             report["resultat"] = {
                 "restaurant": cand,
@@ -566,16 +579,13 @@ def main() -> int:
                 "verification": proof,
                 "peuplement": entry,
             }
-            slug = slugify(str(cand["nom_complet"]))
-            run_dir = Path(args.out_dir)
-            run_dir.mkdir(parents=True, exist_ok=True)
             (run_dir / "report.json").write_text(
                 json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8"
             )
             (run_dir / f"{slug}.json").write_text(
                 json.dumps(catalog, ensure_ascii=False, indent=2), encoding="utf-8"
             )
-            print(f"[ok] {cand['nom_complet']} ({cand['commune']})")
+            print(f"[ok] {cand['nom_complet']} ({cand.get('commune')})")
             print(f"     site officiel verifie : {site} ({proof['methode']})")
             print(f"     {entry['nb_plats']} plats extraits ({entry['source_peuplement']})")
             return 0

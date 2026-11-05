@@ -44,7 +44,7 @@ fallback documenté (`--html-fallback`) : texte des pages carte du site officiel
 vérifié — contenu identique à la carte téléchargeable. Le téléchargement et le
 parsing du PDF sont implémentés dans le script (pypdf) pour une exécution locale.
 
-**Résultat** : `gurtlerhoft.json` — 57 plats au format Dish, prix strictement
+**Résultat** : `gurtlerhoft.json` — 58 plats au format Dish, prix strictement
 recopiés depuis la carte du site officiel.
 
 ## Constats de terrain (utiles pour la mise en production)
