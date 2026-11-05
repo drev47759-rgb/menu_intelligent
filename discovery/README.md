@@ -77,3 +77,32 @@ La page d'accueil embarque un bouton **J'ai de la chance**
 - **Menu PDF uniquement** : un restaurant dont le menu n'existe qu'au
   format PDF est signalé par une **icône distinctive** — badge ambre
   « Menu PDF uniquement » (icône document) + liens directs vers les PDF.
+
+### Intégration à la liste des restaurants
+
+Chaque restaurant découvert **rejoint la liste complète** (page d'accueil et
+page Menus) et dispose de sa propre page menu
+`/solutions/restauration/menu/{slug}` — avec les mêmes actions que les
+trois maisons préchargées : recherche, filtres, calculateur de repas,
+itinéraire, réservation.
+
+- Le catalogue (fiche `Restaurant` + plats `Dish`) est construit côté
+  serveur : plats extraits des pages carte HTML du site officiel
+  (heuristique « nom … prix € », rubriques reconnues, régimes/piquant
+  déduits du libellé — `src/lib/discovery/menu-extract.ts`,
+  `src/lib/discovery/mapping.ts`).
+- Les restaurants découverts sont persistés dans le `localStorage` du
+  navigateur (`src/lib/discovered-store.ts`, 20 max) — pas de compte ni
+  de base. La route `/api/discovery` reçoit les SIRET déjà
+  enregistrés (paramètre `exclude`) pour ne jamais retomber sur un
+  restaurant déjà listé : chaque clic ajoute un nouveau restaurant.
+- Un restaurant sans image officielle exploitable affiche une vignette
+  générique ; sans téléphone connu, le bouton « Appeler » disparaît au
+  profit du site officiel et de l'itinéraire ; sans horaires connus, la
+  section Horaires l'indique.
+- Un restaurant dont le menu n'est que PDF n'a pas de plat structuré : sa
+  page menu affiche les liens PDF et les plateformes (Uber Eats,
+  Deliveroo, TripAdvisor) à la place des filtres.
+- Thème dédié `decouverte` (accent ambre) pour distinguer les
+  restaurants découverts des maisons préchargées ; badge
+  « Découverte » sur les cartes, bouton « Retirer » disponible.
