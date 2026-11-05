@@ -13,7 +13,7 @@ const PER_PAGE = 5;
 /** Limite de l'API : page x per_page <= 10 000. */
 const MAX_PAGE = 10000 / PER_PAGE;
 const PER_PAGE_VILLE = 25;
-/** Limite de l'API en mode ville : page x per_page <= 10 000. */
+/** Limite de l'API en mode ciblé (ville et/ou nom) : page x per_page <= 10 000. */
 const MAX_PAGE_VILLE = 10000 / PER_PAGE_VILLE;
 
 const KEYWORDS = [
@@ -163,7 +163,8 @@ async function queryRestaurants(params: URLSearchParams): Promise<SireneDraw> {
   }
 }
 
-function filtersVille(extra: Record<string, string>): URLSearchParams {
+/** Paramètres communs du tirage ciblé (ville et/ou nom) : per_page 25. */
+function filtersCible(extra: Record<string, string>): URLSearchParams {
   const params = new URLSearchParams();
   params.set("activite_principale", NAF_RESTAURATION);
   params.set("per_page", String(PER_PAGE_VILLE));
@@ -174,44 +175,82 @@ function filtersVille(extra: Record<string, string>): URLSearchParams {
   return params;
 }
 
+/** Page au hasard dans le bassin des résultats (borné par la limite API). */
+function pageAleatoire(totalPages: number): number {
+  if (totalPages <= 1) return 1;
+  return 2 + Math.floor(Math.random() * (Math.min(totalPages, MAX_PAGE_VILLE) - 1));
+}
+
 /**
  * Tirage aléatoire d'un lot de restaurants (NAF 56.10A).
- * - Avec ville : la saisie est résolue en commune (API Geo), puis le tirage
- *   filtre sur code_commune (codes postaux en repli) ; la page est tirée
- *   au hasard dans tout le bassin de la commune.
- * - Sans ville : mot-clé au hasard + page aléatoire, partout en France.
+ * - Avec nom : recherche plein texte sur la dénomination/enseigne
+ *   (paramètre q), combinable avec une ville ciblée ; la page est tirée
+ *   au hasard dans tout le bassin des résultats.
+ * - Avec ville (sans nom) : la saisie est résolue en commune (API Geo),
+ *   puis le tirage filtre sur code_commune (codes postaux en repli) ;
+ *   la page est tirée au hasard dans tout le bassin de la commune.
+ * - Sans nom ni ville : mot-clé au hasard + page aléatoire, France entière.
  * Ne retourne QUE des restaurants dont l'unité légale ET l'établissement
  * du siège (SIRET) sont encore en activité ("A" dans la base Sirene).
  */
 export async function drawActiveRestaurants(
   ville?: string,
+  nom?: string,
 ): Promise<DiscoveredRestaurant[]> {
-  const saisie = ville?.trim() ?? "";
-  const cible = saisie.length >= 2 ? await resolveCommune(saisie) : null;
+  const saisieVille = ville?.trim() ?? "";
+  const saisieNom = nom?.trim() ?? "";
+  const cible =
+    saisieVille.length >= 2 ? await resolveCommune(saisieVille) : null;
+  // Ville saisie mais introuvable : aucun résultat (discover lève
+  // VILLE_INCONNUE, ou NOM_SANS_RESULTAT si un nom est aussi ciblé).
+  if (saisieVille.length >= 2 && !cible) return [];
 
-  if (saisie.length >= 2) {
-    if (!cible) return [];
+  if (saisieNom.length >= 2) {
+    const base: Record<string, string> = { q: saisieNom };
+    if (cible) base.code_commune = cible.codeInsee;
+    const first = await queryRestaurants(filtersCible(base));
+    let drawn = first;
+    if (first.restaurants.length === 0 && cible && cible.codesPostaux.length > 0) {
+      drawn = await queryRestaurants(
+        filtersCible({ q: saisieNom, code_postal: cible.codesPostaux.join(",") }),
+      );
+    }
+    if (drawn.restaurants.length === 0) return [];
 
+    const totalPages = Math.min(drawn.totalPages, MAX_PAGE_VILLE);
+    if (totalPages <= 1) return drawn.restaurants;
+
+    const replay: Record<string, string> = {
+      q: saisieNom,
+      page: String(pageAleatoire(totalPages)),
+    };
+    if (cible) replay.code_commune = cible.codeInsee;
+    const random = await queryRestaurants(filtersCible(replay));
+    return random.restaurants.length > 0 ? random.restaurants : drawn.restaurants;
+  }
+
+  if (cible) {
     const first = await queryRestaurants(
-      filtersVille({ code_commune: cible.codeInsee }),
+      filtersCible({ code_commune: cible.codeInsee }),
     );
     const drawn =
       first.restaurants.length > 0
         ? first
         : await queryRestaurants(
             cible.codesPostaux.length > 0
-              ? filtersVille({ code_postal: cible.codesPostaux.join(",") })
-              : filtersVille({ code_commune: cible.codeInsee }),
+              ? filtersCible({ code_postal: cible.codesPostaux.join(",") })
+              : filtersCible({ code_commune: cible.codeInsee }),
           );
     if (drawn.restaurants.length === 0) return [];
 
-    // Page au hasard dans tout le bassin (borné par la limite API).
     const totalPages = Math.min(drawn.totalPages, MAX_PAGE_VILLE);
     if (totalPages <= 1) return drawn.restaurants;
 
-    const page = 2 + Math.floor(Math.random() * (totalPages - 1));
     const random = await queryRestaurants(
-      filtersVille({ code_commune: cible.codeInsee, page: String(page) }),
+      filtersCible({
+        code_commune: cible.codeInsee,
+        page: String(pageAleatoire(totalPages)),
+      }),
     );
     return random.restaurants.length > 0 ? random.restaurants : drawn.restaurants;
   }

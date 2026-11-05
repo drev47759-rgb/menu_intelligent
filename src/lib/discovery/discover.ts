@@ -15,8 +15,9 @@ const SOURCE =
 
 const MAX_ATTEMPTS = 10;
 /** Pages tirées au hasard dont tous les restaurants sont déjà enregistrés
- *  avant de conclure que la ville est épuisée : une seule page de 25 ne
- *  suffit pas, la commune peut être plus vaste que la liste de l'utilisateur. */
+ *  avant de conclure que le ciblage (ville ou nom) est épuisé : une seule
+ *  page de 25 ne suffit pas, le bassin peut être plus vaste que la liste
+ *  de l'utilisateur. */
 const MAX_PAGES_EPUISES = 3;
 
 function delay(ms: number): Promise<void> {
@@ -42,8 +43,9 @@ async function platformLinksFor(
  * Découverte d'un restaurant au hasard :
  * 1. tirage Sirene — SIRET du siège en activité uniquement (les SIRET
  *    déjà enregistrés chez l'utilisateur sont exclus via exclude) ;
- *    ville ciblée optionnelle : résolue en commune (API Geo) et le
- *    tirage reste aléatoire dans tout le bassin de la commune ;
+ *    ciblage optionnel par nom (recherche plein texte sur la
+ *    dénomination) et/ou par ville (résolue en commune via l'API Geo),
+ *    le tirage reste aléatoire dans tout le bassin visé ;
  * 2. recherche du site officiel puis vérification par le SIRET
  *    (ou l'adresse étendue) dans les mentions légales ou le footer ;
  * 3. exploration automatique du menu : plats extraits des cartes HTML,
@@ -60,30 +62,44 @@ export async function discoverLuckyRestaurant(
     deadlineMs?: number;
     exclude?: string[];
     ville?: string;
+    nom?: string;
   } = {},
 ): Promise<DiscoveryResult> {
   const deadline = Date.now() + (options.deadlineMs ?? 40_000);
   const excluded = new Set(options.exclude ?? []);
-  const saisie = options.ville?.trim() ?? "";
-  const ville = saisie.length >= 2 ? saisie : undefined;
+  const saisieVille = options.ville?.trim() ?? "";
+  const ville = saisieVille.length >= 2 ? saisieVille : undefined;
+  const saisieNom = options.nom?.trim() ?? "";
+  const nom = saisieNom.length >= 2 ? saisieNom : undefined;
   let fallback: DiscoveryResult | null = null;
   let vides = 0;
+  let videsNom = 0;
   let epuisees = 0;
 
   for (let attempt = 0; attempt < MAX_ATTEMPTS && Date.now() < deadline; attempt++) {
-    const drawn = await drawActiveRestaurants(ville);
+    const drawn = await drawActiveRestaurants(ville, nom);
     const pool = drawn.filter((c) => !excluded.has(c.siret));
     const candidate = pool[Math.floor(Math.random() * pool.length)];
     if (!candidate) {
-      if (drawn.length > 0 && ville !== undefined) {
+      if (drawn.length > 0 && (ville !== undefined || nom !== undefined)) {
         // Cette page tirée au hasard ne contient que des restaurants déjà
         // enregistrés : on retente d'autres pages avant de conclure.
         epuisees += 1;
-        if (epuisees >= MAX_PAGES_EPUISES) throw new Error("VILLE_EPUISEE");
+        if (epuisees >= MAX_PAGES_EPUISES) {
+          throw new Error(
+            nom !== undefined ? "NOM_EPUISE" : "VILLE_EPUISEE",
+          );
+        }
         await delay(200);
         continue;
       }
-      if (ville !== undefined) {
+      if (nom !== undefined) {
+        // Nom ciblé sans aucun restaurant actif correspondant (éventuel
+        // bornage ville) : inutile d'insister, la recherche est
+        // déterministe.
+        videsNom += 1;
+        if (videsNom >= 2) throw new Error("NOM_SANS_RESULTAT");
+      } else if (ville !== undefined) {
         vides += 1;
         if (vides >= 2) throw new Error("VILLE_INCONNUE");
       }
