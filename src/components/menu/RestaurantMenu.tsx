@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, UtensilsCrossed } from "lucide-react";
 import { ActionButtons } from "@/components/menu/ActionButtons";
 import { DishCard, DrinkList } from "@/components/menu/DishCard";
 import { HoursTable } from "@/components/menu/HoursTable";
@@ -199,13 +199,17 @@ export function RestaurantMenu({ restaurant, dishes }: Props) {
               </p>
               <p className="mt-3 text-sm text-ink-soft">
                 {restaurant.address}
-                <span aria-hidden> · </span>
-                <a
-                  className="font-semibold text-ink underline-offset-2 hover:underline"
-                  href={telHref(restaurant.phone)}
-                >
-                  {formatPhone(restaurant.phone)}
-                </a>
+                {restaurant.phone ? (
+                  <>
+                    <span aria-hidden> · </span>
+                    <a
+                      className="font-semibold text-ink underline-offset-2 hover:underline"
+                      href={telHref(restaurant.phone)}
+                    >
+                      {formatPhone(restaurant.phone)}
+                    </a>
+                  </>
+                ) : null}
               </p>
               <p
                 className={
@@ -227,15 +231,23 @@ export function RestaurantMenu({ restaurant, dishes }: Props) {
       </header>
 
       <figure className="relative overflow-hidden bg-ink">
-        <Image
-          src={restaurant.image}
-          alt={restaurant.imageAlt}
-          width={1600}
-          height={640}
-          priority
-          sizes="100vw"
-          className="h-40 w-full object-cover opacity-75 sm:h-52"
-        />
+        {restaurant.image ? (
+          <Image
+            src={restaurant.image}
+            alt={restaurant.imageAlt}
+            width={1600}
+            height={640}
+            priority
+            sizes="100vw"
+            className="h-40 w-full object-cover opacity-75 sm:h-52"
+          />
+        ) : (
+          // Restaurant découvert : pas d'image officielle exploitable,
+          // vignette générique à la place.
+          <div className="grid h-40 w-full place-items-center text-cream sm:h-52">
+            <UtensilsCrossed className="size-10 opacity-60" aria-hidden />
+          </div>
+        )}
       </figure>
 
       {groups.length > 1 ? (

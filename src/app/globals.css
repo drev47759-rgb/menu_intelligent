@@ -93,6 +93,12 @@
   --color-accent-hover: #2f352a;
 }
 
+[data-theme="decouverte"] {
+  --color-accent: #8a5a2b;
+  --color-accent-fg: #f7f3ec;
+  --color-accent-hover: #6f4822;
+}
+
 .skip-link {
   position: absolute;
   left: -999px;

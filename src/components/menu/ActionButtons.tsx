@@ -15,10 +15,13 @@ export function ActionButtons({
   variant = "header",
   className,
 }: Props) {
-  const call = telHref(restaurant.phone);
+  // Un restaurant découvert n'a pas de téléphone connu : on masque
+  // « Appeler » et on retombe sur le site officiel puis l'itinéraire.
+  const hasPhone = restaurant.phone.replace(/\D/g, "").length >= 9;
+  const call = hasPhone ? telHref(restaurant.phone) : null;
   const maps = mapsHref(restaurant.mapsQuery);
-  const reserve = restaurant.reservationUrl ?? call;
-  const order = restaurant.orderUrl ?? call;
+  const reserve = restaurant.reservationUrl ?? restaurant.website ?? call ?? maps;
+  const order = restaurant.orderUrl ?? restaurant.website ?? call ?? maps;
 
   const baseBtn =
     "inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-4 text-sm font-semibold transition-colors duration-(--motion-quick) ease-(--ease-out) focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
@@ -54,14 +57,18 @@ export function ActionButtons({
         <ShoppingBag className="size-4" aria-hidden />
         Commander
       </a>
-      <a
-        href={call}
-        className={cn(baseBtn, secondary)}
-        onClick={() => track("click_call", { restaurant: restaurant.slug })}
-      >
-        <Phone className="size-4" aria-hidden />
-        Appeler
-      </a>
+      {call ? (
+        <a
+          href={call}
+          className={cn(baseBtn, secondary)}
+          onClick={() =>
+            track("click_call", { restaurant: restaurant.slug })
+          }
+        >
+          <Phone className="size-4" aria-hidden />
+          Appeler
+        </a>
+      ) : null}
       <a
         href={maps}
         target="_blank"

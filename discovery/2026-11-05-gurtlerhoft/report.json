@@ -1,0 +1,127 @@
+{
+  "run": {
+    "date": "2026-11-05",
+    "branche": "feat/decouverte-aleatoire-datagouv",
+    "script": "scripts/discover-restaurant.py",
+    "outillage": [
+      "API Recherche d'entreprises (recherche-entreprises.api.gouv.fr) — données Sirene de l'INSEE publiées sur data.gouv.fr, gratuite, sans authentification",
+      "Recherche web du site officiel (moteur gratuit, équivalent DuckDuckGo HTML dans le script)",
+      "Vérification d'officialité par le SIRET / adresse étendue dans les mentions légales ou le footer"
+    ],
+    "contrainte_environnement_test": "Le bac à sable de test n'expose pas le HTML brut ni le téléchargement binaire ; la lecture s'est faite par extraction texte des pages. Le script commited implémente le parcours complet (HTML brut + téléchargement PDF + pypdf) pour une exécution locale."
+  },
+  "tirage": {
+    "methode": "page aléatoire (page 63) — q=restaurant, activite_principale=56.10A, per_page=5, uniquement les unités légales et sièges actifs",
+    "candidats_tires": [
+      {
+        "nom": "RESTAURANT BODEGA LA PLANCHA (LA VIEILLE AUBERGE)",
+        "siret_siege": "44315573400017",
+        "commune": "SAINT-JEAN-DE-LUZ"
+      },
+      {
+        "nom": "LES RESTAURANTS POTAGERS DE TOURAINE (LES JARDINIERS)",
+        "siret_siege": "91302884100017",
+        "commune": "LIGRE"
+      },
+      {
+        "nom": "RESTAURANT ET CAVEAU DE LA CATHEDRALE",
+        "siret_siege": "92275605100012",
+        "commune": "STRASBOURG"
+      },
+      {
+        "nom": "RESTAURANT DU GOLF DE LA BRESSE",
+        "siret_siege": "44018304400013",
+        "commune": "SEPTMONCEL LES MOLUNES"
+      },
+      {
+        "nom": "RESTAURANT DI CUMPAGNO",
+        "siret_siege": "75309947200015",
+        "commune": "CUTTOLI-CORTICCHIATO"
+      }
+    ],
+    "restaurant_retenu": {
+      "nom_complet": "RESTAURANT ET CAVEAU DE LA CATHEDRALE",
+      "siren": "922756051",
+      "siret_siege": "92275605100012",
+      "naf": "56.10A — Restauration traditionnelle",
+      "etat": "actif",
+      "adresse_etendue_siege": "29 RUE DES GRANDES ARCADES 67000 STRASBOURG",
+      "enseigne": "Caveau du Gurtlerhoft (Restaurant Gurtlerhoft)"
+    }
+  },
+  "site_officiel": {
+    "url": "https://www.gurtlerhoft.fr/",
+    "titre": "Caveau Du Gurtlerhoft",
+    "trouve_via": "recherche web « enseigne + ville » (annuaires exclus)"
+  },
+  "verification": {
+    "statut": "site officiel confirmé",
+    "methode": "SIRET exact dans la page Mentions légales",
+    "page": "https://www.gurtlerhoft.fr/mentions-lgales",
+    "preuve_textuelle": "Éditeur : Restaurant Gurtlerhoft, 13 Place de la Cathédrale, 67000 Strasbourg — « Numéro de Siret : 92275605100012 » — Capital Social : 100 000 euros — RCS de Strasbourg",
+    "correspondance": "Le SIRET affiché (92275605100012) est identique au SIRET du siège issu du tirage data.gouv ; l'enseigne du site correspond à un établissement de la même unité légale (SIREN 922756051)."
+  },
+  "menus_pdf": {
+    "constat": "La page La Carte affiche : « Téléchargez la carte du restaurant Gurtlerhoft en cliquant ici » (lien de téléchargement PDF présent dans le HTML brut de la page).",
+    "url_pdf_indexee_historique": "http://www.gurtlerhoft.fr/files/file/Petite Carte - francais allemand - 2019.pdf (HTTP 404 : fichier retiré)",
+    "telechargement_dans_ce_test": "Non exécutable depuis le bac à sable (binaire interdit) — implémenté dans scripts/discover-restaurant.py (téléchargement + contrôle magie %PDF + extraction pypdf)."
+  },
+  "peuplement": {
+    "source": "Pages carte du site officiel vérifié (fallback --html-fallback documenté : contenu identique à la carte PDF téléchargeable)",
+    "pages_sources": [
+      "https://www.gurtlerhoft.fr/la-carte",
+      "https://www.gurtlerhoft.fr/les-entres",
+      "https://www.gurtlerhoft.fr/les-plats",
+      "https://www.gurtlerhoft.fr/les-tartes-flambes",
+      "https://www.gurtlerhoft.fr/les-desserts",
+      "https://www.gurtlerhoft.fr/nos-menus"
+    ],
+    "nb_plats": 58,
+    "fichier": "gurtlerhoft.json",
+    "format": "Dish (src/types/menu.ts)",
+    "fidelite": "Prix strictement recopiés depuis la carte en ligne, prix nets TTC. Les plats du jour (volatils) ne sont pas intégrés.",
+    "ecart_constate": "Le résumé de la page La Carte affiche « Menu du Gurtlerhoft à 39,90 € » tandis que la page Nos Menus affiche 39,00 € ; la valeur de la page Nos Menus est retenue."
+  },
+  "candidats_evalues_au_cours_du_test": [
+    {
+      "nom": "RESTAURANT ET CAVEAU DE LA CATHEDRALE (Gurtlerhoft), Strasbourg",
+      "issue": "site officiel vérifié (SIRET exact) — carte PDF téléchargeable — RETENU, peuplement effectué"
+    },
+    {
+      "nom": "BISTROT BRICK HOUSE, Chambéry",
+      "issue": "site officiel vérifié par adresse étendue du siège dans les mentions légales (91 rue Philibert Routin, 73000 Chambéry, RCS Chambéry) ; carte non exposée en PDF indexé"
+    },
+    {
+      "nom": "MOBY DICK, Porto-Vecchio",
+      "issue": "aucun site officiel hors annuaires"
+    },
+    {
+      "nom": "LE HAOU, Biarritz",
+      "issue": "aucun site officiel hors annuaires"
+    },
+    {
+      "nom": "AZURBAC, Saint-Jorioz",
+      "issue": "site trouvé (restaurant-st-jorioz.com) mais enseigne différente (La Suite by John) — non retenu"
+    },
+    {
+      "nom": "BISTROT SAINT FLORENT, Strasbourg",
+      "issue": "aucun site officiel hors annuaires"
+    },
+    {
+      "nom": "ESTORIL, Limoges",
+      "issue": "site estorilrestaurant.com trouvé mais accès automatisé bloqué — vérification impossible"
+    },
+    {
+      "nom": "AG BRASSERIES (Annexe Café), Vaison-la-Romaine",
+      "issue": "site annexe-cafe.com trouvé mais accès automatisé bloqué — vérification impossible"
+    },
+    {
+      "nom": "PIZZERIA ITALIA, Hettange-Grande",
+      "issue": "site italia-pizzeria.fr trouvé mais derrière un mur de cookies — vérification impossible"
+    },
+    {
+      "nom": "SAS LA SUITE BY JOHN / LES 4 VENTS / CHEZ FANNY / CASTEL EVENTS / LE BEACH KREYOL / RESTAURANT LA FLEUR, etc.",
+      "issue": "aucun site officiel identifiable (annuaires uniquement) sur ~20 autres tirages"
+    }
+  ]
+}

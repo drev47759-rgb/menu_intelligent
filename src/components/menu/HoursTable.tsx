@@ -20,6 +20,25 @@ export function HoursTable({ hours }: { hours: OpeningHours[] }) {
     };
   }, []);
 
+  // Un restaurant découvert n'a pas d'horaires connus (Sirene ne les
+  // publie pas) : on le dit plutôt que d'afficher un tableau vide.
+  if (hours.length === 0) {
+    return (
+      <section
+        aria-labelledby="hours-heading"
+        className="rounded-xl bg-paper p-4 shadow-border"
+      >
+        <h2 id="hours-heading" className="font-display text-xl text-ink">
+          Horaires
+        </h2>
+        <p className="mt-2 text-sm leading-normal text-ink-muted">
+          Horaires inconnus — consultez le site officiel ou la fiche du
+          restaurant sur les plateformes de livraison.
+        </p>
+      </section>
+    );
+  }
+
   const open = now !== null && isOpenNow(hours, now);
   const grouped = new Map<string, string[]>();
   for (const slot of hours) {
