@@ -9,6 +9,7 @@ import {
   UtensilsCrossed,
 } from "lucide-react";
 import { restaurants } from "@/data/restaurants";
+import { LuckyDiscovery } from "@/components/discovery/LuckyDiscovery";
 
 export const metadata: Metadata = {
   title: "Menu Intelligent — Décidez avant d’y aller",
@@ -42,6 +43,9 @@ export default function Home() {
           Est-ce que ça me plaît, est-ce que ça passe mes contraintes, combien
           je vais payer — et que faire maintenant.
         </p>
+        <div className="mt-10 max-w-2xl">
+          <LuckyDiscovery />
+        </div>
       </section>
 
       <section className="border-y border-line bg-paper">
@@ -74,7 +78,7 @@ export default function Home() {
           {restaurants.map((r) => (
             <li key={r.slug}>
               <Link
-                href={`/solutions/restauration/menu/${r.slug}`}
+                href={"/solutions/restauration/menu/" + r.slug}
                 className="group flex h-full flex-col overflow-hidden rounded-2xl bg-paper shadow-border transition-shadow duration-(--motion-fast) hover:shadow-border-hover"
               >
                 <Image
