@@ -1,5 +1,6 @@
 import type { DiscoveredRestaurant, MenuFormat, VerificationInfo } from "@/types/discovery";
 import { htmlToLines, parseRawDishes, type RawDish } from "./menu-extract";
+import { extractRawDishesFromPdfs } from "./pdf-menu";
 import { fetchText, safeHost } from "./websearch";
 
 const MENTIONS_HINT = /mentions?[-\s]?l[eé]gales?|legal-notice/i;
@@ -111,19 +112,21 @@ export interface MenuExploration {
   format: MenuFormat;
   /** Liens PDF trouvés (carte, menus, brochures). */
   pdfs: string[];
-  /** Plats extraits des pages carte HTML (heuristique « nom … prix € »). */
+  /** Plats extraits automatiquement (HTML d'abord, PDF ensuite). */
   rawDishes: RawDish[];
 }
 
 /**
  * Exploration du menu officiel : parcours en largeur des pages carte/menu
- * (8 pages max, même domaine). Collecte les liens PDF et les plats
- * présents dans les cartes HTML — c'est ce qui permet d'ajouter le
- * restaurant à la liste avec une vraie carte filtrable.
- * - "pdf"     : le menu n'existe que par des liens PDF ;
- * - "mixte"   : carte HTML + menu PDF ;
- * - "html"    : carte en ligne ;
- * - "inconnu" : rien de localisé.
+ * (8 pages max, même domaine). Peuplement automatique, sans action de
+ * l'utilisateur :
+ * 1. plats extraits de chaque page visitée (une carte tient parfois dans
+ *    la page d'accueil) ;
+ * 2. si rien n'a été trouvé et que des PDF existent, les plats sont
+ *    extraits directement DANS les PDF (décompression + lecture des
+ *    opérateurs texte, voir pdf-menu.ts).
+ * Formats : "pdf" (menu seulement en PDF — plats extraits du PDF),
+ * "mixte", "html", "inconnu".
  */
 export async function exploreMenu(
   siteUrl: string,
@@ -139,6 +142,15 @@ export async function exploreMenu(
   let menuPages = 0;
   let visited = 0;
 
+  const addDishes = (found: RawDish[]): void => {
+    for (const raw of found) {
+      const key = raw.name.toLowerCase() + "|" + raw.category;
+      if (dishKeys.has(key)) continue;
+      dishKeys.add(key);
+      rawDishes.push(raw);
+    }
+  };
+
   while (queue.length > 0 && visited < 8) {
     const url = queue.shift();
     if (!url) break;
@@ -148,15 +160,8 @@ export async function exploreMenu(
     const html = await fetchText(url);
     if (html === null) continue;
     visited += 1;
-    if (MENU_HINT.test(url)) {
-      menuPages += 1;
-      for (const raw of parseRawDishes(htmlToLines(html))) {
-        const key = raw.name.toLowerCase() + "|" + raw.category;
-        if (dishKeys.has(key)) continue;
-        dishKeys.add(key);
-        rawDishes.push(raw);
-      }
-    }
+    if (MENU_HINT.test(url)) menuPages += 1;
+    addDishes(parseRawDishes(htmlToLines(html)));
     for (const link of extractLinks(html, url)) {
       if (/\.pdf($|\?|#)/i.test(link)) {
         if (!pdfs.includes(link)) pdfs.push(link);
@@ -164,6 +169,10 @@ export async function exploreMenu(
         queue.push(link);
       }
     }
+  }
+
+  if (rawDishes.length === 0 && pdfs.length > 0) {
+    addDishes(await extractRawDishesFromPdfs(pdfs));
   }
 
   if (pdfs.length > 0 && menuPages === 0) return { format: "pdf", pdfs, rawDishes };

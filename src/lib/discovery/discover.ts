@@ -38,10 +38,12 @@ async function platformLinksFor(
  * Découverte d'un restaurant au hasard :
  * 1. tirage Sirene — SIRET du siège en activité uniquement (les SIRET
  *    déjà enregistrés chez l'utilisateur sont exclus via exclude) ;
+ *    ville ciblée optionnelle : résolue en commune (API Geo) et le
+ *    tirage reste aléatoire dans tout le bassin de la commune ;
  * 2. recherche du site officiel puis vérification par le SIRET
  *    (ou l'adresse étendue) dans les mentions légales ou le footer ;
- * 3. exploration du menu officiel : format (PDF uniquement = signalé
- *    dans l'UI) et plats extraits des cartes HTML ;
+ * 3. exploration automatique du menu : plats extraits des cartes HTML,
+ *    sinon directement depuis les PDF (jamais à la main) ;
  * 4. catalogue complet (Restaurant + Dish) — le restaurant rejoint la
  *    liste avec les mêmes actions que les maisons préchargées ;
  * 5. recherche du restaurant sur Uber Eats, Deliveroo et TripAdvisor.
@@ -50,18 +52,32 @@ async function platformLinksFor(
  * d'erreur tant qu'un établissement actif a été tiré.
  */
 export async function discoverLuckyRestaurant(
-  options: { deadlineMs?: number; exclude?: string[] } = {},
+  options: {
+    deadlineMs?: number;
+    exclude?: string[];
+    ville?: string;
+  } = {},
 ): Promise<DiscoveryResult> {
   const deadline = Date.now() + (options.deadlineMs ?? 40_000);
   const excluded = new Set(options.exclude ?? []);
+  const saisie = options.ville?.trim() ?? "";
+  const ville = saisie.length >= 2 ? saisie : undefined;
   let fallback: DiscoveryResult | null = null;
+  let vides = 0;
 
   for (let attempt = 0; attempt < MAX_ATTEMPTS && Date.now() < deadline; attempt++) {
-    const pool = (await drawActiveRestaurants()).filter(
-      (c) => !excluded.has(c.siret),
-    );
+    const drawn = await drawActiveRestaurants(ville);
+    const pool = drawn.filter((c) => !excluded.has(c.siret));
     const candidate = pool[Math.floor(Math.random() * pool.length)];
     if (!candidate) {
+      if (drawn.length > 0 && ville !== undefined) {
+        // La ville a des restaurants actifs, mais tous sont déjà enregistrés.
+        throw new Error("VILLE_EPUISEE");
+      }
+      if (ville !== undefined) {
+        vides += 1;
+        if (vides >= 2) throw new Error("VILLE_INCONNUE");
+      }
       await delay(400);
       continue;
     }

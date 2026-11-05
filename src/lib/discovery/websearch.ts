@@ -51,6 +51,24 @@ export async function fetchText(
   }
 }
 
+/** Téléchargement de binaire (menus PDF) — serveur uniquement. */
+export async function fetchBytes(
+  url: string,
+  timeoutMs = 9000,
+): Promise<Uint8Array | null> {
+  try {
+    const res = await fetch(url, {
+      cache: "no-store",
+      signal: AbortSignal.timeout(timeoutMs),
+      headers: { "User-Agent": UA, "Accept-Language": "fr" },
+    });
+    if (!res.ok) return null;
+    return new Uint8Array(await res.arrayBuffer());
+  } catch {
+    return null;
+  }
+}
+
 export function safeHost(url: string): string | null {
   try {
     return new URL(url).host;

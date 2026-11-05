@@ -9,7 +9,8 @@ export interface RawDish {
   category: string;
 }
 
-const PRICE_RE = /(\d{1,3}(?:[.,]\d{1,2})?)\s*(?:€|eur\b|euros\b)/i;
+/** Prix en euros en fin de ligne : « 12,50 € », « 18€ », « 12.5 EUR ». */
+export const PRICE_RE = /(\d{1,3}(?:[.,]\d{1,2})?)\s*(?:€|eur\b|euros\b)/i;
 
 /** Texte d'une page découpé en lignes (les balises de bloc deviennent \\n). */
 export function htmlToLines(html: string): string[] {
