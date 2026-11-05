@@ -14,6 +14,10 @@ const SOURCE =
   "Tirage aléatoire — API Recherche d'entreprises (données Sirene, data.gouv.fr), NAF 56.10A, établissements en activité uniquement.";
 
 const MAX_ATTEMPTS = 10;
+/** Pages tirées au hasard dont tous les restaurants sont déjà enregistrés
+ *  avant de conclure que la ville est épuisée : une seule page de 25 ne
+ *  suffit pas, la commune peut être plus vaste que la liste de l'utilisateur. */
+const MAX_PAGES_EPUISES = 3;
 
 function delay(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -64,6 +68,7 @@ export async function discoverLuckyRestaurant(
   const ville = saisie.length >= 2 ? saisie : undefined;
   let fallback: DiscoveryResult | null = null;
   let vides = 0;
+  let epuisees = 0;
 
   for (let attempt = 0; attempt < MAX_ATTEMPTS && Date.now() < deadline; attempt++) {
     const drawn = await drawActiveRestaurants(ville);
@@ -71,8 +76,12 @@ export async function discoverLuckyRestaurant(
     const candidate = pool[Math.floor(Math.random() * pool.length)];
     if (!candidate) {
       if (drawn.length > 0 && ville !== undefined) {
-        // La ville a des restaurants actifs, mais tous sont déjà enregistrés.
-        throw new Error("VILLE_EPUISEE");
+        // Cette page tirée au hasard ne contient que des restaurants déjà
+        // enregistrés : on retente d'autres pages avant de conclure.
+        epuisees += 1;
+        if (epuisees >= MAX_PAGES_EPUISES) throw new Error("VILLE_EPUISEE");
+        await delay(200);
+        continue;
       }
       if (ville !== undefined) {
         vides += 1;
@@ -131,5 +140,5 @@ export async function discoverLuckyRestaurant(
     fallback.plateformes = await platformLinksFor(fallback.restaurant);
     return fallback;
   }
-  throw new Error("Aucun restaurant actif tire au sort.");
+  throw new Error("Aucun restaurant actif tiré au sort.");
 }
